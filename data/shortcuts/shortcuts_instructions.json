@@ -1,0 +1,26 @@
+{
+  "created_at": "2025-08-02T14:18:45.270439",
+  "total_covers": 550,
+  "files_created": [
+    "optimized_covers.json",
+    "simple_urls.json",
+    "random_sample.json"
+  ],
+  "ios_shortcuts_setup": {
+    "step_1": "Open Shortcuts app on your iPhone",
+    "step_2": "Create new shortcut",
+    "step_3": "Add 'Get Contents of URL' action",
+    "step_4": "Use: https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/data/shortcuts/optimized_covers.json",
+    "step_5": "Add 'Get Dictionary from Input' action",
+    "step_6": "Add 'Get Random Item from List' action",
+    "step_7": "Add 'Get Dictionary Value' with key 'url'",
+    "step_8": "Add 'Get Contents of URL' to download image",
+    "step_9": "Add 'Set Wallpaper' action",
+    "step_10": "Test the shortcut!"
+  },
+  "recommended_files": {
+    "full_featured": "optimized_covers.json - Complete with metadata",
+    "simple": "simple_urls.json - Just URLs for basic shortcuts",
+    "testing": "random_sample.json - 50 random covers for testing"
+  }
+}

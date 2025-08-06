@@ -37,7 +37,7 @@ class ThrasherImageOptimizer:
             return None
     
     def optimize_image(self, image_data, filename, metadata=None):
-        """Optimize image for lock screen"""
+        """Optimize image for lock screen with full cover visible"""
         try:
             # Open image
             image = Image.open(io.BytesIO(image_data))
@@ -46,24 +46,37 @@ class ThrasherImageOptimizer:
             if image.mode != 'RGB':
                 image = image.convert('RGB')
             
-            # Calculate aspect ratio
+            # Create a new image with lock screen dimensions and black background
+            lock_screen_image = Image.new('RGB', self.lock_screen_size, (0, 0, 0))
+            
+            # Calculate scaling to fit the entire magazine cover
             img_ratio = image.width / image.height
             target_ratio = self.lock_screen_size[0] / self.lock_screen_size[1]
             
-            # Resize image to fit lock screen
+            # Scale image to fit within lock screen while maintaining aspect ratio
             if img_ratio > target_ratio:
-                # Image is wider than target - crop width
-                new_width = int(image.height * target_ratio)
-                left = (image.width - new_width) // 2
-                image = image.crop((left, 0, left + new_width, image.height))
+                # Image is wider than target - scale to fit width
+                scale_factor = self.lock_screen_size[0] / image.width
+                new_width = self.lock_screen_size[0]
+                new_height = int(image.height * scale_factor)
             else:
-                # Image is taller than target - crop height
-                new_height = int(image.width / target_ratio)
-                top = (image.height - new_height) // 2
-                image = image.crop((0, top, image.width, top + new_height))
+                # Image is taller than target - scale to fit height
+                scale_factor = self.lock_screen_size[1] / image.height
+                new_width = int(image.width * scale_factor)
+                new_height = self.lock_screen_size[1]
             
-            # Resize to target dimensions
-            image = image.resize(self.lock_screen_size, Image.Resampling.LANCZOS)
+            # Resize the magazine cover
+            resized_image = image.resize((new_width, new_height), Image.Resampling.LANCZOS)
+            
+            # Calculate position to center the image
+            x_offset = (self.lock_screen_size[0] - new_width) // 2
+            y_offset = (self.lock_screen_size[1] - new_height) // 2
+            
+            # Paste the resized magazine cover onto the lock screen background
+            lock_screen_image.paste(resized_image, (x_offset, y_offset))
+            
+            # Use the lock screen image for further processing
+            image = lock_screen_image
             
             # Add metadata overlay if provided
             if metadata:
@@ -294,7 +307,7 @@ def main():
     
     # Process a sample batch first
     processed, failed = optimizer.process_covers_batch(
-        'final_comprehensive_verified_urls.json',
+        'data/shortcuts/final_comprehensive_verified_urls.json',
         metadata_file=metadata_file,
         limit=10  # Start with 10 covers for testing
     )

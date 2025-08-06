@@ -1,0 +1,3302 @@
+[
+  {
+    "filename": "0525_10.jpg",
+    "local_path": "images/optimized_final/0525_10.jpg",
+    "file_size": 393288,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "1981_01.jpg",
+    "local_path": "images/optimized_final/1981_01.jpg",
+    "file_size": 351066,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "1981_02.jpg",
+    "local_path": "images/optimized_final/1981_02.jpg",
+    "file_size": 246669,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1981_03.jpg",
+    "local_path": "images/optimized_final/1981_03.jpg",
+    "file_size": 246143,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "1981_04.jpg",
+    "local_path": "images/optimized_final/1981_04.jpg",
+    "file_size": 325465,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1981_05.jpg",
+    "local_path": "images/optimized_final/1981_05.jpg",
+    "file_size": 326953,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1981_06.jpg",
+    "local_path": "images/optimized_final/1981_06.jpg",
+    "file_size": 300088,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1981_07.jpg",
+    "local_path": "images/optimized_final/1981_07.jpg",
+    "file_size": 313417,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1981_08.jpg",
+    "local_path": "images/optimized_final/1981_08.jpg",
+    "file_size": 300835,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1981_09.jpg",
+    "local_path": "images/optimized_final/1981_09.jpg",
+    "file_size": 377976,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "1981_10.jpg",
+    "local_path": "images/optimized_final/1981_10.jpg",
+    "file_size": 287717,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1981_11.jpg",
+    "local_path": "images/optimized_final/1981_11.jpg",
+    "file_size": 272127,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1981_12.jpg",
+    "local_path": "images/optimized_final/1981_12.jpg",
+    "file_size": 227576,
+    "file_size_mb": 0.22
+  },
+  {
+    "filename": "1982_01.jpg",
+    "local_path": "images/optimized_final/1982_01.jpg",
+    "file_size": 331440,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1982_02.jpg",
+    "local_path": "images/optimized_final/1982_02.jpg",
+    "file_size": 218343,
+    "file_size_mb": 0.21
+  },
+  {
+    "filename": "1982_03.jpg",
+    "local_path": "images/optimized_final/1982_03.jpg",
+    "file_size": 280864,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1982_04.jpg",
+    "local_path": "images/optimized_final/1982_04.jpg",
+    "file_size": 266176,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1982_07.jpg",
+    "local_path": "images/optimized_final/1982_07.jpg",
+    "file_size": 263389,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1982_08.jpg",
+    "local_path": "images/optimized_final/1982_08.jpg",
+    "file_size": 273467,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1982_09.jpg",
+    "local_path": "images/optimized_final/1982_09.jpg",
+    "file_size": 281434,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1982_10.jpg",
+    "local_path": "images/optimized_final/1982_10.jpg",
+    "file_size": 271607,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1982_11.jpg",
+    "local_path": "images/optimized_final/1982_11.jpg",
+    "file_size": 280225,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1982_12.jpg",
+    "local_path": "images/optimized_final/1982_12.jpg",
+    "file_size": 273850,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1983_01.jpg",
+    "local_path": "images/optimized_final/1983_01.jpg",
+    "file_size": 269145,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1983_02.jpg",
+    "local_path": "images/optimized_final/1983_02.jpg",
+    "file_size": 288790,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1983_03.jpg",
+    "local_path": "images/optimized_final/1983_03.jpg",
+    "file_size": 305378,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1983_04.jpg",
+    "local_path": "images/optimized_final/1983_04.jpg",
+    "file_size": 289265,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1983_05.jpg",
+    "local_path": "images/optimized_final/1983_05.jpg",
+    "file_size": 224961,
+    "file_size_mb": 0.21
+  },
+  {
+    "filename": "1983_06.jpg",
+    "local_path": "images/optimized_final/1983_06.jpg",
+    "file_size": 262522,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1983_07.jpg",
+    "local_path": "images/optimized_final/1983_07.jpg",
+    "file_size": 215625,
+    "file_size_mb": 0.21
+  },
+  {
+    "filename": "1983_08.jpg",
+    "local_path": "images/optimized_final/1983_08.jpg",
+    "file_size": 247339,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1983_09.jpg",
+    "local_path": "images/optimized_final/1983_09.jpg",
+    "file_size": 268704,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1983_10.jpg",
+    "local_path": "images/optimized_final/1983_10.jpg",
+    "file_size": 338531,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1983_11.jpg",
+    "local_path": "images/optimized_final/1983_11.jpg",
+    "file_size": 242155,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "1983_12.jpg",
+    "local_path": "images/optimized_final/1983_12.jpg",
+    "file_size": 263800,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1984_01.jpg",
+    "local_path": "images/optimized_final/1984_01.jpg",
+    "file_size": 277882,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1984_02.jpg",
+    "local_path": "images/optimized_final/1984_02.jpg",
+    "file_size": 329614,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1984_03.jpg",
+    "local_path": "images/optimized_final/1984_03.jpg",
+    "file_size": 284304,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1984_04.jpg",
+    "local_path": "images/optimized_final/1984_04.jpg",
+    "file_size": 309386,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1984_05.jpg",
+    "local_path": "images/optimized_final/1984_05.jpg",
+    "file_size": 341784,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "1984_06.jpg",
+    "local_path": "images/optimized_final/1984_06.jpg",
+    "file_size": 230588,
+    "file_size_mb": 0.22
+  },
+  {
+    "filename": "1984_07.jpg",
+    "local_path": "images/optimized_final/1984_07.jpg",
+    "file_size": 316142,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1984_08.jpg",
+    "local_path": "images/optimized_final/1984_08.jpg",
+    "file_size": 277948,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1984_09.jpg",
+    "local_path": "images/optimized_final/1984_09.jpg",
+    "file_size": 377865,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "1984_10.jpg",
+    "local_path": "images/optimized_final/1984_10.jpg",
+    "file_size": 282584,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1984_11.jpg",
+    "local_path": "images/optimized_final/1984_11.jpg",
+    "file_size": 271905,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1984_12.jpg",
+    "local_path": "images/optimized_final/1984_12.jpg",
+    "file_size": 344680,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "1985_01.jpg",
+    "local_path": "images/optimized_final/1985_01.jpg",
+    "file_size": 266034,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1985_02.jpg",
+    "local_path": "images/optimized_final/1985_02.jpg",
+    "file_size": 286611,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1985_03.jpg",
+    "local_path": "images/optimized_final/1985_03.jpg",
+    "file_size": 307235,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1985_04.jpg",
+    "local_path": "images/optimized_final/1985_04.jpg",
+    "file_size": 223424,
+    "file_size_mb": 0.21
+  },
+  {
+    "filename": "1985_05.jpg",
+    "local_path": "images/optimized_final/1985_05.jpg",
+    "file_size": 298944,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1985_06.jpg",
+    "local_path": "images/optimized_final/1985_06.jpg",
+    "file_size": 281252,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1985_07.jpg",
+    "local_path": "images/optimized_final/1985_07.jpg",
+    "file_size": 269093,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1985_08.jpg",
+    "local_path": "images/optimized_final/1985_08.jpg",
+    "file_size": 271816,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1985_09.jpg",
+    "local_path": "images/optimized_final/1985_09.jpg",
+    "file_size": 345273,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "1985_10.jpg",
+    "local_path": "images/optimized_final/1985_10.jpg",
+    "file_size": 245621,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "1985_11.jpg",
+    "local_path": "images/optimized_final/1985_11.jpg",
+    "file_size": 303859,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1985_12.jpg",
+    "local_path": "images/optimized_final/1985_12.jpg",
+    "file_size": 249519,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1986_01.jpg",
+    "local_path": "images/optimized_final/1986_01.jpg",
+    "file_size": 264255,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1986_02.jpg",
+    "local_path": "images/optimized_final/1986_02.jpg",
+    "file_size": 331287,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1986_03.jpg",
+    "local_path": "images/optimized_final/1986_03.jpg",
+    "file_size": 353631,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "1986_04.jpg",
+    "local_path": "images/optimized_final/1986_04.jpg",
+    "file_size": 355337,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "1986_05.jpg",
+    "local_path": "images/optimized_final/1986_05.jpg",
+    "file_size": 228730,
+    "file_size_mb": 0.22
+  },
+  {
+    "filename": "1986_06.jpg",
+    "local_path": "images/optimized_final/1986_06.jpg",
+    "file_size": 212627,
+    "file_size_mb": 0.2
+  },
+  {
+    "filename": "1986_07.jpg",
+    "local_path": "images/optimized_final/1986_07.jpg",
+    "file_size": 250462,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1986_08.jpg",
+    "local_path": "images/optimized_final/1986_08.jpg",
+    "file_size": 495223,
+    "file_size_mb": 0.47
+  },
+  {
+    "filename": "1986_09.jpg",
+    "local_path": "images/optimized_final/1986_09.jpg",
+    "file_size": 301875,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1986_12.jpg",
+    "local_path": "images/optimized_final/1986_12.jpg",
+    "file_size": 273528,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1987_01.jpg",
+    "local_path": "images/optimized_final/1987_01.jpg",
+    "file_size": 498119,
+    "file_size_mb": 0.48
+  },
+  {
+    "filename": "1987_02.jpg",
+    "local_path": "images/optimized_final/1987_02.jpg",
+    "file_size": 278226,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1987_03.jpg",
+    "local_path": "images/optimized_final/1987_03.jpg",
+    "file_size": 282761,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1987_04.jpg",
+    "local_path": "images/optimized_final/1987_04.jpg",
+    "file_size": 241034,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "1987_05.jpg",
+    "local_path": "images/optimized_final/1987_05.jpg",
+    "file_size": 393194,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "1987_06.jpg",
+    "local_path": "images/optimized_final/1987_06.jpg",
+    "file_size": 287294,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1987_07.jpg",
+    "local_path": "images/optimized_final/1987_07.jpg",
+    "file_size": 321160,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1987_08.jpg",
+    "local_path": "images/optimized_final/1987_08.jpg",
+    "file_size": 334806,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1987_09.jpg",
+    "local_path": "images/optimized_final/1987_09.jpg",
+    "file_size": 477129,
+    "file_size_mb": 0.46
+  },
+  {
+    "filename": "1987_10.jpg",
+    "local_path": "images/optimized_final/1987_10.jpg",
+    "file_size": 357557,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "1987_11.jpg",
+    "local_path": "images/optimized_final/1987_11.jpg",
+    "file_size": 298126,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1987_12.jpg",
+    "local_path": "images/optimized_final/1987_12.jpg",
+    "file_size": 303875,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1988_01.jpg",
+    "local_path": "images/optimized_final/1988_01.jpg",
+    "file_size": 299539,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1988_02.jpg",
+    "local_path": "images/optimized_final/1988_02.jpg",
+    "file_size": 334332,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1988_03.jpg",
+    "local_path": "images/optimized_final/1988_03.jpg",
+    "file_size": 316531,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1988_04.jpg",
+    "local_path": "images/optimized_final/1988_04.jpg",
+    "file_size": 353075,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "1988_05.jpg",
+    "local_path": "images/optimized_final/1988_05.jpg",
+    "file_size": 358179,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "1988_06.jpg",
+    "local_path": "images/optimized_final/1988_06.jpg",
+    "file_size": 287082,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1988_07.jpg",
+    "local_path": "images/optimized_final/1988_07.jpg",
+    "file_size": 365385,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "1988_08.jpg",
+    "local_path": "images/optimized_final/1988_08.jpg",
+    "file_size": 393621,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "1988_09.jpg",
+    "local_path": "images/optimized_final/1988_09.jpg",
+    "file_size": 322507,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1988_10.jpg",
+    "local_path": "images/optimized_final/1988_10.jpg",
+    "file_size": 262536,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1988_11.jpg",
+    "local_path": "images/optimized_final/1988_11.jpg",
+    "file_size": 284860,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1988_12.jpg",
+    "local_path": "images/optimized_final/1988_12.jpg",
+    "file_size": 291625,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1989_01.jpg",
+    "local_path": "images/optimized_final/1989_01.jpg",
+    "file_size": 338107,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1989_02.jpg",
+    "local_path": "images/optimized_final/1989_02.jpg",
+    "file_size": 275263,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1989_03.jpg",
+    "local_path": "images/optimized_final/1989_03.jpg",
+    "file_size": 324197,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1989_04.jpg",
+    "local_path": "images/optimized_final/1989_04.jpg",
+    "file_size": 249909,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1989_05.jpg",
+    "local_path": "images/optimized_final/1989_05.jpg",
+    "file_size": 301168,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1989_06.jpg",
+    "local_path": "images/optimized_final/1989_06.jpg",
+    "file_size": 182866,
+    "file_size_mb": 0.17
+  },
+  {
+    "filename": "1989_07.jpg",
+    "local_path": "images/optimized_final/1989_07.jpg",
+    "file_size": 303279,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1989_08.jpg",
+    "local_path": "images/optimized_final/1989_08.jpg",
+    "file_size": 348512,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "1989_09.jpg",
+    "local_path": "images/optimized_final/1989_09.jpg",
+    "file_size": 320253,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1989_10.jpg",
+    "local_path": "images/optimized_final/1989_10.jpg",
+    "file_size": 260679,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1989_11.jpg",
+    "local_path": "images/optimized_final/1989_11.jpg",
+    "file_size": 331959,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1989_12.jpg",
+    "local_path": "images/optimized_final/1989_12.jpg",
+    "file_size": 301085,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1990_01.jpg",
+    "local_path": "images/optimized_final/1990_01.jpg",
+    "file_size": 340706,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1990_02.jpg",
+    "local_path": "images/optimized_final/1990_02.jpg",
+    "file_size": 324204,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1990_03.jpg",
+    "local_path": "images/optimized_final/1990_03.jpg",
+    "file_size": 307824,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1990_04.jpg",
+    "local_path": "images/optimized_final/1990_04.jpg",
+    "file_size": 277281,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1990_05.jpg",
+    "local_path": "images/optimized_final/1990_05.jpg",
+    "file_size": 399418,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "1990_06.jpg",
+    "local_path": "images/optimized_final/1990_06.jpg",
+    "file_size": 370553,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "1990_07.jpg",
+    "local_path": "images/optimized_final/1990_07.jpg",
+    "file_size": 273823,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1990_08.jpg",
+    "local_path": "images/optimized_final/1990_08.jpg",
+    "file_size": 315524,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1990_09.jpg",
+    "local_path": "images/optimized_final/1990_09.jpg",
+    "file_size": 333022,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1990_10.jpg",
+    "local_path": "images/optimized_final/1990_10.jpg",
+    "file_size": 281347,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1990_11.jpg",
+    "local_path": "images/optimized_final/1990_11.jpg",
+    "file_size": 315082,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1990_12.jpg",
+    "local_path": "images/optimized_final/1990_12.jpg",
+    "file_size": 323576,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1991_01.jpg",
+    "local_path": "images/optimized_final/1991_01.jpg",
+    "file_size": 263079,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1991_02.jpg",
+    "local_path": "images/optimized_final/1991_02.jpg",
+    "file_size": 263406,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1991_03.jpg",
+    "local_path": "images/optimized_final/1991_03.jpg",
+    "file_size": 422827,
+    "file_size_mb": 0.4
+  },
+  {
+    "filename": "1991_04.jpg",
+    "local_path": "images/optimized_final/1991_04.jpg",
+    "file_size": 252282,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1991_05.jpg",
+    "local_path": "images/optimized_final/1991_05.jpg",
+    "file_size": 263820,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1991_06.jpg",
+    "local_path": "images/optimized_final/1991_06.jpg",
+    "file_size": 343594,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "1991_07.jpg",
+    "local_path": "images/optimized_final/1991_07.jpg",
+    "file_size": 341260,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "1991_08.jpg",
+    "local_path": "images/optimized_final/1991_08.jpg",
+    "file_size": 373669,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "1991_09.jpg",
+    "local_path": "images/optimized_final/1991_09.jpg",
+    "file_size": 355036,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "1991_10.jpg",
+    "local_path": "images/optimized_final/1991_10.jpg",
+    "file_size": 329025,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1991_11.jpg",
+    "local_path": "images/optimized_final/1991_11.jpg",
+    "file_size": 293771,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1991_12.jpg",
+    "local_path": "images/optimized_final/1991_12.jpg",
+    "file_size": 327254,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1992_01.jpg",
+    "local_path": "images/optimized_final/1992_01.jpg",
+    "file_size": 307095,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1992_02.jpg",
+    "local_path": "images/optimized_final/1992_02.jpg",
+    "file_size": 269808,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1992_03.jpg",
+    "local_path": "images/optimized_final/1992_03.jpg",
+    "file_size": 281668,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1992_04.jpg",
+    "local_path": "images/optimized_final/1992_04.jpg",
+    "file_size": 260403,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1992_05.jpg",
+    "local_path": "images/optimized_final/1992_05.jpg",
+    "file_size": 286617,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1992_06.jpg",
+    "local_path": "images/optimized_final/1992_06.jpg",
+    "file_size": 402091,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "1992_07.jpg",
+    "local_path": "images/optimized_final/1992_07.jpg",
+    "file_size": 329824,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1992_08.jpg",
+    "local_path": "images/optimized_final/1992_08.jpg",
+    "file_size": 266650,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1992_09.jpg",
+    "local_path": "images/optimized_final/1992_09.jpg",
+    "file_size": 271855,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1992_10.jpg",
+    "local_path": "images/optimized_final/1992_10.jpg",
+    "file_size": 315074,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1992_11.jpg",
+    "local_path": "images/optimized_final/1992_11.jpg",
+    "file_size": 265807,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1992_12.jpg",
+    "local_path": "images/optimized_final/1992_12.jpg",
+    "file_size": 275944,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1993_01.jpg",
+    "local_path": "images/optimized_final/1993_01.jpg",
+    "file_size": 371020,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "1993_02.jpg",
+    "local_path": "images/optimized_final/1993_02.jpg",
+    "file_size": 317433,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1993_04.jpg",
+    "local_path": "images/optimized_final/1993_04.jpg",
+    "file_size": 292139,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1993_05.jpg",
+    "local_path": "images/optimized_final/1993_05.jpg",
+    "file_size": 322598,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1993_06.jpg",
+    "local_path": "images/optimized_final/1993_06.jpg",
+    "file_size": 279963,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1993_07.jpg",
+    "local_path": "images/optimized_final/1993_07.jpg",
+    "file_size": 312506,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1993_08.jpg",
+    "local_path": "images/optimized_final/1993_08.jpg",
+    "file_size": 307034,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1993_09.jpg",
+    "local_path": "images/optimized_final/1993_09.jpg",
+    "file_size": 387645,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "1993_10.jpg",
+    "local_path": "images/optimized_final/1993_10.jpg",
+    "file_size": 391589,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "1993_11.jpg",
+    "local_path": "images/optimized_final/1993_11.jpg",
+    "file_size": 334002,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1993_12.jpg",
+    "local_path": "images/optimized_final/1993_12.jpg",
+    "file_size": 340331,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1994_01.jpg",
+    "local_path": "images/optimized_final/1994_01.jpg",
+    "file_size": 320992,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1994_02.jpg",
+    "local_path": "images/optimized_final/1994_02.jpg",
+    "file_size": 259069,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1994_03.jpg",
+    "local_path": "images/optimized_final/1994_03.jpg",
+    "file_size": 318868,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1994_04.jpg",
+    "local_path": "images/optimized_final/1994_04.jpg",
+    "file_size": 421853,
+    "file_size_mb": 0.4
+  },
+  {
+    "filename": "1994_05.jpg",
+    "local_path": "images/optimized_final/1994_05.jpg",
+    "file_size": 202343,
+    "file_size_mb": 0.19
+  },
+  {
+    "filename": "1994_06.jpg",
+    "local_path": "images/optimized_final/1994_06.jpg",
+    "file_size": 320896,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1994_07.jpg",
+    "local_path": "images/optimized_final/1994_07.jpg",
+    "file_size": 310683,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1994_08.jpg",
+    "local_path": "images/optimized_final/1994_08.jpg",
+    "file_size": 285822,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1994_09.jpg",
+    "local_path": "images/optimized_final/1994_09.jpg",
+    "file_size": 296910,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1994_10.jpg",
+    "local_path": "images/optimized_final/1994_10.jpg",
+    "file_size": 347271,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "1994_11.jpg",
+    "local_path": "images/optimized_final/1994_11.jpg",
+    "file_size": 311735,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1994_12.jpg",
+    "local_path": "images/optimized_final/1994_12.jpg",
+    "file_size": 331373,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1995_01.jpg",
+    "local_path": "images/optimized_final/1995_01.jpg",
+    "file_size": 324469,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1995_02.jpg",
+    "local_path": "images/optimized_final/1995_02.jpg",
+    "file_size": 408732,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "1995_03.jpg",
+    "local_path": "images/optimized_final/1995_03.jpg",
+    "file_size": 252999,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1995_04.jpg",
+    "local_path": "images/optimized_final/1995_04.jpg",
+    "file_size": 253644,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1995_05.jpg",
+    "local_path": "images/optimized_final/1995_05.jpg",
+    "file_size": 378948,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "1995_06.jpg",
+    "local_path": "images/optimized_final/1995_06.jpg",
+    "file_size": 332131,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1995_07.jpg",
+    "local_path": "images/optimized_final/1995_07.jpg",
+    "file_size": 249191,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1995_08.jpg",
+    "local_path": "images/optimized_final/1995_08.jpg",
+    "file_size": 293483,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1995_09.jpg",
+    "local_path": "images/optimized_final/1995_09.jpg",
+    "file_size": 316317,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1995_10.jpg",
+    "local_path": "images/optimized_final/1995_10.jpg",
+    "file_size": 281061,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1995_11.jpg",
+    "local_path": "images/optimized_final/1995_11.jpg",
+    "file_size": 313937,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1995_12.jpg",
+    "local_path": "images/optimized_final/1995_12.jpg",
+    "file_size": 292518,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1996_01.jpg",
+    "local_path": "images/optimized_final/1996_01.jpg",
+    "file_size": 333477,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1996_02.jpg",
+    "local_path": "images/optimized_final/1996_02.jpg",
+    "file_size": 302078,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1996_03.jpg",
+    "local_path": "images/optimized_final/1996_03.jpg",
+    "file_size": 277010,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1996_04.jpg",
+    "local_path": "images/optimized_final/1996_04.jpg",
+    "file_size": 356045,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "1996_05.jpg",
+    "local_path": "images/optimized_final/1996_05.jpg",
+    "file_size": 271540,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1996_06.jpg",
+    "local_path": "images/optimized_final/1996_06.jpg",
+    "file_size": 241768,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "1996_07.jpg",
+    "local_path": "images/optimized_final/1996_07.jpg",
+    "file_size": 252676,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1996_08.jpg",
+    "local_path": "images/optimized_final/1996_08.jpg",
+    "file_size": 257566,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1996_09.jpg",
+    "local_path": "images/optimized_final/1996_09.jpg",
+    "file_size": 191919,
+    "file_size_mb": 0.18
+  },
+  {
+    "filename": "1996_10.jpg",
+    "local_path": "images/optimized_final/1996_10.jpg",
+    "file_size": 219909,
+    "file_size_mb": 0.21
+  },
+  {
+    "filename": "1996_11.jpg",
+    "local_path": "images/optimized_final/1996_11.jpg",
+    "file_size": 302911,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1996_12.jpg",
+    "local_path": "images/optimized_final/1996_12.jpg",
+    "file_size": 236561,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "1997_01.jpg",
+    "local_path": "images/optimized_final/1997_01.jpg",
+    "file_size": 257035,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1997_02.jpg",
+    "local_path": "images/optimized_final/1997_02.jpg",
+    "file_size": 319534,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1997_03.jpg",
+    "local_path": "images/optimized_final/1997_03.jpg",
+    "file_size": 250197,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "1997_04.jpg",
+    "local_path": "images/optimized_final/1997_04.jpg",
+    "file_size": 280119,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1997_05.jpg",
+    "local_path": "images/optimized_final/1997_05.jpg",
+    "file_size": 210251,
+    "file_size_mb": 0.2
+  },
+  {
+    "filename": "1997_06.jpg",
+    "local_path": "images/optimized_final/1997_06.jpg",
+    "file_size": 224134,
+    "file_size_mb": 0.21
+  },
+  {
+    "filename": "1997_07.jpg",
+    "local_path": "images/optimized_final/1997_07.jpg",
+    "file_size": 239399,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "1997_08.jpg",
+    "local_path": "images/optimized_final/1997_08.jpg",
+    "file_size": 259374,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1997_09.jpg",
+    "local_path": "images/optimized_final/1997_09.jpg",
+    "file_size": 300068,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1997_10.jpg",
+    "local_path": "images/optimized_final/1997_10.jpg",
+    "file_size": 228500,
+    "file_size_mb": 0.22
+  },
+  {
+    "filename": "1997_11.jpg",
+    "local_path": "images/optimized_final/1997_11.jpg",
+    "file_size": 289891,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1997_12.jpg",
+    "local_path": "images/optimized_final/1997_12.jpg",
+    "file_size": 287556,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1998_01.jpg",
+    "local_path": "images/optimized_final/1998_01.jpg",
+    "file_size": 287738,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1998_02.jpg",
+    "local_path": "images/optimized_final/1998_02.jpg",
+    "file_size": 285582,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1998_03.jpg",
+    "local_path": "images/optimized_final/1998_03.jpg",
+    "file_size": 297466,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1998_04.jpg",
+    "local_path": "images/optimized_final/1998_04.jpg",
+    "file_size": 286858,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1998_05.jpg",
+    "local_path": "images/optimized_final/1998_05.jpg",
+    "file_size": 243314,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "1998_06.jpg",
+    "local_path": "images/optimized_final/1998_06.jpg",
+    "file_size": 301827,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1998_07.jpg",
+    "local_path": "images/optimized_final/1998_07.jpg",
+    "file_size": 277031,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1998_08.jpg",
+    "local_path": "images/optimized_final/1998_08.jpg",
+    "file_size": 277864,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "1998_09.jpg",
+    "local_path": "images/optimized_final/1998_09.jpg",
+    "file_size": 462607,
+    "file_size_mb": 0.44
+  },
+  {
+    "filename": "1998_10.jpg",
+    "local_path": "images/optimized_final/1998_10.jpg",
+    "file_size": 290537,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "1998_11.jpg",
+    "local_path": "images/optimized_final/1998_11.jpg",
+    "file_size": 333855,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "1998_12.jpg",
+    "local_path": "images/optimized_final/1998_12.jpg",
+    "file_size": 311267,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1999_01.jpg",
+    "local_path": "images/optimized_final/1999_01.jpg",
+    "file_size": 314412,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1999_02.jpg",
+    "local_path": "images/optimized_final/1999_02.jpg",
+    "file_size": 326345,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1999_03.jpg",
+    "local_path": "images/optimized_final/1999_03.jpg",
+    "file_size": 243307,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "1999_04.jpg",
+    "local_path": "images/optimized_final/1999_04.jpg",
+    "file_size": 318534,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1999_05.jpg",
+    "local_path": "images/optimized_final/1999_05.jpg",
+    "file_size": 286382,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "1999_06.jpg",
+    "local_path": "images/optimized_final/1999_06.jpg",
+    "file_size": 317430,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "1999_07.jpg",
+    "local_path": "images/optimized_final/1999_07.jpg",
+    "file_size": 343572,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "1999_08.jpg",
+    "local_path": "images/optimized_final/1999_08.jpg",
+    "file_size": 303481,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "1999_09.jpg",
+    "local_path": "images/optimized_final/1999_09.jpg",
+    "file_size": 260088,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "1999_10.jpg",
+    "local_path": "images/optimized_final/1999_10.jpg",
+    "file_size": 342376,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "1999_11.jpg",
+    "local_path": "images/optimized_final/1999_11.jpg",
+    "file_size": 328035,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "1999_12.jpg",
+    "local_path": "images/optimized_final/1999_12.jpg",
+    "file_size": 333533,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2000_01.jpg",
+    "local_path": "images/optimized_final/2000_01.jpg",
+    "file_size": 404352,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "2000_02.jpg",
+    "local_path": "images/optimized_final/2000_02.jpg",
+    "file_size": 299273,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2000_03.jpg",
+    "local_path": "images/optimized_final/2000_03.jpg",
+    "file_size": 314115,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2000_04.jpg",
+    "local_path": "images/optimized_final/2000_04.jpg",
+    "file_size": 362424,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2000_05.jpg",
+    "local_path": "images/optimized_final/2000_05.jpg",
+    "file_size": 299835,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2000_06.jpg",
+    "local_path": "images/optimized_final/2000_06.jpg",
+    "file_size": 217184,
+    "file_size_mb": 0.21
+  },
+  {
+    "filename": "2000_07.jpg",
+    "local_path": "images/optimized_final/2000_07.jpg",
+    "file_size": 386932,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2000_08.jpg",
+    "local_path": "images/optimized_final/2000_08.jpg",
+    "file_size": 364688,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2000_09.jpg",
+    "local_path": "images/optimized_final/2000_09.jpg",
+    "file_size": 271071,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2000_10.jpg",
+    "local_path": "images/optimized_final/2000_10.jpg",
+    "file_size": 314368,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2000_11.jpg",
+    "local_path": "images/optimized_final/2000_11.jpg",
+    "file_size": 368314,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2000_12.jpg",
+    "local_path": "images/optimized_final/2000_12.jpg",
+    "file_size": 302971,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2001_01.jpg",
+    "local_path": "images/optimized_final/2001_01.jpg",
+    "file_size": 330318,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2001_02.jpg",
+    "local_path": "images/optimized_final/2001_02.jpg",
+    "file_size": 373690,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2001_03.jpg",
+    "local_path": "images/optimized_final/2001_03.jpg",
+    "file_size": 312805,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2001_04.jpg",
+    "local_path": "images/optimized_final/2001_04.jpg",
+    "file_size": 130363,
+    "file_size_mb": 0.12
+  },
+  {
+    "filename": "2001_05.jpg",
+    "local_path": "images/optimized_final/2001_05.jpg",
+    "file_size": 330053,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2001_06.jpg",
+    "local_path": "images/optimized_final/2001_06.jpg",
+    "file_size": 340911,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2001_07.jpg",
+    "local_path": "images/optimized_final/2001_07.jpg",
+    "file_size": 328167,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2001_08.jpg",
+    "local_path": "images/optimized_final/2001_08.jpg",
+    "file_size": 485614,
+    "file_size_mb": 0.46
+  },
+  {
+    "filename": "2001_09.jpg",
+    "local_path": "images/optimized_final/2001_09.jpg",
+    "file_size": 468568,
+    "file_size_mb": 0.45
+  },
+  {
+    "filename": "2001_10.jpg",
+    "local_path": "images/optimized_final/2001_10.jpg",
+    "file_size": 307606,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2001_12.jpg",
+    "local_path": "images/optimized_final/2001_12.jpg",
+    "file_size": 273957,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2002_01.jpg",
+    "local_path": "images/optimized_final/2002_01.jpg",
+    "file_size": 243058,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "2002_02.jpg",
+    "local_path": "images/optimized_final/2002_02.jpg",
+    "file_size": 344909,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2002_03.jpg",
+    "local_path": "images/optimized_final/2002_03.jpg",
+    "file_size": 300561,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2002_04.jpg",
+    "local_path": "images/optimized_final/2002_04.jpg",
+    "file_size": 343329,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2002_05.jpg",
+    "local_path": "images/optimized_final/2002_05.jpg",
+    "file_size": 335051,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2002_06.jpg",
+    "local_path": "images/optimized_final/2002_06.jpg",
+    "file_size": 272344,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2002_07.jpg",
+    "local_path": "images/optimized_final/2002_07.jpg",
+    "file_size": 391580,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2002_08.jpg",
+    "local_path": "images/optimized_final/2002_08.jpg",
+    "file_size": 344918,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2002_09.jpg",
+    "local_path": "images/optimized_final/2002_09.jpg",
+    "file_size": 325883,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2002_10.jpg",
+    "local_path": "images/optimized_final/2002_10.jpg",
+    "file_size": 330174,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2002_11.jpg",
+    "local_path": "images/optimized_final/2002_11.jpg",
+    "file_size": 306181,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2002_12.jpg",
+    "local_path": "images/optimized_final/2002_12.jpg",
+    "file_size": 334010,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2003_01.jpg",
+    "local_path": "images/optimized_final/2003_01.jpg",
+    "file_size": 319150,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2003_02.jpg",
+    "local_path": "images/optimized_final/2003_02.jpg",
+    "file_size": 384594,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2003_03.jpg",
+    "local_path": "images/optimized_final/2003_03.jpg",
+    "file_size": 321034,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2003_04.jpg",
+    "local_path": "images/optimized_final/2003_04.jpg",
+    "file_size": 349940,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2003_05.jpg",
+    "local_path": "images/optimized_final/2003_05.jpg",
+    "file_size": 238384,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "2003_06.jpg",
+    "local_path": "images/optimized_final/2003_06.jpg",
+    "file_size": 363762,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2003_07.jpg",
+    "local_path": "images/optimized_final/2003_07.jpg",
+    "file_size": 351795,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2003_08.jpg",
+    "local_path": "images/optimized_final/2003_08.jpg",
+    "file_size": 282823,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "2003_09.jpg",
+    "local_path": "images/optimized_final/2003_09.jpg",
+    "file_size": 386911,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2003_10.jpg",
+    "local_path": "images/optimized_final/2003_10.jpg",
+    "file_size": 343045,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2003_11.jpg",
+    "local_path": "images/optimized_final/2003_11.jpg",
+    "file_size": 307304,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2003_12.jpg",
+    "local_path": "images/optimized_final/2003_12.jpg",
+    "file_size": 344712,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2004_01.jpg",
+    "local_path": "images/optimized_final/2004_01.jpg",
+    "file_size": 319305,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2004_02.jpg",
+    "local_path": "images/optimized_final/2004_02.jpg",
+    "file_size": 346233,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2004_03.jpg",
+    "local_path": "images/optimized_final/2004_03.jpg",
+    "file_size": 327917,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2004_04.jpg",
+    "local_path": "images/optimized_final/2004_04.jpg",
+    "file_size": 313604,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2004_05.jpg",
+    "local_path": "images/optimized_final/2004_05.jpg",
+    "file_size": 364429,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2004_06.jpg",
+    "local_path": "images/optimized_final/2004_06.jpg",
+    "file_size": 232239,
+    "file_size_mb": 0.22
+  },
+  {
+    "filename": "2004_07.jpg",
+    "local_path": "images/optimized_final/2004_07.jpg",
+    "file_size": 327075,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2004_08.jpg",
+    "local_path": "images/optimized_final/2004_08.jpg",
+    "file_size": 315641,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2004_09.jpg",
+    "local_path": "images/optimized_final/2004_09.jpg",
+    "file_size": 287914,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "2004_10.jpg",
+    "local_path": "images/optimized_final/2004_10.jpg",
+    "file_size": 273759,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2004_11.jpg",
+    "local_path": "images/optimized_final/2004_11.jpg",
+    "file_size": 282541,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "2004_12.jpg",
+    "local_path": "images/optimized_final/2004_12.jpg",
+    "file_size": 373660,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2005_01.jpg",
+    "local_path": "images/optimized_final/2005_01.jpg",
+    "file_size": 276416,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2005_02.jpg",
+    "local_path": "images/optimized_final/2005_02.jpg",
+    "file_size": 228099,
+    "file_size_mb": 0.22
+  },
+  {
+    "filename": "2005_03.jpg",
+    "local_path": "images/optimized_final/2005_03.jpg",
+    "file_size": 367136,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2005_04.jpg",
+    "local_path": "images/optimized_final/2005_04.jpg",
+    "file_size": 250779,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "2005_05.jpg",
+    "local_path": "images/optimized_final/2005_05.jpg",
+    "file_size": 351864,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2005_06.jpg",
+    "local_path": "images/optimized_final/2005_06.jpg",
+    "file_size": 391989,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2005_07.jpg",
+    "local_path": "images/optimized_final/2005_07.jpg",
+    "file_size": 257887,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "2005_08.jpg",
+    "local_path": "images/optimized_final/2005_08.jpg",
+    "file_size": 302504,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2005_09.jpg",
+    "local_path": "images/optimized_final/2005_09.jpg",
+    "file_size": 283233,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "2005_10.jpg",
+    "local_path": "images/optimized_final/2005_10.jpg",
+    "file_size": 345413,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2005_11.jpg",
+    "local_path": "images/optimized_final/2005_11.jpg",
+    "file_size": 323617,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2005_12.jpg",
+    "local_path": "images/optimized_final/2005_12.jpg",
+    "file_size": 329560,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2006_01.jpg",
+    "local_path": "images/optimized_final/2006_01.jpg",
+    "file_size": 331045,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2006_02.jpg",
+    "local_path": "images/optimized_final/2006_02.jpg",
+    "file_size": 301818,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2006_03.jpg",
+    "local_path": "images/optimized_final/2006_03.jpg",
+    "file_size": 308555,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2006_04.jpg",
+    "local_path": "images/optimized_final/2006_04.jpg",
+    "file_size": 366206,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2006_05.jpg",
+    "local_path": "images/optimized_final/2006_05.jpg",
+    "file_size": 332998,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2006_06.jpg",
+    "local_path": "images/optimized_final/2006_06.jpg",
+    "file_size": 352733,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2006_07.jpg",
+    "local_path": "images/optimized_final/2006_07.jpg",
+    "file_size": 398607,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "2006_08.jpg",
+    "local_path": "images/optimized_final/2006_08.jpg",
+    "file_size": 309314,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2006_09.jpg",
+    "local_path": "images/optimized_final/2006_09.jpg",
+    "file_size": 310377,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2006_10.jpg",
+    "local_path": "images/optimized_final/2006_10.jpg",
+    "file_size": 306990,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2006_11.jpg",
+    "local_path": "images/optimized_final/2006_11.jpg",
+    "file_size": 397345,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "2006_12.jpg",
+    "local_path": "images/optimized_final/2006_12.jpg",
+    "file_size": 382734,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2007_01.jpg",
+    "local_path": "images/optimized_final/2007_01.jpg",
+    "file_size": 267059,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "2007_02.jpg",
+    "local_path": "images/optimized_final/2007_02.jpg",
+    "file_size": 400592,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "2007_03.jpg",
+    "local_path": "images/optimized_final/2007_03.jpg",
+    "file_size": 275079,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2007_04.jpg",
+    "local_path": "images/optimized_final/2007_04.jpg",
+    "file_size": 312342,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2007_05.jpg",
+    "local_path": "images/optimized_final/2007_05.jpg",
+    "file_size": 376683,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2007_07.jpg",
+    "local_path": "images/optimized_final/2007_07.jpg",
+    "file_size": 354491,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2007_08.jpg",
+    "local_path": "images/optimized_final/2007_08.jpg",
+    "file_size": 237833,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "2007_10.jpg",
+    "local_path": "images/optimized_final/2007_10.jpg",
+    "file_size": 334816,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2007_11.jpg",
+    "local_path": "images/optimized_final/2007_11.jpg",
+    "file_size": 435025,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2007_12.jpg",
+    "local_path": "images/optimized_final/2007_12.jpg",
+    "file_size": 288714,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "2008_02.jpg",
+    "local_path": "images/optimized_final/2008_02.jpg",
+    "file_size": 471160,
+    "file_size_mb": 0.45
+  },
+  {
+    "filename": "2008_03.jpg",
+    "local_path": "images/optimized_final/2008_03.jpg",
+    "file_size": 327192,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2008_04.jpg",
+    "local_path": "images/optimized_final/2008_04.jpg",
+    "file_size": 409973,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "2008_05.jpg",
+    "local_path": "images/optimized_final/2008_05.jpg",
+    "file_size": 252342,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "2008_06.jpg",
+    "local_path": "images/optimized_final/2008_06.jpg",
+    "file_size": 273726,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2008_07.jpg",
+    "local_path": "images/optimized_final/2008_07.jpg",
+    "file_size": 258300,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "2008_08.jpg",
+    "local_path": "images/optimized_final/2008_08.jpg",
+    "file_size": 255593,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "2008_09.jpg",
+    "local_path": "images/optimized_final/2008_09.jpg",
+    "file_size": 340217,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2008_10.jpg",
+    "local_path": "images/optimized_final/2008_10.jpg",
+    "file_size": 320246,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2008_11.jpg",
+    "local_path": "images/optimized_final/2008_11.jpg",
+    "file_size": 275809,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2008_12.jpg",
+    "local_path": "images/optimized_final/2008_12.jpg",
+    "file_size": 209660,
+    "file_size_mb": 0.2
+  },
+  {
+    "filename": "2009_01.jpg",
+    "local_path": "images/optimized_final/2009_01.jpg",
+    "file_size": 377371,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2009_02.jpg",
+    "local_path": "images/optimized_final/2009_02.jpg",
+    "file_size": 308121,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2009_03.jpg",
+    "local_path": "images/optimized_final/2009_03.jpg",
+    "file_size": 278775,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "2009_04.jpg",
+    "local_path": "images/optimized_final/2009_04.jpg",
+    "file_size": 392840,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2009_05.jpg",
+    "local_path": "images/optimized_final/2009_05.jpg",
+    "file_size": 443644,
+    "file_size_mb": 0.42
+  },
+  {
+    "filename": "2009_06.jpg",
+    "local_path": "images/optimized_final/2009_06.jpg",
+    "file_size": 320041,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2009_07.jpg",
+    "local_path": "images/optimized_final/2009_07.jpg",
+    "file_size": 314256,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2009_08.jpg",
+    "local_path": "images/optimized_final/2009_08.jpg",
+    "file_size": 313790,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2009_09.jpg",
+    "local_path": "images/optimized_final/2009_09.jpg",
+    "file_size": 359748,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2009_10.jpg",
+    "local_path": "images/optimized_final/2009_10.jpg",
+    "file_size": 318329,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2009_11.jpg",
+    "local_path": "images/optimized_final/2009_11.jpg",
+    "file_size": 324095,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2009_12.jpg",
+    "local_path": "images/optimized_final/2009_12.jpg",
+    "file_size": 308802,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2010_01.jpg",
+    "local_path": "images/optimized_final/2010_01.jpg",
+    "file_size": 416323,
+    "file_size_mb": 0.4
+  },
+  {
+    "filename": "2010_02.jpg",
+    "local_path": "images/optimized_final/2010_02.jpg",
+    "file_size": 304952,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2010_03.jpg",
+    "local_path": "images/optimized_final/2010_03.jpg",
+    "file_size": 281255,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "2010_04.jpg",
+    "local_path": "images/optimized_final/2010_04.jpg",
+    "file_size": 315223,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2010_05.jpg",
+    "local_path": "images/optimized_final/2010_05.jpg",
+    "file_size": 345652,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2010_06.jpg",
+    "local_path": "images/optimized_final/2010_06.jpg",
+    "file_size": 310108,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2010_07.jpg",
+    "local_path": "images/optimized_final/2010_07.jpg",
+    "file_size": 411162,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "2010_08.jpg",
+    "local_path": "images/optimized_final/2010_08.jpg",
+    "file_size": 312907,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2010_09.jpg",
+    "local_path": "images/optimized_final/2010_09.jpg",
+    "file_size": 376454,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2010_10.jpg",
+    "local_path": "images/optimized_final/2010_10.jpg",
+    "file_size": 290584,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "2010_11.jpg",
+    "local_path": "images/optimized_final/2010_11.jpg",
+    "file_size": 440238,
+    "file_size_mb": 0.42
+  },
+  {
+    "filename": "2010_12.jpg",
+    "local_path": "images/optimized_final/2010_12.jpg",
+    "file_size": 363861,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2011_01.jpg",
+    "local_path": "images/optimized_final/2011_01.jpg",
+    "file_size": 312934,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2011_03.jpg",
+    "local_path": "images/optimized_final/2011_03.jpg",
+    "file_size": 313701,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2011_04.jpg",
+    "local_path": "images/optimized_final/2011_04.jpg",
+    "file_size": 307330,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2011_06.jpg",
+    "local_path": "images/optimized_final/2011_06.jpg",
+    "file_size": 427257,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2011_07.jpg",
+    "local_path": "images/optimized_final/2011_07.jpg",
+    "file_size": 301384,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2011_08.jpg",
+    "local_path": "images/optimized_final/2011_08.jpg",
+    "file_size": 357038,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2011_09.jpg",
+    "local_path": "images/optimized_final/2011_09.jpg",
+    "file_size": 383700,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2011_10.jpg",
+    "local_path": "images/optimized_final/2011_10.jpg",
+    "file_size": 251249,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "2011_11.jpg",
+    "local_path": "images/optimized_final/2011_11.jpg",
+    "file_size": 345553,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2011_12.jpg",
+    "local_path": "images/optimized_final/2011_12.jpg",
+    "file_size": 347897,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2012_01.jpg",
+    "local_path": "images/optimized_final/2012_01.jpg",
+    "file_size": 430709,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2012_02.jpg",
+    "local_path": "images/optimized_final/2012_02.jpg",
+    "file_size": 369293,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2012_03.jpg",
+    "local_path": "images/optimized_final/2012_03.jpg",
+    "file_size": 336306,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2012_04.jpg",
+    "local_path": "images/optimized_final/2012_04.jpg",
+    "file_size": 333247,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2012_05.jpg",
+    "local_path": "images/optimized_final/2012_05.jpg",
+    "file_size": 355530,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2012_06.jpg",
+    "local_path": "images/optimized_final/2012_06.jpg",
+    "file_size": 408546,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "2012_06_01.jpg",
+    "local_path": "images/optimized_final/2012_06_01.jpg",
+    "file_size": 239127,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "2012_07.jpg",
+    "local_path": "images/optimized_final/2012_07.jpg",
+    "file_size": 388773,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2012_08.jpg",
+    "local_path": "images/optimized_final/2012_08.jpg",
+    "file_size": 464498,
+    "file_size_mb": 0.44
+  },
+  {
+    "filename": "2012_09.jpg",
+    "local_path": "images/optimized_final/2012_09.jpg",
+    "file_size": 367171,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2012_10.jpg",
+    "local_path": "images/optimized_final/2012_10.jpg",
+    "file_size": 400980,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "2012_11.jpg",
+    "local_path": "images/optimized_final/2012_11.jpg",
+    "file_size": 376661,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2012_12.jpg",
+    "local_path": "images/optimized_final/2012_12.jpg",
+    "file_size": 424431,
+    "file_size_mb": 0.4
+  },
+  {
+    "filename": "2013_01.jpg",
+    "local_path": "images/optimized_final/2013_01.jpg",
+    "file_size": 261283,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "2013_01_01.jpg",
+    "local_path": "images/optimized_final/2013_01_01.jpg",
+    "file_size": 353216,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2013_01_02.jpg",
+    "local_path": "images/optimized_final/2013_01_02.jpg",
+    "file_size": 376082,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2013_02.jpg",
+    "local_path": "images/optimized_final/2013_02.jpg",
+    "file_size": 290047,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "2013_03.jpg",
+    "local_path": "images/optimized_final/2013_03.jpg",
+    "file_size": 274855,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2013_04.jpg",
+    "local_path": "images/optimized_final/2013_04.jpg",
+    "file_size": 345090,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2013_05.jpg",
+    "local_path": "images/optimized_final/2013_05.jpg",
+    "file_size": 304764,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2013_06.jpg",
+    "local_path": "images/optimized_final/2013_06.jpg",
+    "file_size": 396576,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "2013_07.jpg",
+    "local_path": "images/optimized_final/2013_07.jpg",
+    "file_size": 413545,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "2013_08.jpg",
+    "local_path": "images/optimized_final/2013_08.jpg",
+    "file_size": 361272,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2013_09.jpg",
+    "local_path": "images/optimized_final/2013_09.jpg",
+    "file_size": 407340,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "2013_10.jpg",
+    "local_path": "images/optimized_final/2013_10.jpg",
+    "file_size": 426779,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2013_11.jpg",
+    "local_path": "images/optimized_final/2013_11.jpg",
+    "file_size": 332407,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2013_12.jpg",
+    "local_path": "images/optimized_final/2013_12.jpg",
+    "file_size": 372686,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2014_01.jpg",
+    "local_path": "images/optimized_final/2014_01.jpg",
+    "file_size": 304734,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2014_02.jpg",
+    "local_path": "images/optimized_final/2014_02.jpg",
+    "file_size": 339317,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2014_03.jpg",
+    "local_path": "images/optimized_final/2014_03.jpg",
+    "file_size": 395513,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "2014_04.jpg",
+    "local_path": "images/optimized_final/2014_04.jpg",
+    "file_size": 348884,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2014_05.jpg",
+    "local_path": "images/optimized_final/2014_05.jpg",
+    "file_size": 305482,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2014_06.jpg",
+    "local_path": "images/optimized_final/2014_06.jpg",
+    "file_size": 359546,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2014_07.jpg",
+    "local_path": "images/optimized_final/2014_07.jpg",
+    "file_size": 370647,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2014_08.jpg",
+    "local_path": "images/optimized_final/2014_08.jpg",
+    "file_size": 343715,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2014_09.jpg",
+    "local_path": "images/optimized_final/2014_09.jpg",
+    "file_size": 341826,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2014_10.jpg",
+    "local_path": "images/optimized_final/2014_10.jpg",
+    "file_size": 328038,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2014_11.jpg",
+    "local_path": "images/optimized_final/2014_11.jpg",
+    "file_size": 378458,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2014_12.jpg",
+    "local_path": "images/optimized_final/2014_12.jpg",
+    "file_size": 292684,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "2015_01.jpg",
+    "local_path": "images/optimized_final/2015_01.jpg",
+    "file_size": 376772,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2015_01_01.jpg",
+    "local_path": "images/optimized_final/2015_01_01.jpg",
+    "file_size": 390742,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2015_01_02.jpg",
+    "local_path": "images/optimized_final/2015_01_02.jpg",
+    "file_size": 488095,
+    "file_size_mb": 0.47
+  },
+  {
+    "filename": "2015_01_03.jpg",
+    "local_path": "images/optimized_final/2015_01_03.jpg",
+    "file_size": 383045,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2015_02.jpg",
+    "local_path": "images/optimized_final/2015_02.jpg",
+    "file_size": 380176,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2015_03.jpg",
+    "local_path": "images/optimized_final/2015_03.jpg",
+    "file_size": 501962,
+    "file_size_mb": 0.48
+  },
+  {
+    "filename": "2015_04.jpg",
+    "local_path": "images/optimized_final/2015_04.jpg",
+    "file_size": 335474,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2015_05.jpg",
+    "local_path": "images/optimized_final/2015_05.jpg",
+    "file_size": 502796,
+    "file_size_mb": 0.48
+  },
+  {
+    "filename": "2015_07.jpg",
+    "local_path": "images/optimized_final/2015_07.jpg",
+    "file_size": 358011,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2015_08.jpg",
+    "local_path": "images/optimized_final/2015_08.jpg",
+    "file_size": 397171,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "2015_09.jpg",
+    "local_path": "images/optimized_final/2015_09.jpg",
+    "file_size": 360470,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2015_09_01.jpg",
+    "local_path": "images/optimized_final/2015_09_01.jpg",
+    "file_size": 386222,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2015_10.jpg",
+    "local_path": "images/optimized_final/2015_10.jpg",
+    "file_size": 270635,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2015_11.jpg",
+    "local_path": "images/optimized_final/2015_11.jpg",
+    "file_size": 429658,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2015_12.jpg",
+    "local_path": "images/optimized_final/2015_12.jpg",
+    "file_size": 306397,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2016_01.jpg",
+    "local_path": "images/optimized_final/2016_01.jpg",
+    "file_size": 465307,
+    "file_size_mb": 0.44
+  },
+  {
+    "filename": "2016_02.jpg",
+    "local_path": "images/optimized_final/2016_02.jpg",
+    "file_size": 352245,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2016_03.jpg",
+    "local_path": "images/optimized_final/2016_03.jpg",
+    "file_size": 356442,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2016_04.jpg",
+    "local_path": "images/optimized_final/2016_04.jpg",
+    "file_size": 223238,
+    "file_size_mb": 0.21
+  },
+  {
+    "filename": "2016_05.jpg",
+    "local_path": "images/optimized_final/2016_05.jpg",
+    "file_size": 355817,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2016_06.jpg",
+    "local_path": "images/optimized_final/2016_06.jpg",
+    "file_size": 339511,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2016_07.jpg",
+    "local_path": "images/optimized_final/2016_07.jpg",
+    "file_size": 313935,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2016_08.jpg",
+    "local_path": "images/optimized_final/2016_08.jpg",
+    "file_size": 449085,
+    "file_size_mb": 0.43
+  },
+  {
+    "filename": "2016_09.jpg",
+    "local_path": "images/optimized_final/2016_09.jpg",
+    "file_size": 366288,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2016_10.jpg",
+    "local_path": "images/optimized_final/2016_10.jpg",
+    "file_size": 278514,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "2016_11.jpg",
+    "local_path": "images/optimized_final/2016_11.jpg",
+    "file_size": 438278,
+    "file_size_mb": 0.42
+  },
+  {
+    "filename": "2016_12.jpg",
+    "local_path": "images/optimized_final/2016_12.jpg",
+    "file_size": 328692,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2017_01.jpg",
+    "local_path": "images/optimized_final/2017_01.jpg",
+    "file_size": 448475,
+    "file_size_mb": 0.43
+  },
+  {
+    "filename": "2017_01_01.jpg",
+    "local_path": "images/optimized_final/2017_01_01.jpg",
+    "file_size": 386955,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2017_02.jpg",
+    "local_path": "images/optimized_final/2017_02.jpg",
+    "file_size": 322612,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2017_03.jpg",
+    "local_path": "images/optimized_final/2017_03.jpg",
+    "file_size": 351330,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2017_04.jpg",
+    "local_path": "images/optimized_final/2017_04.jpg",
+    "file_size": 410745,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "2017_05.jpg",
+    "local_path": "images/optimized_final/2017_05.jpg",
+    "file_size": 277674,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2017_06.jpg",
+    "local_path": "images/optimized_final/2017_06.jpg",
+    "file_size": 461005,
+    "file_size_mb": 0.44
+  },
+  {
+    "filename": "2017_07.jpg",
+    "local_path": "images/optimized_final/2017_07.jpg",
+    "file_size": 376222,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2017_08.jpg",
+    "local_path": "images/optimized_final/2017_08.jpg",
+    "file_size": 501415,
+    "file_size_mb": 0.48
+  },
+  {
+    "filename": "2017_09.jpg",
+    "local_path": "images/optimized_final/2017_09.jpg",
+    "file_size": 375422,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2017_10.jpg",
+    "local_path": "images/optimized_final/2017_10.jpg",
+    "file_size": 336285,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2017_11.jpg",
+    "local_path": "images/optimized_final/2017_11.jpg",
+    "file_size": 335577,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2017_12.jpg",
+    "local_path": "images/optimized_final/2017_12.jpg",
+    "file_size": 249419,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "2018_01.jpg",
+    "local_path": "images/optimized_final/2018_01.jpg",
+    "file_size": 394692,
+    "file_size_mb": 0.38
+  },
+  {
+    "filename": "2018_02.jpg",
+    "local_path": "images/optimized_final/2018_02.jpg",
+    "file_size": 272071,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2018_03.jpg",
+    "local_path": "images/optimized_final/2018_03.jpg",
+    "file_size": 382396,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2018_04.jpg",
+    "local_path": "images/optimized_final/2018_04.jpg",
+    "file_size": 439585,
+    "file_size_mb": 0.42
+  },
+  {
+    "filename": "2018_05.jpg",
+    "local_path": "images/optimized_final/2018_05.jpg",
+    "file_size": 285675,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "2018_06.jpg",
+    "local_path": "images/optimized_final/2018_06.jpg",
+    "file_size": 376745,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2018_07.jpg",
+    "local_path": "images/optimized_final/2018_07.jpg",
+    "file_size": 440992,
+    "file_size_mb": 0.42
+  },
+  {
+    "filename": "2018_08.jpg",
+    "local_path": "images/optimized_final/2018_08.jpg",
+    "file_size": 351996,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2018_09.jpg",
+    "local_path": "images/optimized_final/2018_09.jpg",
+    "file_size": 333705,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2018_10.jpg",
+    "local_path": "images/optimized_final/2018_10.jpg",
+    "file_size": 409381,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "2018_11.jpg",
+    "local_path": "images/optimized_final/2018_11.jpg",
+    "file_size": 429342,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2018_12.jpg",
+    "local_path": "images/optimized_final/2018_12.jpg",
+    "file_size": 449760,
+    "file_size_mb": 0.43
+  },
+  {
+    "filename": "2019_01.jpg",
+    "local_path": "images/optimized_final/2019_01.jpg",
+    "file_size": 384195,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2019_02.jpg",
+    "local_path": "images/optimized_final/2019_02.jpg",
+    "file_size": 336632,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2019_05.jpg",
+    "local_path": "images/optimized_final/2019_05.jpg",
+    "file_size": 356359,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2021_03.jpg",
+    "local_path": "images/optimized_final/2021_03.jpg",
+    "file_size": 439574,
+    "file_size_mb": 0.42
+  },
+  {
+    "filename": "2022_11.jpg",
+    "local_path": "images/optimized_final/2022_11.jpg",
+    "file_size": 276011,
+    "file_size_mb": 0.26
+  },
+  {
+    "filename": "2022_12.jpg",
+    "local_path": "images/optimized_final/2022_12.jpg",
+    "file_size": 432685,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2023_03.jpg",
+    "local_path": "images/optimized_final/2023_03.jpg",
+    "file_size": 420929,
+    "file_size_mb": 0.4
+  },
+  {
+    "filename": "2023_04.jpg",
+    "local_path": "images/optimized_final/2023_04.jpg",
+    "file_size": 479030,
+    "file_size_mb": 0.46
+  },
+  {
+    "filename": "2023_05.jpg",
+    "local_path": "images/optimized_final/2023_05.jpg",
+    "file_size": 473515,
+    "file_size_mb": 0.45
+  },
+  {
+    "filename": "2023_06.jpg",
+    "local_path": "images/optimized_final/2023_06.jpg",
+    "file_size": 425881,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2023_07.jpg",
+    "local_path": "images/optimized_final/2023_07.jpg",
+    "file_size": 440560,
+    "file_size_mb": 0.42
+  },
+  {
+    "filename": "2023_08.jpg",
+    "local_path": "images/optimized_final/2023_08.jpg",
+    "file_size": 506566,
+    "file_size_mb": 0.48
+  },
+  {
+    "filename": "2023_09.jpg",
+    "local_path": "images/optimized_final/2023_09.jpg",
+    "file_size": 324441,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2023_10.jpg",
+    "local_path": "images/optimized_final/2023_10.jpg",
+    "file_size": 479810,
+    "file_size_mb": 0.46
+  },
+  {
+    "filename": "2023_11.jpg",
+    "local_path": "images/optimized_final/2023_11.jpg",
+    "file_size": 447445,
+    "file_size_mb": 0.43
+  },
+  {
+    "filename": "2023_12.jpg",
+    "local_path": "images/optimized_final/2023_12.jpg",
+    "file_size": 470938,
+    "file_size_mb": 0.45
+  },
+  {
+    "filename": "2024_01.jpg",
+    "local_path": "images/optimized_final/2024_01.jpg",
+    "file_size": 465781,
+    "file_size_mb": 0.44
+  },
+  {
+    "filename": "2024_02.jpg",
+    "local_path": "images/optimized_final/2024_02.jpg",
+    "file_size": 339006,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2024_03.jpg",
+    "local_path": "images/optimized_final/2024_03.jpg",
+    "file_size": 483034,
+    "file_size_mb": 0.46
+  },
+  {
+    "filename": "2024_04.jpg",
+    "local_path": "images/optimized_final/2024_04.jpg",
+    "file_size": 495451,
+    "file_size_mb": 0.47
+  },
+  {
+    "filename": "2024_05.jpg",
+    "local_path": "images/optimized_final/2024_05.jpg",
+    "file_size": 366026,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2024_06.jpg",
+    "local_path": "images/optimized_final/2024_06.jpg",
+    "file_size": 364691,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2024_07.jpg",
+    "local_path": "images/optimized_final/2024_07.jpg",
+    "file_size": 473304,
+    "file_size_mb": 0.45
+  },
+  {
+    "filename": "2024_08.jpg",
+    "local_path": "images/optimized_final/2024_08.jpg",
+    "file_size": 468003,
+    "file_size_mb": 0.45
+  },
+  {
+    "filename": "2024_09.jpg",
+    "local_path": "images/optimized_final/2024_09.jpg",
+    "file_size": 462962,
+    "file_size_mb": 0.44
+  },
+  {
+    "filename": "2024_10.jpg",
+    "local_path": "images/optimized_final/2024_10.jpg",
+    "file_size": 297056,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "2024_11.jpg",
+    "local_path": "images/optimized_final/2024_11.jpg",
+    "file_size": 341246,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2024_12.jpg",
+    "local_path": "images/optimized_final/2024_12.jpg",
+    "file_size": 506715,
+    "file_size_mb": 0.48
+  },
+  {
+    "filename": "2025_01.jpg",
+    "local_path": "images/optimized_final/2025_01.jpg",
+    "file_size": 412793,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "2025_02.jpg",
+    "local_path": "images/optimized_final/2025_02.jpg",
+    "file_size": 470798,
+    "file_size_mb": 0.45
+  },
+  {
+    "filename": "2025_03.jpg",
+    "local_path": "images/optimized_final/2025_03.jpg",
+    "file_size": 323963,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2025_04.jpg",
+    "local_path": "images/optimized_final/2025_04.jpg",
+    "file_size": 507470,
+    "file_size_mb": 0.48
+  },
+  {
+    "filename": "2025_08.jpg",
+    "local_path": "images/optimized_final/2025_08.jpg",
+    "file_size": 297736,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "2025_08_01.jpg",
+    "local_path": "images/optimized_final/2025_08_01.jpg",
+    "file_size": 374277,
+    "file_size_mb": 0.36
+  },
+  {
+    "filename": "2025_08_02.jpg",
+    "local_path": "images/optimized_final/2025_08_02.jpg",
+    "file_size": 300180,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2025_08_03.jpg",
+    "local_path": "images/optimized_final/2025_08_03.jpg",
+    "file_size": 279128,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "2025_08_04.jpg",
+    "local_path": "images/optimized_final/2025_08_04.jpg",
+    "file_size": 360041,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2025_08_05.jpg",
+    "local_path": "images/optimized_final/2025_08_05.jpg",
+    "file_size": 430309,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2025_08_06.jpg",
+    "local_path": "images/optimized_final/2025_08_06.jpg",
+    "file_size": 239214,
+    "file_size_mb": 0.23
+  },
+  {
+    "filename": "2025_08_07.jpg",
+    "local_path": "images/optimized_final/2025_08_07.jpg",
+    "file_size": 472578,
+    "file_size_mb": 0.45
+  },
+  {
+    "filename": "2025_08_08.jpg",
+    "local_path": "images/optimized_final/2025_08_08.jpg",
+    "file_size": 434397,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2025_08_09.jpg",
+    "local_path": "images/optimized_final/2025_08_09.jpg",
+    "file_size": 214331,
+    "file_size_mb": 0.2
+  },
+  {
+    "filename": "2025_08_10.jpg",
+    "local_path": "images/optimized_final/2025_08_10.jpg",
+    "file_size": 324590,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2025_08_11.jpg",
+    "local_path": "images/optimized_final/2025_08_11.jpg",
+    "file_size": 313630,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2025_08_12.jpg",
+    "local_path": "images/optimized_final/2025_08_12.jpg",
+    "file_size": 415441,
+    "file_size_mb": 0.4
+  },
+  {
+    "filename": "2025_08_13.jpg",
+    "local_path": "images/optimized_final/2025_08_13.jpg",
+    "file_size": 493377,
+    "file_size_mb": 0.47
+  },
+  {
+    "filename": "2025_08_14.jpg",
+    "local_path": "images/optimized_final/2025_08_14.jpg",
+    "file_size": 422785,
+    "file_size_mb": 0.4
+  },
+  {
+    "filename": "2025_08_15.jpg",
+    "local_path": "images/optimized_final/2025_08_15.jpg",
+    "file_size": 431062,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2025_08_16.jpg",
+    "local_path": "images/optimized_final/2025_08_16.jpg",
+    "file_size": 346761,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2025_08_17.jpg",
+    "local_path": "images/optimized_final/2025_08_17.jpg",
+    "file_size": 467495,
+    "file_size_mb": 0.45
+  },
+  {
+    "filename": "2025_08_18.jpg",
+    "local_path": "images/optimized_final/2025_08_18.jpg",
+    "file_size": 496755,
+    "file_size_mb": 0.47
+  },
+  {
+    "filename": "2025_08_19.jpg",
+    "local_path": "images/optimized_final/2025_08_19.jpg",
+    "file_size": 251937,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "2025_08_20.jpg",
+    "local_path": "images/optimized_final/2025_08_20.jpg",
+    "file_size": 490235,
+    "file_size_mb": 0.47
+  },
+  {
+    "filename": "2025_08_21.jpg",
+    "local_path": "images/optimized_final/2025_08_21.jpg",
+    "file_size": 449640,
+    "file_size_mb": 0.43
+  },
+  {
+    "filename": "2025_08_22.jpg",
+    "local_path": "images/optimized_final/2025_08_22.jpg",
+    "file_size": 321886,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2025_08_23.jpg",
+    "local_path": "images/optimized_final/2025_08_23.jpg",
+    "file_size": 457095,
+    "file_size_mb": 0.44
+  },
+  {
+    "filename": "2025_08_24.jpg",
+    "local_path": "images/optimized_final/2025_08_24.jpg",
+    "file_size": 229240,
+    "file_size_mb": 0.22
+  },
+  {
+    "filename": "2025_08_25.jpg",
+    "local_path": "images/optimized_final/2025_08_25.jpg",
+    "file_size": 318605,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2025_08_26.jpg",
+    "local_path": "images/optimized_final/2025_08_26.jpg",
+    "file_size": 443015,
+    "file_size_mb": 0.42
+  },
+  {
+    "filename": "2025_08_27.jpg",
+    "local_path": "images/optimized_final/2025_08_27.jpg",
+    "file_size": 483112,
+    "file_size_mb": 0.46
+  },
+  {
+    "filename": "2025_08_28.jpg",
+    "local_path": "images/optimized_final/2025_08_28.jpg",
+    "file_size": 223426,
+    "file_size_mb": 0.21
+  },
+  {
+    "filename": "2025_08_29.jpg",
+    "local_path": "images/optimized_final/2025_08_29.jpg",
+    "file_size": 345451,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2025_08_30.jpg",
+    "local_path": "images/optimized_final/2025_08_30.jpg",
+    "file_size": 252661,
+    "file_size_mb": 0.24
+  },
+  {
+    "filename": "2025_08_31.jpg",
+    "local_path": "images/optimized_final/2025_08_31.jpg",
+    "file_size": 470315,
+    "file_size_mb": 0.45
+  },
+  {
+    "filename": "2025_08_32.jpg",
+    "local_path": "images/optimized_final/2025_08_32.jpg",
+    "file_size": 510276,
+    "file_size_mb": 0.49
+  },
+  {
+    "filename": "2025_08_33.jpg",
+    "local_path": "images/optimized_final/2025_08_33.jpg",
+    "file_size": 295282,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "2025_08_34.jpg",
+    "local_path": "images/optimized_final/2025_08_34.jpg",
+    "file_size": 382847,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2025_08_35.jpg",
+    "local_path": "images/optimized_final/2025_08_35.jpg",
+    "file_size": 358492,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2025_08_36.jpg",
+    "local_path": "images/optimized_final/2025_08_36.jpg",
+    "file_size": 307741,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2025_08_37.jpg",
+    "local_path": "images/optimized_final/2025_08_37.jpg",
+    "file_size": 384687,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2025_08_38.jpg",
+    "local_path": "images/optimized_final/2025_08_38.jpg",
+    "file_size": 304987,
+    "file_size_mb": 0.29
+  },
+  {
+    "filename": "2025_08_39.jpg",
+    "local_path": "images/optimized_final/2025_08_39.jpg",
+    "file_size": 189517,
+    "file_size_mb": 0.18
+  },
+  {
+    "filename": "2025_08_40.jpg",
+    "local_path": "images/optimized_final/2025_08_40.jpg",
+    "file_size": 211725,
+    "file_size_mb": 0.2
+  },
+  {
+    "filename": "2025_08_41.jpg",
+    "local_path": "images/optimized_final/2025_08_41.jpg",
+    "file_size": 318606,
+    "file_size_mb": 0.3
+  },
+  {
+    "filename": "2025_08_42.jpg",
+    "local_path": "images/optimized_final/2025_08_42.jpg",
+    "file_size": 431537,
+    "file_size_mb": 0.41
+  },
+  {
+    "filename": "2025_08_43.jpg",
+    "local_path": "images/optimized_final/2025_08_43.jpg",
+    "file_size": 449938,
+    "file_size_mb": 0.43
+  },
+  {
+    "filename": "2025_08_44.jpg",
+    "local_path": "images/optimized_final/2025_08_44.jpg",
+    "file_size": 509494,
+    "file_size_mb": 0.49
+  },
+  {
+    "filename": "2025_08_45.jpg",
+    "local_path": "images/optimized_final/2025_08_45.jpg",
+    "file_size": 282781,
+    "file_size_mb": 0.27
+  },
+  {
+    "filename": "2025_08_46.jpg",
+    "local_path": "images/optimized_final/2025_08_46.jpg",
+    "file_size": 454974,
+    "file_size_mb": 0.43
+  },
+  {
+    "filename": "2025_08_47.jpg",
+    "local_path": "images/optimized_final/2025_08_47.jpg",
+    "file_size": 367782,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2025_08_48.jpg",
+    "local_path": "images/optimized_final/2025_08_48.jpg",
+    "file_size": 368509,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2025_08_49.jpg",
+    "local_path": "images/optimized_final/2025_08_49.jpg",
+    "file_size": 264752,
+    "file_size_mb": 0.25
+  },
+  {
+    "filename": "2025_08_50.jpg",
+    "local_path": "images/optimized_final/2025_08_50.jpg",
+    "file_size": 386460,
+    "file_size_mb": 0.37
+  },
+  {
+    "filename": "2025_08_51.jpg",
+    "local_path": "images/optimized_final/2025_08_51.jpg",
+    "file_size": 331759,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2025_08_52.jpg",
+    "local_path": "images/optimized_final/2025_08_52.jpg",
+    "file_size": 466300,
+    "file_size_mb": 0.44
+  },
+  {
+    "filename": "2025_08_53.jpg",
+    "local_path": "images/optimized_final/2025_08_53.jpg",
+    "file_size": 295966,
+    "file_size_mb": 0.28
+  },
+  {
+    "filename": "2025_08_54.jpg",
+    "local_path": "images/optimized_final/2025_08_54.jpg",
+    "file_size": 362086,
+    "file_size_mb": 0.35
+  },
+  {
+    "filename": "2025_08_55.jpg",
+    "local_path": "images/optimized_final/2025_08_55.jpg",
+    "file_size": 357776,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2025_08_56.jpg",
+    "local_path": "images/optimized_final/2025_08_56.jpg",
+    "file_size": 348459,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2025_08_57.jpg",
+    "local_path": "images/optimized_final/2025_08_57.jpg",
+    "file_size": 460849,
+    "file_size_mb": 0.44
+  },
+  {
+    "filename": "2025_08_58.jpg",
+    "local_path": "images/optimized_final/2025_08_58.jpg",
+    "file_size": 348966,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2025_08_59.jpg",
+    "local_path": "images/optimized_final/2025_08_59.jpg",
+    "file_size": 342320,
+    "file_size_mb": 0.33
+  },
+  {
+    "filename": "2025_08_60.jpg",
+    "local_path": "images/optimized_final/2025_08_60.jpg",
+    "file_size": 413771,
+    "file_size_mb": 0.39
+  },
+  {
+    "filename": "2025_08_61.jpg",
+    "local_path": "images/optimized_final/2025_08_61.jpg",
+    "file_size": 356122,
+    "file_size_mb": 0.34
+  },
+  {
+    "filename": "2025_08_62.jpg",
+    "local_path": "images/optimized_final/2025_08_62.jpg",
+    "file_size": 330191,
+    "file_size_mb": 0.31
+  },
+  {
+    "filename": "2025_08_63.jpg",
+    "local_path": "images/optimized_final/2025_08_63.jpg",
+    "file_size": 334007,
+    "file_size_mb": 0.32
+  },
+  {
+    "filename": "2025_09.jpg",
+    "local_path": "images/optimized_final/2025_09.jpg",
+    "file_size": 318878,
+    "file_size_mb": 0.3
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "samples_created": 5,
+  "samples": [
+    {
+      "input": "2010_12.jpg",
+      "output": "sample_1_2010_12.jpg",
+      "metadata": {
+        "issueno": "370",
+        "month": "12",
+        "year": "2010",
+        "skater": "james hardy",
+        "trick": "fs noseblunt",
+        "obstacle": "rail",
+        "detailer": "handrail",
+        "staircount": "17",
+        "spot": "patrick henry high",
+        "location": "San Diego, CA",
+        "notes": "",
+        "special": "",
+        "soty": ""
+      }
+    },
+    {
+      "input": "2010_06.jpg",
+      "output": "sample_2_2010_06.jpg",
+      "metadata": {
+        "issueno": "364",
+        "month": "06",
+        "year": "2010",
+        "skater": "david gonzales",
+        "trick": "bs crook",
+        "obstacle": "rail",
+        "detailer": "",
+        "staircount": "",
+        "spot": "ditch",
+        "location": "",
+        "notes": "",
+        "special": "",
+        "soty": ""
+      }
+    },
+    {
+      "input": "1993_09.jpg",
+      "output": "sample_3_1993_09.jpg",
+      "metadata": {
+        "issueno": "154",
+        "month": "09",
+        "year": "1993",
+        "skater": "karma tsocheff",
+        "trick": "fs 180 nosegrind to regular",
+        "obstacle": "rail",
+        "detailer": "handrail",
+        "staircount": "4",
+        "spot": "",
+        "location": "",
+        "notes": "",
+        "special": "",
+        "soty": ""
+      }
+    },
+    {
+      "input": "2000_03.jpg",
+      "output": "sample_4_2000_03.jpg",
+      "metadata": {
+        "issueno": "232",
+        "month": "03",
+        "year": "2000",
+        "skater": "paul machnau",
+        "trick": "fs boardslide",
+        "obstacle": "rail",
+        "detailer": "handrail",
+        "staircount": "",
+        "spot": "",
+        "location": "",
+        "notes": "",
+        "special": "",
+        "soty": ""
+      }
+    },
+    {
+      "input": "1984_11.jpg",
+      "output": "sample_5_1984_11.jpg",
+      "metadata": {
+        "issueno": "47",
+        "month": "11",
+        "year": "1984",
+        "skater": "mark gonzales",
+        "trick": "beanplant",
+        "obstacle": "gap",
+        "detailer": "bank",
+        "staircount": "",
+        "spot": "",
+        "location": "",
+        "notes": "",
+        "special": "",
+        "soty": ""
+      }
+    }
+  ]
+}

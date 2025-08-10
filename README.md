@@ -17,7 +17,13 @@ This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you
 
 ## 🚀 Quick Setup (2 minutes!)
 
-### Option 1: Build It Yourself (Recommended)
+### Option 1: Download Pre-Built Shortcut ⭐ **EASIEST**
+1. **Tap this link on your iPhone**: [Download Thrasher Shortcut](https://www.icloud.com/shortcuts/your-shortcut-id-here)
+2. **Tap "Get Shortcut"** when prompted
+3. **Test it** by tapping the ▶️ button
+4. **Done!** Your lock screen changes instantly
+
+### Option 2: Build It Yourself (Advanced)
 
 #### Step 1: Get the Data
 1. Open **Shortcuts** app on your iPhone
@@ -51,12 +57,15 @@ This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you
 - Tap your Thrasher shortcut
 - Lock screen changes instantly
 
-### Option 2: Automatic (Daily at 9 AM)
-1. In your shortcut, tap the **⏰** icon
-2. Set it to run **Daily at 9:00 AM**
-3. Your lock screen will change automatically every morning!
+### Option 2: Automatic (Daily at 9 AM) - **RECOMMENDED**
+**Note:** You cannot use the shortcut's built-in automation for lock screen changes due to Apple's security policy. You must set up the Automation tab method below.
 
-### Option 3: Automation Tab (Most Reliable)
+1. Follow the **Automation Tab** setup steps below
+2. Your lock screen will change automatically every morning!
+
+### Option 3: Automation Tab (Required for Daily Updates) ⚠️ **IMPORTANT**
+**Why this step is required:** Apple's security policy prevents shortcuts from automatically changing lock screens unless they're set up through the Automation tab.
+
 1. Open **Shortcuts** app
 2. Tap **Automation** tab at bottom
 3. Tap **+** to create new automation
@@ -66,7 +75,7 @@ This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you
 7. Tap **Add Action**
 8. Search for your **Thrasher shortcut**
 9. Tap **Next**
-10. Turn **OFF** "Ask Before Running"
+10. Turn **OFF** "Ask Before Running" (this is crucial!)
 11. Tap **Done**
 
 ## 🎨 What You Get

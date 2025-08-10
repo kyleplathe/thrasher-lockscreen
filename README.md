@@ -2,6 +2,10 @@
 
 **Get a random Thrasher Magazine cover as your iPhone lock screen every day!**
 
+![Thrasher Lock Screen Example](https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/lock_screen_mockup.jpg)
+
+*Example: November 1984 cover with skater "mark gonzales" and trick "beanplant"*
+
 ## 🎯 What This Does
 
 This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you can automatically set as your iPhone lock screen. Each cover includes:

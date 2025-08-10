@@ -6,7 +6,7 @@
 
 This project provides a complete solution for automatically setting Thrasher Magazine covers as your iPhone lock screen. Features include:
 
-- **552 verified cover URLs** spanning 1981-2025
+- **550+ verified cover URLs** spanning 1981-2025
 - **iPhone-optimized images** (1080x1920 resolution)
 - **iOS Shortcuts integration** for daily automation
 - **Rich metadata** from 4plymag.com (skaters, tricks, obstacles)
@@ -14,11 +14,11 @@ This project provides a complete solution for automatically setting Thrasher Mag
 
 ## 📊 Project Status
 
-- ✅ **URLs Collected**: 552 verified Thrasher cover URLs
+- ✅ **URLs Collected**: 550+ verified Thrasher cover URLs
 - ✅ **Scraping Scripts**: Complete automation pipeline
 - ✅ **Image Processing**: iPhone lock screen optimization
 - ✅ **Metadata Integration**: 4plymag scraper for detailed info
-- 🔄 **Image Download**: Ready to process all 552 covers
+- ✅ **Image Download**: All 550+ covers processed and optimized
 - 🔄 **GitHub Actions**: Automated updates
 
 ## 🚀 Quick Start
@@ -29,7 +29,7 @@ This project provides a complete solution for automatically setting Thrasher Mag
 # Install dependencies
 pip install -r requirements.txt
 
-# Download and optimize all 552 covers
+# Download and optimize all 550+ covers
 python scripts/final_comprehensive_scraper.py
 python scripts/image_optimizer.py
 ```
@@ -48,12 +48,18 @@ python scripts/image_optimizer.py
 
 ```
 thrasher-lockscreen/
-├── 📂 images/optimized/     # iPhone-ready cover images
-├── 📂 data/shortcuts/       # iOS Shortcuts JSON files
+├── 📂 images/
+│   ├── optimized/           # iPhone-ready cover images (550+ covers)
+│   └── original/            # Original downloaded covers
+├── 📂 data/                 # Data files and metadata
+│   └── shortcuts/           # iOS Shortcuts JSON files
 ├── 📂 scripts/              # Automation scripts
 │   ├── final_comprehensive_scraper.py
 │   ├── 4plymag_metadata_scraper.py
-│   └── image_optimizer.py
+│   ├── image_optimizer.py
+│   ├── download_images.py
+│   ├── create_shortcuts_json.py
+│   └── optimize_local_images.py
 ├── 📂 docs/                 # Documentation
 └── 📄 README.md
 ```
@@ -61,7 +67,7 @@ thrasher-lockscreen/
 ## 🛠️ Scripts
 
 ### `final_comprehensive_scraper.py`
-Downloads all 552 verified Thrasher cover images with error handling and progress tracking.
+Downloads all 550+ verified Thrasher cover images with error handling and progress tracking.
 
 ### `image_optimizer.py`
 Optimizes images for iPhone lock screens:
@@ -76,16 +82,25 @@ Extracts detailed metadata from [4plymag.com](http://4plymag.com/thrashersearch/
 - Obstacle types
 - Locations
 
+### `create_shortcuts_json.py`
+Creates iOS Shortcuts integration files for easy automation.
+
+### `download_images.py`
+Downloads images from verified URLs with error handling.
+
+### `optimize_local_images.py`
+Optimizes local images for iPhone lock screen dimensions.
+
 ## 📱 iOS Shortcuts Integration
 
 ### Direct GitHub Access
 All data is hosted on GitHub for easy iOS Shortcuts integration:
 
-- **Cover URLs**: `https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/data/shortcuts/final_comprehensive_verified_urls.json`
+- **Cover URLs**: `https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/data/shortcuts/optimized_covers.json`
 - **Date Pairs**: `https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/data/shortcuts/final_comprehensive_date_url_pairs.json`
 
 ### Automation Features
-- **Daily random selection** from 552 covers
+- **Daily random selection** from 550+ covers
 - **Metadata display** in notifications
 - **Error handling** with fallback covers
 - **Offline caching** for reliability
@@ -99,7 +114,7 @@ All data is hosted on GitHub for easy iOS Shortcuts integration:
 - **File Size**: <500KB per image
 - **Processing**: Lanczos resampling for high quality
 
-### Metadata Overlay
+### Metadata Integration
 Each cover includes rich information:
 - 📅 **Date**: "December 2020"
 - 👤 **Skaters**: "Tony Hawk, Rodney Mullen"
@@ -112,7 +127,7 @@ Each cover includes rich information:
 ### Daily Operation
 1. **iOS Shortcut triggers** (manual or automated)
 2. **Fetches latest data** from GitHub
-3. **Randomly selects** a cover from 552 options
+3. **Randomly selects** a cover from 550+ options
 4. **Downloads optimized image**
 5. **Applies to lock screen**
 6. **Displays metadata** in notification
@@ -126,35 +141,64 @@ Each cover includes rich information:
 ## 📈 Coverage Statistics
 
 ### Time Period: 1981-2025 (45 years!)
-- **Total Covers**: 552 verified URLs
+- **Total Covers**: 550+ verified URLs
 - **Date Range**: January 1981 to September 2025
 - **Coverage**: Complete archive spanning nearly half a century
 - **Quality**: All covers verified and accessible
 
-### Why 552 vs Expected 537?
-The extra 15 covers come from:
-- **Multiple Editions**: Some months had multiple covers
-- **Special Issues**: Anniversary editions, collector's editions
-- **Regional Variations**: Different covers for different markets
-- **Pattern Discovery**: Found additional URL patterns during analysis
+### Why 550+ vs Expected 537?
+The extra covers come from:
+- **Special editions** and anniversary issues
+- **Multiple covers per month** in some years
+- **International releases** and variants
+- **Limited edition** and promotional covers
 
-## 🛠️ Technical Details
+## 🚀 Getting Started
 
-### Dependencies
-- **Pillow**: Image processing and optimization
-- **Requests**: HTTP requests for scraping
-- **BeautifulSoup4**: HTML parsing
-- **JSON**: Data serialization
+### Prerequisites
+- Python 3.7+
+- pip package manager
+- Internet connection for image downloads
 
-### Error Handling
-- **HTTP 404 detection**: Skips broken URLs
-- **Timeout management**: 30-second download limits
-- **Retry logic**: 3 attempts per failed download
-- **Progress tracking**: Real-time status updates
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/kyleplathe/thrasher-lockscreen.git
+cd thrasher-lockscreen
 
-## 🤝 Contributing
+# Install dependencies
+pip install -r requirements.txt
+```
 
-### Adding New Covers
+### First Run
+```bash
+# Download all covers
+python scripts/final_comprehensive_scraper.py
+
+# Optimize for iPhone
+python scripts/image_optimizer.py
+
+# Create iOS Shortcuts files
+python scripts/create_shortcuts_json.py
+```
+
+## 🔧 Customization
+
+### Image Optimization
+Edit `scripts/image_optimizer.py` to adjust:
+- **Resolution**: Change target dimensions
+- **Quality**: Adjust JPEG compression
+- **Format**: Switch to PNG or other formats
+
+### Metadata Sources
+Modify `scripts/4plymag_metadata_scraper.py` to:
+- **Add new sources** for cover information
+- **Enhance data extraction** for better accuracy
+- **Customize metadata fields** for your needs
+
+## 📝 Adding New Covers
+
+### Manual Process
 1. Update `final_comprehensive_scraper.py` with new URL patterns
 2. Run the scraper to download new covers
 3. Process images with `image_optimizer.py`
@@ -162,16 +206,16 @@ The extra 15 covers come from:
 
 ### Improving Metadata
 1. Enhance `4plymag_metadata_scraper.py` for better data extraction
-2. Add new metadata fields as needed
-3. Update iOS Shortcuts instructions
+2. Add new metadata sources for comprehensive coverage
+3. Validate and clean extracted data for consistency
 
-## 📞 Support
+## 🤝 Contributing
 
-### Troubleshooting
-- **Image loading issues**: Check GitHub raw URLs
-- **Metadata problems**: Verify 4plymag connectivity
-- **Shortcut errors**: Review iOS Shortcuts documentation
-- **Performance issues**: Monitor file sizes and optimization
+### How to Help
+- **Report bugs** in GitHub Issues
+- **Suggest improvements** for image processing
+- **Add new metadata sources** for better cover information
+- **Test iOS Shortcuts** on different devices
 
 ### Getting Help
 - **GitHub Issues**: Report bugs and feature requests
@@ -180,8 +224,8 @@ The extra 15 covers come from:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**🎉 You now have the most comprehensive Thrasher Magazine lock screen automation ever created!** 🛹✨
+**🎉 Ready to rock your iPhone lock screen with daily Thrasher covers!**

@@ -13,7 +13,7 @@ This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you
 **Coverage Details:**
 - **Years:** 1981-2025 (September)
 - **Total:** 550 covers
-- **Missing Issues:** 1982 (May, June), 1986 (October, November)
+- **Missing Issues:** 1982 (May, June), 1986 (October, November) - *Original images not available*
 - **Current:** Updated through September 2025
 
 - 📅 **Date** (month and year)

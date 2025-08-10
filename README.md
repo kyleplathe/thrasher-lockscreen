@@ -10,6 +10,12 @@
 
 This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you can automatically set as your iPhone lock screen. Each cover includes:
 
+**Coverage Details:**
+- **Years:** 1981-2025 (September)
+- **Total:** 550 covers
+- **Missing Issues:** 1982 (May, June), 1986 (October, November)
+- **Current:** Updated through September 2025
+
 - 📅 **Date** (month and year)
 - 👤 **Skater name** 
 - 🛹 **Trick description**
@@ -80,7 +86,8 @@ This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you
 
 ## 🎨 What You Get
 
-- **550+ covers** spanning 45 years (1981-2025)
+- **550 covers** spanning 45 years (1981-2025)
+- **Complete coverage** - most years have all 12 issues
 - **Perfect iPhone sizing** - no cropping or stretching
 - **Rich metadata** - know the skater, trick, and location
 - **High quality** - optimized for crisp display

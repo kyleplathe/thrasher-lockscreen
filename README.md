@@ -13,7 +13,9 @@ This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you
 
 ## 🚀 Quick Setup (2 minutes!)
 
-### Step 1: Download the Shortcut
+### Option 1: Build It Yourself (Recommended)
+
+#### Step 1: Get the Data
 1. Open **Shortcuts** app on your iPhone
 2. Tap the **+** button to create a new shortcut
 3. Tap **"Get Contents of URL"**
@@ -22,19 +24,19 @@ This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you
    https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/shortcuts_text_overlay_covers.json
    ```
 
-### Step 2: Add Random Selection
+#### Step 2: Pick Random Cover
 1. Tap **+** to add another action
 2. Search for **"Get Random Item from List"**
 3. Connect it to the previous action
 
-### Step 3: Download and Set Image
+#### Step 3: Download & Set Wallpaper
 1. Tap **+** again
 2. Add **"Get Contents of URL"** 
 3. Connect it to the random item
 4. Add **"Set Wallpaper"** action
 5. Set it to **Lock Screen**
 
-### Step 4: Test It!
+#### Step 4: Test It!
 1. Tap the **▶️** button to test
 2. Your lock screen should change to a random Thrasher cover!
 
@@ -49,6 +51,19 @@ This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you
 1. In your shortcut, tap the **⏰** icon
 2. Set it to run **Daily at 9:00 AM**
 3. Your lock screen will change automatically every morning!
+
+### Option 3: Automation Tab (Most Reliable)
+1. Open **Shortcuts** app
+2. Tap **Automation** tab at bottom
+3. Tap **+** to create new automation
+4. Choose **"Time of Day"**
+5. Set to **9:00 AM** and **Daily**
+6. Tap **Next**
+7. Tap **Add Action**
+8. Search for your **Thrasher shortcut**
+9. Tap **Next**
+10. Turn **OFF** "Ask Before Running"
+11. Tap **Done**
 
 ## 🎨 What You Get
 
@@ -90,6 +105,11 @@ Choose which details to display (date, skater, trick, location).
 ### Want different covers?
 - The shortcut randomly picks from 550+ options
 - Run it multiple times to see different covers
+
+### Automation not running?
+- Make sure "Ask Before Running" is turned OFF
+- Check that you're in the Automation tab, not Shortcuts tab
+- Verify the time is set correctly
 
 ## 🤝 Support
 

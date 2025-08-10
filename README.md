@@ -1,254 +1,106 @@
-# 🛹 Thrasher Lock Screen Archive
+# 🛹 Thrasher Lock Screen
 
-**550+ Thrasher Magazine covers with 4ply metadata text overlays, optimized for iPhone lock screens with iOS Shortcuts automation. Daily random covers with skater/trick/location information from 1981-2025.**
+**Get a random Thrasher Magazine cover as your iPhone lock screen every day!**
 
-## 🎯 Overview
+## 🎯 What This Does
 
-This project provides a complete solution for automatically setting Thrasher Magazine covers as your iPhone lock screen. Features include:
+This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you can automatically set as your iPhone lock screen. Each cover includes:
 
-- **550+ verified cover URLs** spanning 1981-2025
-- **Text overlays with 4ply metadata** (skaters, tricks, locations)
-- **iPhone-optimized images** (1080x1920 resolution)
-- **iOS Shortcuts integration** for daily automation
-- **Rich metadata** from 4plymag.com (skaters, tricks, obstacles)
-- **Random daily selection** with fallback mechanisms
+- 📅 **Date** (month and year)
+- 👤 **Skater name** 
+- 🛹 **Trick description**
+- 📍 **Location** (when available)
 
-## 📊 Project Status
+## 🚀 Quick Setup (2 minutes!)
 
-- ✅ **URLs Collected**: 550+ verified Thrasher cover URLs
-- ✅ **Scraping Scripts**: Complete automation pipeline
-- ✅ **Image Processing**: iPhone lock screen optimization
-- ✅ **Metadata Integration**: 4plymag scraper for detailed info
-- ✅ **Image Download**: All 550+ covers processed and optimized
-- ✅ **Text Overlays**: Complete with skater/trick/location metadata
-- 🔄 **GitHub Actions**: Automated updates
-
-## 🚀 Quick Start
-
-### 1. Download and Process Images
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Download and optimize all 550+ covers
-python scripts/final_comprehensive_scraper.py
-python scripts/image_optimizer.py
-
-# Apply text overlays with 4ply metadata
-python scripts/apply_text_overlays_all.py
-```
-
-### 2. iOS Shortcuts Setup
-
+### Step 1: Download the Shortcut
 1. Open **Shortcuts** app on your iPhone
-2. Create new shortcut
-3. Add **"Get Contents of URL"** action
-4. Use: `https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/shortcuts_text_overlay_covers.json`
-5. Add **"Get Random Item from List"**
-6. Add **"Get Contents of URL"** to download image
-7. Add **"Set Wallpaper"** action
+2. Tap the **+** button to create a new shortcut
+3. Tap **"Get Contents of URL"**
+4. Copy and paste this URL:
+   ```
+   https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/shortcuts_text_overlay_covers.json
+   ```
 
-## 📁 Project Structure
+### Step 2: Add Random Selection
+1. Tap **+** to add another action
+2. Search for **"Get Random Item from List"**
+3. Connect it to the previous action
 
-```
-thrasher-lockscreen/
-├── 📂 images/
-│   ├── optimized_final_with_text/ # iPhone-ready covers with text overlays
-│   ├── original/                   # Original downloaded covers
-│   ├── optimized_final/            # Optimized images without text
-│   └── text_overlay_samples/       # Sample images for testing
-├── 📂 scripts/                     # Automation scripts
-│   ├── apply_text_overlays_all.py  # Main text overlay script
-│   ├── final_comprehensive_scraper.py
-│   ├── 4plymag_metadata_scraper.py
-│   ├── image_optimizer.py
-│   ├── create_text_overlay_images.py
-│   └── create_text_overlay_shortcuts_json.py
-├── 📂 data/                        # Data files and metadata
-│   └── shortcuts/                  # iOS Shortcuts JSON files
-├── 📄 shortcuts_text_overlay_covers.json # Main iOS Shortcuts file
-├── 📄 text_overlay_config.json     # Text overlay configuration
-└── 📄 README.md
-```
+### Step 3: Download and Set Image
+1. Tap **+** again
+2. Add **"Get Contents of URL"** 
+3. Connect it to the random item
+4. Add **"Set Wallpaper"** action
+5. Set it to **Lock Screen**
 
-## 🛠️ Scripts
+### Step 4: Test It!
+1. Tap the **▶️** button to test
+2. Your lock screen should change to a random Thrasher cover!
 
-### `apply_text_overlays_all.py`
-**Main script** that applies text overlays to all optimized images with:
-- **Skater names** from 4plymag metadata
-- **Trick descriptions** and obstacle types
-- **Location information** when available
-- **Date formatting** for consistent display
+## 📱 How to Use Daily
 
-### `final_comprehensive_scraper.py`
-Downloads all 550+ verified Thrasher cover images with error handling and progress tracking.
+### Option 1: Manual (Tap to change)
+- Open Shortcuts app
+- Tap your Thrasher shortcut
+- Lock screen changes instantly
 
-### `image_optimizer.py`
-Optimizes images for iPhone lock screens:
-- **Resolution**: 1080x1920 (perfect iPhone ratio)
-- **File Size**: <500KB per image
-- **Quality**: 85% JPEG compression
+### Option 2: Automatic (Daily at 9 AM)
+1. In your shortcut, tap the **⏰** icon
+2. Set it to run **Daily at 9:00 AM**
+3. Your lock screen will change automatically every morning!
 
-### `4plymag_metadata_scraper.py`
-Extracts detailed metadata from [4plymag.com](http://4plymag.com/thrashersearch/):
-- Skater names
-- Trick descriptions
-- Obstacle types
-- Locations
+## 🎨 What You Get
 
-### `create_text_overlay_images.py`
-Creates text overlay images with customizable positioning and styling.
-
-### `create_text_overlay_shortcuts_json.py`
-Creates iOS Shortcuts integration files for the text overlay covers.
-
-## 📱 iOS Shortcuts Integration
-
-### Direct GitHub Access
-All data is hosted on GitHub for easy iOS Shortcuts integration:
-
-- **Text Overlay Covers**: `https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/shortcuts_text_overlay_covers.json`
-- **Optimized Covers**: `https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/shortcuts_final_optimized_covers.json`
-
-### Automation Features
-- **Daily random selection** from 550+ covers
-- **Metadata display** in notifications
-- **Error handling** with fallback covers
-- **Offline caching** for reliability
-
-## 🎨 Image Specifications
-
-### Optimization Details
-- **Target Resolution**: 1080x1920 pixels
-- **Aspect Ratio**: 9:16 (perfect for iPhone lock screens)
-- **File Format**: JPEG with 85% quality
-- **File Size**: <500KB per image
-- **Processing**: Lanczos resampling for high quality
-
-### Text Overlay Features
-Each cover includes rich information:
-- 📅 **Date**: "December 2020"
-- 👤 **Skaters**: "Tony Hawk, Rodney Mullen"
-- 🛹 **Tricks**: "kickflip, 360 flip"
-- 🏗️ **Obstacles**: "rail, stairs"
-- 📍 **Location**: "Los Angeles, CA"
-
-## 🔄 Automation Workflow
-
-### Daily Operation
-1. **iOS Shortcut triggers** (manual or automated)
-2. **Fetches latest data** from GitHub
-3. **Randomly selects** a cover from 550+ options
-4. **Downloads optimized image with text overlay**
-5. **Applies to lock screen**
-6. **Displays metadata** in notification
-
-### Weekly Updates
-1. **GitHub Actions** automatically scrape new covers
-2. **Image optimization** processes new additions
-3. **Text overlay application** with metadata
-4. **Repository updates** with new content
-
-## 📈 Coverage Statistics
-
-### Time Period: 1981-2025 (45 years!)
-- **Total Covers**: 550+ verified URLs
-- **Date Range**: January 1981 to September 2025
-- **Coverage**: Complete archive spanning nearly half a century
-- **Quality**: All covers verified and accessible
-
-### Why 550+ vs Expected 537?
-The extra covers come from:
-- **Special editions** and anniversary issues
-- **Multiple covers per month** in some years
-- **International releases** and variants
-- **Limited edition** and promotional covers
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Python 3.7+
-- pip package manager
-- Internet connection for image downloads
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/kyleplathe/thrasher-lockscreen.git
-cd thrasher-lockscreen
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### First Run
-```bash
-# Download all covers
-python scripts/final_comprehensive_scraper.py
-
-# Optimize for iPhone
-python scripts/image_optimizer.py
-
-# Apply text overlays with metadata
-python scripts/apply_text_overlays_all.py
-
-# Create iOS Shortcuts files
-python scripts/create_text_overlay_shortcuts_json.py
-```
+- **550+ covers** spanning 45 years (1981-2025)
+- **Perfect iPhone sizing** - no cropping or stretching
+- **Rich metadata** - know the skater, trick, and location
+- **High quality** - optimized for crisp display
+- **Random selection** - never see the same cover twice in a row
 
 ## 🔧 Customization
 
-### Text Overlay Configuration
-Edit `text_overlay_config.json` to customize:
-- **Text positioning** (x, y coordinates)
-- **Font size** and style
-- **Metadata display** (show/hide skater, trick, location)
-- **Color scheme** and transparency
+### Change Text Position
+Edit `text_overlay_config.json` to move the date/skater text around on the image.
 
-### Image Optimization
-Edit `scripts/image_optimizer.py` to adjust:
-- **Resolution**: Change target dimensions
-- **Quality**: Adjust JPEG compression
-- **Format**: Switch to PNG or other formats
+### Change Font Size
+Adjust the font size in the same config file.
 
-### Metadata Sources
-Modify `scripts/4plymag_metadata_scraper.py` to:
-- **Add new sources** for cover information
-- **Enhance data extraction** for better accuracy
-- **Customize metadata fields** for your needs
+### Hide/Show Info
+Choose which details to display (date, skater, trick, location).
 
-## 📝 Adding New Covers
+## 📚 Examples
 
-### Manual Process
-1. Update `final_comprehensive_scraper.py` with new URL patterns
-2. Run the scraper to download new covers
-3. Process images with `image_optimizer.py`
-4. Apply text overlays with `apply_text_overlays_all.py`
-5. Update JSON files in root directory
+**Cover might show:**
+- **December 2020** - Tony Hawk - Kickflip - Los Angeles, CA
+- **March 1995** - Rodney Mullen - 360 Flip - Tampa, FL
+- **August 2008** - Paul Rodriguez - Nollie Heelflip - San Francisco, CA
 
-### Improving Metadata
-1. Enhance `4plymag_metadata_scraper.py` for better data extraction
-2. Add new metadata sources for comprehensive coverage
-3. Validate and clean extracted data for consistency
+## 🆘 Troubleshooting
 
-## 🤝 Contributing
+### Shortcut won't work?
+- Make sure you're connected to WiFi/cellular
+- Check that the URL is copied exactly
+- Try running the shortcut manually first
 
-### How to Help
-- **Report bugs** in GitHub Issues
-- **Suggest improvements** for image processing
-- **Add new metadata sources** for better cover information
-- **Test iOS Shortcuts** on different devices
+### Images look blurry?
+- All images are optimized for iPhone lock screens
+- They should look crisp on any iPhone model
 
-### Getting Help
-- **GitHub Issues**: Report bugs and feature requests
-- **Documentation**: Check `docs/` folder for detailed guides
-- **Examples**: See root directory for sample JSON structures
+### Want different covers?
+- The shortcut randomly picks from 550+ options
+- Run it multiple times to see different covers
+
+## 🤝 Support
+
+- **GitHub Issues**: Report problems or request features
+- **Questions**: Open an issue with your question
+- **Improvements**: Suggest ways to make it better
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+Open source - feel free to use and modify!
 
 ---
 
-**🎉 Ready to rock your iPhone lock screen with daily Thrasher covers featuring rich 4ply metadata!**
+**🎉 That's it! You're ready to rock a new Thrasher cover every day! 🛹**

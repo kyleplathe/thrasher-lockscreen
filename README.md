@@ -1,27 +1,21 @@
-# 🛹 Thrasher Lock Screen
+# 🛹 Thrasher Lock Screen - Private Repository
 
-**Get a random Thrasher Magazine cover as your iPhone lock screen every day!**
+**⚠️ This is a private repository containing personal lock screen images and automation tools.**
 
-![Thrasher Lock Screen Example](https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/lock_screen_mockup.PNG)
+## 🔒 Security Notice
 
-*Example: November 1984 cover with skater "mark gonzales" and trick "beanplant"*
+This repository is kept private to prevent malicious actors from hijacking the image URLs and potentially changing users' lock screens to inappropriate content. The automation methods and shortcuts are shared below for educational purposes, but the actual image data remains secure.
 
-## 🎯 What This Does
+## 🎯 What This Project Does
 
-This project gives you **550+ Thrasher Magazine covers** from 1981-2025 that you can automatically set as your iPhone lock screen. Each cover includes:
-
-**Coverage Details:**
-- **Years:** 1981-2025 (September)
-- **Total:** 550 covers
-- **Missing Issues:** 1982 (May, June), 1986 (October, November) - *Original images not available*
-- **Current:** Updated through September 2025
+This project provides **550+ Thrasher Magazine covers** from 1981-2025 that can be automatically set as iPhone lock screens. Each cover includes:
 
 - 📅 **Date** (month and year)
 - 👤 **Skater name** 
 - 🛹 **Trick description**
 - 📍 **Location** (when available)
 
-## 🚀 Quick Setup (2 minutes!)
+## 🚀 How to Create Your Own Thrasher Lock Screen Shortcut
 
 ### Option 1: Download Pre-Built Shortcut ⭐ **EASIEST**
 1. **Tap this link on your iPhone**: [Download Thrasher Shortcut](https://www.icloud.com/shortcuts/your-shortcut-id-here)
@@ -144,3 +138,13 @@ Open source - feel free to use and modify!
 ---
 
 **🎉 That's it! You're ready to rock a new Thrasher cover every day! 🛹**
+
+## 🔐 Repository Security
+
+This repository is kept private to:
+- Prevent URL hijacking of lock screen images
+- Protect users from malicious content injection
+- Maintain control over the image distribution
+- Ensure only authorized users can access the automation tools
+
+The automation methods and shortcuts are shared publicly for educational purposes, but the actual image URLs and data remain secure within this private repository.

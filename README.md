@@ -18,7 +18,7 @@ This project provides **550+ Thrasher Magazine covers** from 1981-2025 that can 
 ## 🚀 How to Create Your Own Thrasher Lock Screen Shortcut
 
 ### Option 1: Download Pre-Built Shortcut ⭐ **EASIEST**
-1. **Tap this link on your iPhone**: [Download Thrasher Shortcut](https://www.icloud.com/shortcuts/your-shortcut-id-here)
+1. **Tap this link on your iPhone**: [Download Thrasher Shortcut](https://www.icloud.com/shortcuts/2374fd29de134e4788b63084f8872bbb)
 2. **Tap "Get Shortcut"** when prompted
 3. **Test it** by tapping the ▶️ button
 4. **Done!** Your lock screen changes instantly

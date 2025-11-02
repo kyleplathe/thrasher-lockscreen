@@ -2,7 +2,7 @@
 """
 Apply Text Overlays to All Images Script
 Applies text overlays to all 550 images using 4ply CSV data
-Includes configuration file for easy editing later
+Uses the final perfected layout with bold dates and centered text
 """
 
 import csv
@@ -12,62 +12,16 @@ import json
 
 class TextOverlayApplier:
     def __init__(self):
-        self.input_dir = "images/optimized_final_fixed"
+        self.input_dir = "images/original"
         self.output_dir = "images/optimized_final_with_text"
         self.csv_file = "data/4ply_covers.csv"
-        self.config_file = "text_overlay_config.json"
         self.lock_screen_size = (1179, 2556)  # iPhone 14 Pro Max
         
         # Create output directory
         os.makedirs(self.output_dir, exist_ok=True)
         
-        # Load configuration
-        self.config = self.load_config()
-        
         # Load 4ply data
         self.fourply_data = self.load_4ply_data()
-        
-    def load_config(self):
-        """Load or create configuration file"""
-        default_config = {
-            "font_settings": {
-                "large_size": 56,
-                "medium_size": 48,
-                "small_size": 40,
-                "font_family": "Roboto"
-            },
-            "positioning": {
-                "text_x": 590,
-                "text_y_start": 2200,
-                "line_spacing": 70
-            },
-            "colors": {
-                "text_color": [255, 255, 255],  # White
-                "outline_color": [0, 0, 0],     # Black
-                "outline_width": 3
-            },
-            "content": {
-                "show_date": True,
-                "show_skater": True,
-                "show_trick": True,
-                "show_location": True,
-                "show_obstacle": False
-            }
-        }
-        
-        if os.path.exists(self.config_file):
-            with open(self.config_file, 'r') as f:
-                config = json.load(f)
-                # Merge with defaults in case new options were added
-                for key, value in default_config.items():
-                    if key not in config:
-                        config[key] = value
-        else:
-            config = default_config
-            with open(self.config_file, 'w') as f:
-                json.dump(config, f, indent=2)
-        
-        return config
     
     def load_4ply_data(self):
         """Load 4ply CSV data into a dictionary"""
@@ -96,96 +50,141 @@ class TextOverlayApplier:
         }
         return months.get(month_name.lower())
     
-    def create_text_overlay(self, image_path, metadata):
-        """Create text overlay on image using configuration"""
+    def load_fonts(self):
+        """Load fonts with fallback - try to get bold for date"""
         try:
-            # Open image
+            font_paths = [
+                "/System/Library/Fonts/Helvetica.ttc",  # macOS
+            ]
+            
+            for path in font_paths:
+                if os.path.exists(path):
+                    # Try to load bold if possible
+                    try:
+                        font_large_bold = ImageFont.truetype(path, size=56, index=1)  # Index 1 = Bold
+                    except:
+                        font_large_bold = ImageFont.truetype(path, 56)
+                    font_large = ImageFont.truetype(path, 56)
+                    font_medium = ImageFont.truetype(path, 48)
+                    return {
+                        "large_bold": font_large_bold,
+                        "large": font_large,
+                        "medium": font_medium
+                    }
+        except Exception:
+            pass
+        default = ImageFont.load_default()
+        return {"large_bold": default, "large": default, "medium": default}
+    
+    def get_month_name(self, month_num):
+        """Convert month number to name"""
+        months = ['January', 'February', 'March', 'April', 'May', 'June',
+                 'July', 'August', 'September', 'October', 'November', 'December']
+        return months[month_num - 1] if 1 <= month_num <= 12 else ''
+    
+    def create_text_overlay(self, image_path, metadata):
+        """Create text overlay using finalized layout"""
+        try:
+            # Open and format image
             image = Image.open(image_path)
+            if image.mode != 'RGB':
+                image = image.convert('RGB')
             
-            # Create a copy for drawing
-            overlay_image = image.copy()
+            # Create lock screen with black background
+            lock_screen_image = Image.new('RGB', self.lock_screen_size, (0, 0, 0))
+            img_ratio = image.width / image.height
+            target_ratio = self.lock_screen_size[0] / self.lock_screen_size[1]
+            
+            if img_ratio > target_ratio:
+                scale_factor = self.lock_screen_size[0] / image.width
+                new_width = self.lock_screen_size[0]
+                new_height = int(image.height * scale_factor)
+            else:
+                scale_factor = self.lock_screen_size[1] / image.height
+                new_width = int(image.width * scale_factor)
+                new_height = self.lock_screen_size[1]
+            
+            resized_image = image.resize((new_width, new_height), Image.Resampling.LANCZOS)
+            x_offset = (self.lock_screen_size[0] - new_width) // 2
+            y_offset = (self.lock_screen_size[1] - new_height) // 2
+            lock_screen_image.paste(resized_image, (x_offset, y_offset))
+            
+            overlay_image = lock_screen_image
             draw = ImageDraw.Draw(overlay_image)
+            fonts = self.load_fonts()
             
-            # Load fonts based on configuration
-            font_config = self.config["font_settings"]
-            try:
-                font_large = ImageFont.truetype(f"{font_config['font_family']}-Bold.ttf", font_config["large_size"])
-                font_medium = ImageFont.truetype(f"{font_config['font_family']}-Regular.ttf", font_config["medium_size"])
-                font_small = ImageFont.truetype(f"{font_config['font_family']}-Regular.ttf", font_config["small_size"])
-            except:
-                # Fallback fonts
-                font_large = ImageFont.load_default()
-                font_medium = ImageFont.load_default()
-                font_small = ImageFont.load_default()
+            # Colors
+            text_color = (255, 255, 255)
+            outline_color = (0, 0, 0)
+            outline_width = 3
+            text_x = 590  # Center horizontally
             
-            # Get colors from config
-            text_color = tuple(self.config["colors"]["text_color"])
-            outline_color = tuple(self.config["colors"]["outline_color"])
-            outline_width = self.config["colors"]["outline_width"]
+            # FIXED POSITIONING - Date at fixed position
+            date_y = 2228
             
-            # Get positioning from config
-            pos_config = self.config["positioning"]
-            text_x = pos_config["text_x"]
-            text_y_start = pos_config["text_y_start"]
-            line_spacing = pos_config["line_spacing"]
+            # Build date line (BOLD)
+            month_name = self.get_month_name(int(metadata.get('month', 0)))
+            date_text = f"{month_name} {metadata.get('year', '')}"
+            date_font = fonts["large_bold"]  # Bold font
+            date_bbox = draw.textbbox((0, 0), date_text, font=date_font)
+            date_height = date_bbox[3] - date_bbox[1]
             
-            # Build text content based on config
-            lines = []
-            content_config = self.config["content"]
+            # Draw date with outline
+            date_y_centered = date_y + (date_height // 2)
+            for dx in range(-outline_width, outline_width + 1):
+                for dy in range(-outline_width, outline_width + 1):
+                    if dx != 0 or dy != 0:
+                        draw.text((text_x + dx, date_y_centered + dy), date_text, font=date_font, 
+                                 fill=outline_color, anchor="mm")
+            draw.text((text_x, date_y_centered), date_text, font=date_font, fill=text_color, anchor="mm")
             
-            # Date line
-            if content_config["show_date"] and metadata.get('year') and metadata.get('month'):
-                month_name = self.get_month_name(int(metadata['month']))
-                date_text = f"{month_name} {metadata['year']}"
-                lines.append(("date", date_text))
+            # Badge gap
+            badge_gap = 80
+            after_badge_y = date_y + date_height + badge_gap
             
-            # Skater line
-            if content_config["show_skater"] and metadata.get('skater') and metadata['skater'].strip():
-                skater_text = metadata['skater'].strip()
-                lines.append(("skater", skater_text))
+            # Build lines BELOW badge
+            below_lines = []
+            if metadata.get('skater') and metadata['skater'].strip():
+                below_lines.append((metadata['skater'].strip(), fonts["large"]))
+            if metadata.get('trick') and metadata['trick'].strip():
+                below_lines.append((metadata['trick'].strip(), fonts["medium"]))
+            if metadata.get('location') and metadata['location'].strip():
+                below_lines.append((metadata['location'].strip(), fonts["medium"]))
             
-            # Trick line
-            if content_config["show_trick"] and metadata.get('trick') and metadata['trick'].strip():
-                trick_text = metadata['trick'].strip()
-                lines.append(("trick", trick_text))
+            # Tight spacing for all lines (using 4-line format as base)
+            tight_spacing = 20  # Tight spacing
             
-            # Obstacle line (if enabled)
-            if content_config["show_obstacle"] and metadata.get('obstacle') and metadata['obstacle'].strip():
-                obstacle_text = metadata['obstacle'].strip()
-                lines.append(("obstacle", obstacle_text))
+            # Calculate total height of all lines below badge
+            total_height = 0
+            for text, font in below_lines:
+                bbox = draw.textbbox((0, 0), text, font=font)
+                total_height += (bbox[3] - bbox[1])
+            if len(below_lines) > 1:
+                total_height += (len(below_lines) - 1) * tight_spacing
             
-            # Location line
-            if content_config["show_location"] and metadata.get('location') and metadata['location'].strip():
-                location_text = metadata['location'].strip()
-                lines.append(("location", location_text))
+            # Center the entire block in available space below badge
+            bottom_limit = 2520  # Home swipe
+            available_space = bottom_limit - after_badge_y
+            start_y_below = after_badge_y + ((available_space - total_height) // 2)
             
-            # Draw text lines
-            for i, (line_type, line) in enumerate(lines):
-                # Choose font based on line type
-                if line_type in ["date", "skater"]:
-                    font = font_large
-                else:
-                    font = font_medium
-                
-                # Calculate text position
-                text_y = text_y_start + (i * line_spacing)
-                
-                # Get text bounds for centering
-                bbox = draw.textbbox((0, 0), line, font=font)
-                text_width = bbox[2] - bbox[0]
+            # Draw lines BELOW badge with tight spacing
+            current_draw_y = start_y_below
+            for text, font in below_lines:
+                bbox = draw.textbbox((0, 0), text, font=font)
                 text_height = bbox[3] - bbox[1]
-                
-                # Center the text
-                x = text_x - (text_width // 2)
-                y = text_y - (text_height // 2)
+                text_y = current_draw_y + (text_height // 2)
                 
                 # Draw outline
                 for dx in range(-outline_width, outline_width + 1):
                     for dy in range(-outline_width, outline_width + 1):
-                        draw.text((x + dx, y + dy), line, font=font, fill=outline_color)
+                        if dx != 0 or dy != 0:
+                            draw.text((text_x + dx, text_y + dy), text, font=font, 
+                                     fill=outline_color, anchor="mm")
                 
                 # Draw main text
-                draw.text((x, y), line, font=font, fill=text_color)
+                draw.text((text_x, text_y), text, font=font, fill=text_color, anchor="mm")
+                
+                current_draw_y += text_height + tight_spacing
             
             # Save the image
             filename = os.path.basename(image_path)
@@ -198,20 +197,14 @@ class TextOverlayApplier:
             print(f"Error processing {image_path}: {e}")
             return None
     
-    def get_month_name(self, month_num):
-        """Convert month number to name"""
-        months = [
-            'January', 'February', 'March', 'April', 'May', 'June',
-            'July', 'August', 'September', 'October', 'November', 'December'
-        ]
-        return months[month_num - 1] if 1 <= month_num <= 12 else ''
-    
     def process_all_images(self):
         """Process all images to add text overlays"""
-        print("Applying text overlays to all images...")
+        print("🚀 Applying text overlays to all images...")
+        print("   Using finalized layout: bold dates, centered text below badge")
+        print()
         
         if not os.path.exists(self.input_dir):
-            print(f"Input directory {self.input_dir} not found!")
+            print(f"❌ Input directory {self.input_dir} not found!")
             return
         
         # Get all image files
@@ -220,14 +213,16 @@ class TextOverlayApplier:
             if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
                 image_files.append(filename)
         
-        print(f"Found {len(image_files)} images to process")
+        print(f"📁 Found {len(image_files)} images to process")
+        print()
         
         processed_count = 0
         failed_count = 0
         processed_files = []
         
         for i, filename in enumerate(image_files):
-            print(f"Processing {i+1}/{len(image_files)}: {filename}")
+            if (i + 1) % 50 == 0:
+                print(f"Processing {i+1}/{len(image_files)}: {filename}...")
             
             image_path = os.path.join(self.input_dir, filename)
             
@@ -270,12 +265,12 @@ class TextOverlayApplier:
         with open('text_overlay_processing_info.json', 'w') as f:
             json.dump(processing_info, f, indent=2)
         
-        print(f"\n✅ Processing complete!")
-        print(f"Successfully processed: {processed_count}")
-        print(f"Failed: {failed_count}")
-        print(f"Output directory: {self.output_dir}")
-        print(f"Configuration file: {self.config_file}")
-        print(f"Processing info: text_overlay_processing_info.json")
+        print()
+        print("✅ Processing complete!")
+        print(f"   Successfully processed: {processed_count}")
+        print(f"   Failed: {failed_count}")
+        print(f"   Output directory: {self.output_dir}")
+        print(f"   Processing info: text_overlay_processing_info.json")
         
         return processing_info
 
@@ -283,8 +278,8 @@ def main():
     applier = TextOverlayApplier()
     info = applier.process_all_images()
     
-    print("\n🎨 Text overlays applied to all images!")
-    print("📝 You can edit text_overlay_config.json to adjust settings and re-run if needed.")
+    print()
+    print("🎨 Text overlays applied to all images!")
 
 if __name__ == "__main__":
     main()

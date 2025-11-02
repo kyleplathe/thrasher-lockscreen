@@ -21,8 +21,8 @@ This project provides **553 Thrasher Magazine covers** from 1981-2025 that can b
 ## 📊 Data Sources
 
 The complete collection of 553 covers was built by scraping:
-- **[Thrasher Magazine website](https://www.thrashermagazine.com/articles/magazine/)** - Current covers from 2020-present
-- **[4Ply Magazine archive](https://archive.4plymag.com)** - Historical covers from 1981-2019
+- **[Thrasher Magazine website](https://www.thrashermagazine.com/articles/magazine/)** - Current covers from 1981-present
+- **[4Ply Magazine archive](https://archive.4plymag.com)** - Metadata from 1981-2019
 - Manual metadata extraction from cover filenames and descriptions
 - Text overlay generation with skater names, tricks, and locations
 

@@ -51,6 +51,29 @@ class SingleCoverProcessor:
             return months[month_int - 1] if 1 <= month_int <= 12 else ''
         except:
             return ''
+
+    def get_month_label(self, month_value):
+        """Return display month label for numeric and special issues."""
+        if month_value is None:
+            return ''
+        month_raw = str(month_value).strip()
+        if not month_raw:
+            return ''
+        special_labels = {
+            "photoissue": "Photo Issue",
+            "photo issue": "Photo Issue",
+            "summer": "Summer",
+            "special issue": "Special Issue",
+            "winter": "Winter",
+        }
+        month_key = month_raw.lower()
+        if month_key in special_labels:
+            return special_labels[month_key]
+        return self.get_month_name(month_raw)
+
+    def is_redundant_year_line(self, text, year):
+        """Skip extra standalone year lines that duplicate the date."""
+        return str(text).strip() == str(year).strip()
     
     def process_cover(self, filename):
         """Process a single cover image"""
@@ -102,7 +125,7 @@ class SingleCoverProcessor:
             date_y = 2228
             
             # Build date line (BOLD)
-            month_name = self.get_month_name(metadata.get('month', 0))
+            month_name = self.get_month_label(metadata.get('month', ''))
             date_text = f"{month_name} {metadata.get('year', '')}"
             date_font = fonts["large_bold"]
             date_bbox = draw.textbbox((0, 0), date_text, font=date_font)
@@ -123,8 +146,9 @@ class SingleCoverProcessor:
             
             # Build lines BELOW badge
             below_lines = []
-            if metadata.get('skater') and metadata['skater'].strip():
-                below_lines.append((metadata['skater'].strip(), fonts["large"]))
+            skater = (metadata.get('skater') or '').strip()
+            if skater and not self.is_redundant_year_line(skater, metadata.get('year', '')):
+                below_lines.append((skater, fonts["large"]))
             if metadata.get('trick') and metadata['trick'].strip():
                 below_lines.append((metadata['trick'].strip(), fonts["medium"]))
             if metadata.get('location') and metadata['location'].strip():

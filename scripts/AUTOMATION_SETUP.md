@@ -119,7 +119,7 @@ launchctl load ~/Library/LaunchAgents/com.thrasher.monthly-scraper.plist
 
 ## Notes
 
-- The scraper only looks for recent covers (2024-2025) to avoid processing old archives
+- The scraper only considers recent issue years (about 2024–2029) and `CV1TH…` filenames so the magazine index page does not pull in the full historical archive
 - Images are saved in both original and optimized formats
 - The JSON file is automatically updated with new covers
 - Processing preserves the final text overlay layout with centered, bold dates

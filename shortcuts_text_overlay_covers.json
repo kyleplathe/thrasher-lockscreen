@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "description": "Thrasher Magazine covers with text overlays for iOS Shortcuts",
-  "total_images": 554,
+  "total_images": 558,
   "images": [
     {
       "filename": "2010_12.jpg",
@@ -10773,6 +10773,42 @@
         "filename": "2026_05.jpg",
         "year": "2026",
         "month": "05"
+      }
+    },
+    {
+      "filename": "2026_01.jpg",
+      "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2026_01.jpg",
+      "metadata": {
+        "filename": "2026_01.jpg",
+        "year": "2026",
+        "month": "01"
+      }
+    },
+    {
+      "filename": "2026_02.jpg",
+      "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2026_02.jpg",
+      "metadata": {
+        "filename": "2026_02.jpg",
+        "year": "2026",
+        "month": "02"
+      }
+    },
+    {
+      "filename": "2026_03.jpg",
+      "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2026_03.jpg",
+      "metadata": {
+        "filename": "2026_03.jpg",
+        "year": "2026",
+        "month": "03"
+      }
+    },
+    {
+      "filename": "2026_04.jpg",
+      "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2026_04.jpg",
+      "metadata": {
+        "filename": "2026_04.jpg",
+        "year": "2026",
+        "month": "04"
       }
     }
   ]

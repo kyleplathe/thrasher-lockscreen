@@ -33,17 +33,24 @@ jobs:
       - name: Scrape new covers
         run: python3 scripts/monthly_cover_scraper.py
 
-      - name: Process originals missing optimized output
+      - name: Process only newly downloaded originals
         run: |
           set -euo pipefail
           mkdir -p images/original images/optimized_final_with_text
-          shopt -s nullglob
-          for f in images/original/*.jpg; do
+          mapfile -t new_originals < <(
+            git status --porcelain -- images/original/*.jpg \
+              | awk '{print $2}'
+          )
+
+          if [[ ${#new_originals[@]} -eq 0 ]]; then
+            echo "No new originals to process."
+            exit 0
+          fi
+
+          for f in "${new_originals[@]}"; do
             base=$(basename "$f")
-            if [[ ! -f "images/optimized_final_with_text/$base" ]]; then
-              echo "Processing $base ..."
-              python3 scripts/process_single_cover.py "$base"
-            fi
+            echo "Processing $base ..."
+            python3 scripts/process_single_cover.py "$base"
           done
 
       - name: Commit and push

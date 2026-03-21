@@ -15,6 +15,7 @@ from pathlib import Path
 class ThrasherMonthlyScraper:
     def __init__(self):
         self.base_url = "https://www.thrashermagazine.com/articles/magazine/"
+        self.shop_products_url = "https://shop.thrashermagazine.com/collections/magazines/products.json?limit=250"
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
@@ -50,8 +51,12 @@ class ThrasherMonthlyScraper:
             if not src:
                 continue
             
-            # Look for recent covers (2024-2025)
-            if not (re.search(r'2024|2025', alt) or re.search(r'2024|2025', src)):
+            # Recent / upcoming issues (alt often has "May, 2026"; src may use CV1THMMYY or /InTheMag/YYYY/)
+            if not (
+                re.search(r'\b202[4-9]\b', alt)
+                or re.search(r'\b202[4-9]\b', src)
+                or re.search(r'CV1TH\d{1,2}\d{2}', src, re.I)
+            ):
                 continue
             
             # Parse date from alt text or src (e.g., "December 2025 Cover" or "Thrasher_Cover_12_25")
@@ -77,7 +82,72 @@ class ThrasherMonthlyScraper:
             })
         
         return covers
+
+    def extract_shop_covers(self):
+        """Extract cover information from Thrasher shop products feed"""
+        covers = []
+        month_names = {
+            'january': 1, 'february': 2, 'march': 3, 'april': 4,
+            'may': 5, 'june': 6, 'july': 7, 'august': 8,
+            'september': 9, 'october': 10, 'november': 11, 'december': 12
+        }
+        try:
+            response = requests.get(self.shop_products_url, headers=self.headers, timeout=15)
+            response.raise_for_status()
+            payload = response.json()
+        except Exception as e:
+            print(f"Warning: Could not fetch shop products: {e}")
+            return covers
+
+        for product in payload.get("products", []):
+            title = (product.get("title") or "").strip()
+            handle = (product.get("handle") or "").strip()
+            title_l = title.lower()
+            handle_l = handle.lower()
+
+            month_name = None
+            for name in month_names:
+                if name in title_l or name in handle_l:
+                    month_name = name
+                    break
+            if not month_name:
+                continue
+
+            year_match = re.search(r"(20\d{2})", title_l) or re.search(r"(20\d{2})", handle_l)
+            if not year_match:
+                continue
+
+            year = int(year_match.group(1))
+            month = month_names[month_name]
+            if not self._valid_issue_date(year, month):
+                continue
+
+            # Prefer primary image src; fallback to first image in images[]
+            image_url = ""
+            if product.get("image") and product["image"].get("src"):
+                image_url = product["image"]["src"]
+            elif product.get("images"):
+                first_img = product["images"][0] if product["images"] else {}
+                image_url = first_img.get("src", "")
+            if not image_url:
+                continue
+
+            covers.append({
+                "year": year,
+                "month": month,
+                "month_name": month_name.capitalize(),
+                "url": image_url,
+                "alt": title
+            })
+        return covers
     
+    def _valid_issue_date(self, year, month):
+        """Reject bogus parses (e.g. MM_YY matching inside cache hex ids)."""
+        if not (1 <= month <= 12):
+            return False
+        y_max = datetime.now().year + 2
+        return 1981 <= year <= y_max
+
     def _extract_date(self, alt_text, src):
         """Extract year and month from alt text or src"""
         month_names = {
@@ -85,6 +155,11 @@ class ThrasherMonthlyScraper:
             'may': 5, 'june': 6, 'july': 7, 'august': 8,
             'september': 9, 'october': 10, 'november': 11, 'december': 12
         }
+
+        def ok(y, m, name):
+            if self._valid_issue_date(y, m):
+                return y, m, name
+            return None
         
         # Try to extract from alt text first (e.g., "Tom Schaar Thrasher Cover Disaster December 2025")
         if alt_text:
@@ -92,7 +167,19 @@ class ThrasherMonthlyScraper:
                 pattern = rf"({month_name})\s+(\d{{4}})"
                 match = re.search(pattern, alt_text.lower())
                 if match:
-                    return int(match.group(2)), month_num, month_name.capitalize()
+                    y, m = int(match.group(2)), month_num
+                    got = ok(y, m, month_name.capitalize())
+                    if got:
+                        return got
+            # "May, 2026" style
+            for month_name, month_num in month_names.items():
+                pattern = rf"({month_name}),\s*(\d{{4}})"
+                match = re.search(pattern, alt_text.lower())
+                if match:
+                    y, m = int(match.group(2)), month_num
+                    got = ok(y, m, month_name.capitalize())
+                    if got:
+                        return got
         
         # Try to extract from src (e.g., "Thrasher_Cover_12_25_Tom_Schaar_Disaster_350.jpg" or "CV1TH1125_1080.jpg")
         if src:
@@ -103,23 +190,31 @@ class ThrasherMonthlyScraper:
                 month = int(match.group(1))
                 year = int('20' + match.group(2))
                 month_name = list(month_names.keys())[month - 1]
-                return year, month, month_name.capitalize()
+                got = ok(year, month, month_name.capitalize())
+                if got:
+                    return got
             
-            # Look for MM_YY or MMYY pattern in filename
-            mm_yy_pattern = r'(\d{1,2})_?(\d{2})\D'
-            match = re.search(mm_yy_pattern, src)
-            if match:
-                month = int(match.group(1))
-                year = int('20' + match.group(2))
-                month_name = list(month_names.keys())[month - 1]
-                return year, month, month_name.capitalize()
+            # MM_YY only in obvious cover paths (never match inside /cache/… hex)
+            if re.search(r'InTheMag|Thrasher_Cover|thrasher_cover', src, re.I):
+                mm_yy_pattern = r'(\d{1,2})_?(\d{2})\D'
+                match = re.search(mm_yy_pattern, src)
+                if match:
+                    month = int(match.group(1))
+                    year = int('20' + match.group(2))
+                    month_name = list(month_names.keys())[month - 1]
+                    got = ok(year, month, month_name.capitalize())
+                    if got:
+                        return got
             
             # Also try old format: monthnameYYYYsfw.jpg
             for month_name, month_num in month_names.items():
                 pattern = rf"{month_name}(\d{{4}})sfw\.jpg"
                 match = re.search(pattern, src.lower())
                 if match:
-                    return int(match.group(1)), month_num, month_name.capitalize()
+                    y = int(match.group(1))
+                    got = ok(y, month_num, month_name.capitalize())
+                    if got:
+                        return got
         
         return None
     
@@ -134,6 +229,12 @@ class ThrasherMonthlyScraper:
                 for img in data.get('images', []):
                     if 'filename' in img:
                         existing.add(img['filename'])
+
+        # Also treat local files as existing in case JSON lags behind.
+        for directory in (self.original_dir, self.optimized_dir):
+            if directory.exists():
+                for path in directory.glob("*.jpg"):
+                    existing.add(path.name)
         
         return existing
     
@@ -217,8 +318,16 @@ class ThrasherMonthlyScraper:
             return
         
         # Extract covers from page
-        covers = self.extract_new_covers(html)
-        print(f"📄 Found {len(covers)} covers on Thrasher website")
+        website_covers = self.extract_new_covers(html)
+        shop_covers = self.extract_shop_covers()
+        covers_by_file = {}
+        for cover in website_covers + shop_covers:
+            filename = f"{cover['year']}_{cover['month']:02d}.jpg"
+            covers_by_file[filename] = cover
+        covers = sorted(covers_by_file.values(), key=lambda c: (c["year"], c["month"]))
+        print(f"📄 Found {len(website_covers)} covers on Thrasher website")
+        print(f"🛒 Found {len(shop_covers)} covers in shop archive")
+        print(f"🧩 Combined unique covers: {len(covers)}")
         
         # Get existing covers
         existing = self.get_existing_covers()
@@ -235,6 +344,7 @@ class ThrasherMonthlyScraper:
             print("✅ No new covers found!")
             return
         
+        new_covers.sort(key=lambda c: (c["year"], c["month"]))
         print(f"🆕 Found {len(new_covers)} new covers:")
         for cover in new_covers:
             print(f"   - {cover['month_name']} {cover['year']}")

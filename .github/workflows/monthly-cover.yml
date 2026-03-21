@@ -1,10 +1,14 @@
 # Fetch new Thrasher covers, generate optimized + text overlays, commit if anything changed.
-# Schedule: 1st of each month 14:00 UTC (~morning US). Edit cron below to taste.
+# Schedule: 4×/month (1st, 8th, 15th, 22nd) 14:00 UTC — covers often land mid-month; runs are cheap and idempotent.
+# Edit crons below or add workflow_dispatch for a manual check.
 name: Monthly Thrasher cover
 
 on:
   schedule:
     - cron: "0 14 1 * *"
+    - cron: "0 14 8 * *"
+    - cron: "0 14 15 * *"
+    - cron: "0 14 22 * *"
   workflow_dispatch:
 
 permissions:
@@ -54,13 +58,56 @@ jobs:
           done
 
       - name: Commit and push
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images/original images/optimized_final_with_text shortcuts_text_overlay_covers.json
+          git add images/original images/optimized_final_with_text shortcuts_text_overlay_covers.json data/cover_shop_publish_timestamps.json data/cover_first_seen.json
           if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No changes to commit."
           else
             git commit -m "chore: monthly Thrasher cover update"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # Optional: Resend API + NOTIFY_EMAIL secret — see scripts/AUTOMATION_SETUP.md
+      - name: Notify email (Resend)
+        if: success() && steps.commit.outputs.changed == 'true'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: python3 scripts/send_new_cover_email.py
+
+      # Optional: install ntfy app (iOS/Android), pick a topic, add repo secret NTFY_TOPIC — see scripts/AUTOMATION_SETUP.md
+      - name: Notify phone (ntfy.sh)
+        if: success() && steps.commit.outputs.changed == 'true'
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: |
+          if [ -z "${NTFY_TOPIC}" ]; then
+            echo "No NTFY_TOPIC secret — skipping push notification (optional)."
+            exit 0
+          fi
+          TITLE="Thrasher lock screen: new cover"
+          BODY="$(git log -1 --oneline)"
+          FILES="$(git diff-tree --no-commit-id --name-only -r HEAD | tr '\n' ' ')"
+          MSG="${BODY}"$'\n'"${FILES}"
+          if [ -n "${NTFY_TOKEN}" ]; then
+            curl -fsS \
+              -H "Authorization: Bearer ${NTFY_TOKEN}" \
+              -H "Title: ${TITLE}" \
+              -H "Tags: magazine,skateboard" \
+              -d "${MSG}" \
+              "https://ntfy.sh/${NTFY_TOPIC}"
+          else
+            curl -fsS \
+              -H "Title: ${TITLE}" \
+              -H "Tags: magazine,skateboard" \
+              -d "${MSG}" \
+              "https://ntfy.sh/${NTFY_TOPIC}"
+          fi
+          echo "Push notification sent."

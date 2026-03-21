@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import re
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 class ThrasherMonthlyScraper:
@@ -22,7 +22,105 @@ class ThrasherMonthlyScraper:
         self.original_dir = Path("images/original")
         self.optimized_dir = Path("images/optimized_final_with_text")
         self.json_file = "shortcuts_text_overlay_covers.json"
-        
+        # Written each run: shop publish times for tuning automation (cron / schedule).
+        self.publish_times_file = Path("data/cover_shop_publish_timestamps.json")
+        # First time this automation saved a new cover (for your own timing stats).
+        self.first_seen_file = Path("data/cover_first_seen.json")
+
+    @staticmethod
+    def _parse_shop_datetime(iso_str):
+        """Parse Shopify ISO8601 timestamps (e.g. 2026-03-11T12:59:05-07:00)."""
+        if not iso_str or not str(iso_str).strip():
+            return None
+        s = str(iso_str).strip()
+        # Python 3.7+ fromisoformat handles offset with colon
+        try:
+            return datetime.fromisoformat(s.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+
+    def write_shop_publish_snapshot(self, shop_covers):
+        """Save shop published_at times so you can see when issues hit the store."""
+        self.publish_times_file.parent.mkdir(parents=True, exist_ok=True)
+        rows = []
+        for c in shop_covers:
+            pa = c.get("published_at")
+            dt = self._parse_shop_datetime(pa) if pa else None
+            rows.append({
+                "filename": f"{c['year']}_{c['month']:02d}.jpg",
+                "issue": f"{c['month_name']} {c['year']}",
+                "published_at": pa,
+                "created_at": c.get("created_at"),
+                "updated_at": c.get("updated_at"),
+                "title": c.get("alt") or "",
+            })
+        rows.sort(key=lambda r: (r.get("published_at") or ""), reverse=True)
+        payload = {
+            "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+            "source": "shop.thrashermagazine.com products.json (magazines collection)",
+            "note": "Use published_at to see when each issue appeared in the shop. Website scrape has no reliable post time.",
+            "issues": rows,
+        }
+        with open(self.publish_times_file, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2)
+        return rows
+
+    def record_first_seen(self, filename, cover_info):
+        """Append once when we first download + register a cover (automation 'detected at' time)."""
+        self.first_seen_file.parent.mkdir(parents=True, exist_ok=True)
+        payload = {
+            "note": (
+                "first_seen_utc = when this repo's automation first saved the cover "
+                "(download + JSON). Compare to shop_published_at for Thrasher's listing time."
+            ),
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+            "covers": {},
+        }
+        if self.first_seen_file.exists():
+            try:
+                with open(self.first_seen_file, encoding="utf-8") as f:
+                    payload = json.load(f)
+            except json.JSONDecodeError:
+                pass
+        payload.setdefault("covers", {})
+        if filename in payload["covers"]:
+            return
+        payload["covers"][filename] = {
+            "first_seen_utc": datetime.now(timezone.utc).isoformat(),
+            "shop_published_at": cover_info.get("published_at"),
+            "source": cover_info.get("source"),
+        }
+        payload["updated_at"] = datetime.now(timezone.utc).isoformat()
+        with open(self.first_seen_file, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2)
+        print(f"  📌 First-seen recorded → {self.first_seen_file}")
+
+    def print_shop_publish_summary(self, shop_covers):
+        """Log when shop listings were published (best signal for 'when is the cover live')."""
+        if not shop_covers:
+            print("🕐 Shop publish times: (no shop covers parsed)")
+            return
+        with_times = []
+        for c in shop_covers:
+            pa = c.get("published_at")
+            dt = self._parse_shop_datetime(pa) if pa else None
+            if dt is not None:
+                with_times.append((dt, c))
+        if not with_times:
+            print("🕐 Shop publish times: (no published_at on products)")
+            return
+        with_times.sort(key=lambda x: x[0], reverse=True)
+        latest_dt, latest = with_times[0]
+        print(
+            f"🕐 Latest shop listing: {latest['month_name']} {latest['year']} "
+            f"published_at={latest.get('published_at', '?')}"
+        )
+        print("   (Shopify `published_at` ≈ when the product went live; use this to tune cron.)")
+        # Show a few recent issues by publish time
+        print("   Recent by published_at:")
+        for dt, c in with_times[:5]:
+            print(f"      {c['year']}_{c['month']:02d}.jpg  {c.get('published_at', '')}")
+
     def fetch_page(self):
         """Fetch the Thrasher magazine archive page"""
         try:
@@ -51,7 +149,7 @@ class ThrasherMonthlyScraper:
             if not src:
                 continue
             
-            # Recent / upcoming issues (alt often has "May, 2026"; src may use CV1THMMYY or /InTheMag/YYYY/)
+            # Recent / upcoming issues (alt often has "May, 2026"; src may use CV1THMMYY)
             if not (
                 re.search(r'\b202[4-9]\b', alt)
                 or re.search(r'\b202[4-9]\b', src)
@@ -78,13 +176,16 @@ class ThrasherMonthlyScraper:
                 'month': month,
                 'month_name': month_name,
                 'url': src,
-                'alt': alt
+                'alt': alt,
+                'source': 'website',
+                # Thrasher HTML does not expose a reliable "posted at" on cover img tags.
+                'published_at': None,
             })
         
         return covers
 
     def extract_shop_covers(self):
-        """Extract cover information from Thrasher shop products feed"""
+        """Extract cover information from Thrasher shop products feed."""
         covers = []
         month_names = {
             'january': 1, 'february': 2, 'march': 3, 'april': 4,
@@ -122,7 +223,6 @@ class ThrasherMonthlyScraper:
             if not self._valid_issue_date(year, month):
                 continue
 
-            # Prefer primary image src; fallback to first image in images[]
             image_url = ""
             if product.get("image") and product["image"].get("src"):
                 image_url = product["image"]["src"]
@@ -137,17 +237,21 @@ class ThrasherMonthlyScraper:
                 "month": month,
                 "month_name": month_name.capitalize(),
                 "url": image_url,
-                "alt": title
+                "alt": title,
+                "source": "shop",
+                "published_at": product.get("published_at"),
+                "created_at": product.get("created_at"),
+                "updated_at": product.get("updated_at"),
             })
         return covers
-    
+
     def _valid_issue_date(self, year, month):
-        """Reject bogus parses (e.g. MM_YY matching inside cache hex ids)."""
+        """Reject bogus parses."""
         if not (1 <= month <= 12):
             return False
         y_max = datetime.now().year + 2
         return 1981 <= year <= y_max
-
+    
     def _extract_date(self, alt_text, src):
         """Extract year and month from alt text or src"""
         month_names = {
@@ -171,7 +275,6 @@ class ThrasherMonthlyScraper:
                     got = ok(y, m, month_name.capitalize())
                     if got:
                         return got
-            # "May, 2026" style
             for month_name, month_num in month_names.items():
                 pattern = rf"({month_name}),\s*(\d{{4}})"
                 match = re.search(pattern, alt_text.lower())
@@ -189,22 +292,24 @@ class ThrasherMonthlyScraper:
             if match:
                 month = int(match.group(1))
                 year = int('20' + match.group(2))
-                month_name = list(month_names.keys())[month - 1]
-                got = ok(year, month, month_name.capitalize())
-                if got:
-                    return got
+                if 1 <= month <= 12:
+                    month_name = list(month_names.keys())[month - 1]
+                    got = ok(year, month, month_name.capitalize())
+                    if got:
+                        return got
             
-            # MM_YY only in obvious cover paths (never match inside /cache/… hex)
+            # Look for MM_YY only in obvious cover paths.
             if re.search(r'InTheMag|Thrasher_Cover|thrasher_cover', src, re.I):
                 mm_yy_pattern = r'(\d{1,2})_?(\d{2})\D'
                 match = re.search(mm_yy_pattern, src)
                 if match:
                     month = int(match.group(1))
                     year = int('20' + match.group(2))
-                    month_name = list(month_names.keys())[month - 1]
-                    got = ok(year, month, month_name.capitalize())
-                    if got:
-                        return got
+                    if 1 <= month <= 12:
+                        month_name = list(month_names.keys())[month - 1]
+                        got = ok(year, month, month_name.capitalize())
+                        if got:
+                            return got
             
             # Also try old format: monthnameYYYYsfw.jpg
             for month_name, month_num in month_names.items():
@@ -230,7 +335,7 @@ class ThrasherMonthlyScraper:
                     if 'filename' in img:
                         existing.add(img['filename'])
 
-        # Also treat local files as existing in case JSON lags behind.
+        # Treat local files as existing too, in case JSON lags behind.
         for directory in (self.original_dir, self.optimized_dir):
             if directory.exists():
                 for path in directory.glob("*.jpg"):
@@ -242,6 +347,8 @@ class ThrasherMonthlyScraper:
         """Download a cover image"""
         try:
             print(f"Downloading {cover_info['month_name']} {cover_info['year']}...")
+            if cover_info.get("published_at"):
+                print(f"  (shop published_at: {cover_info['published_at']})")
             response = requests.get(cover_info['url'], headers=self.headers, timeout=10)
             response.raise_for_status()
             
@@ -261,7 +368,7 @@ class ThrasherMonthlyScraper:
             return False
     
     def add_to_json(self, cover_info):
-        """Add cover to shortcuts JSON"""
+        """Add cover to shortcuts JSON. Returns True if a new row was added."""
         try:
             # Load existing JSON
             if os.path.exists(self.json_file):
@@ -281,7 +388,7 @@ class ThrasherMonthlyScraper:
             
             if filename in existing_filenames:
                 print(f"  Cover {filename} already in JSON")
-                return
+                return False
             
             # Create new entry
             new_entry = {
@@ -303,9 +410,11 @@ class ThrasherMonthlyScraper:
                 json.dump(data, f, indent=2)
             
             print(f"  Added {filename} to JSON")
+            return True
             
         except Exception as e:
             print(f"  Error adding to JSON: {e}")
+            return False
     
     def process_new_covers(self):
         """Main method to check for and download new covers"""
@@ -317,10 +426,13 @@ class ThrasherMonthlyScraper:
             print("❌ Failed to fetch archive page")
             return
         
-        # Extract covers from page
+        # Extract covers from page + shop and de-duplicate by filename.
         website_covers = self.extract_new_covers(html)
         shop_covers = self.extract_shop_covers()
+        self.write_shop_publish_snapshot(shop_covers)
+        self.print_shop_publish_summary(shop_covers)
         covers_by_file = {}
+        # Shop second so it wins on duplicate month/year (carries published_at metadata).
         for cover in website_covers + shop_covers:
             filename = f"{cover['year']}_{cover['month']:02d}.jpg"
             covers_by_file[filename] = cover
@@ -328,6 +440,7 @@ class ThrasherMonthlyScraper:
         print(f"📄 Found {len(website_covers)} covers on Thrasher website")
         print(f"🛒 Found {len(shop_covers)} covers in shop archive")
         print(f"🧩 Combined unique covers: {len(covers)}")
+        print(f"📎 Saved shop publish times → {self.publish_times_file}")
         
         # Get existing covers
         existing = self.get_existing_covers()
@@ -347,13 +460,18 @@ class ThrasherMonthlyScraper:
         new_covers.sort(key=lambda c: (c["year"], c["month"]))
         print(f"🆕 Found {len(new_covers)} new covers:")
         for cover in new_covers:
-            print(f"   - {cover['month_name']} {cover['year']}")
+            extra = ""
+            if cover.get("published_at"):
+                extra = f"  [shop published_at: {cover['published_at']}]"
+            print(f"   - {cover['month_name']} {cover['year']}{extra}")
         
         # Download new covers
         print("\n⬇️  Downloading new covers...")
         for cover in new_covers:
             if self.download_cover(cover):
-                self.add_to_json(cover)
+                fn = f"{cover['year']}_{cover['month']:02d}.jpg"
+                if self.add_to_json(cover):
+                    self.record_first_seen(fn, cover)
         
         print(f"\n✅ Successfully processed {len(new_covers)} new covers!")
         print(f"\n📝 Next steps:")

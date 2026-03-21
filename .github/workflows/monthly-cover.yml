@@ -72,16 +72,24 @@ jobs:
       - name: Commit and push
         id: commit
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images/original images/optimized_final_with_text shortcuts_text_overlay_covers.json data/cover_shop_publish_timestamps.json data/cover_first_seen.json
+          BRANCH="${GITHUB_REF#refs/heads/}"
+
+          # Do NOT `git add` missing paths — `git add missing-file` exits 128 (fatal pathspec).
+          git add images/original images/optimized_final_with_text shortcuts_text_overlay_covers.json
+          [[ -f data/cover_shop_publish_timestamps.json ]] && git add data/cover_shop_publish_timestamps.json
+          [[ -f data/cover_first_seen.json ]] && git add data/cover_first_seen.json
+
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No changes to commit."
           else
             git commit -m "chore: monthly Thrasher cover update"
-            # Explicit ref avoids ambiguous push (exit 128) on some runners
-            git push origin "HEAD:${GITHUB_REF#refs/heads/}"
+            git fetch origin "$BRANCH"
+            git rebase "origin/${BRANCH}"
+            git push origin "HEAD:${BRANCH}"
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 

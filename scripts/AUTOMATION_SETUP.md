@@ -25,7 +25,15 @@ This automation system allows you to automatically check for and download new Th
 python3 scripts/monthly_cover_scraper.py
 ```
 
-### 2. `process_single_cover.py`
+### 2. `prune_orphan_optimized_covers.py` (housekeeping)
+**Purpose**: Deletes JPGs in `images/optimized_final_with_text/` that are **not** listed in `shortcuts_text_overlay_covers.json`, so the folder matches the Shortcut feed and sorts cleanly (`YYYY_MM.jpg`).
+
+```bash
+python3 scripts/prune_orphan_optimized_covers.py --dry-run   # preview
+python3 scripts/prune_orphan_optimized_covers.py              # remove orphans
+```
+
+### 3. `process_single_cover.py`
 **Purpose**: Processes a single cover image with the final text overlay layout.
 
 **What it does**:

@@ -21,12 +21,19 @@ concurrency:
 jobs:
   update-covers:
     runs-on: ubuntu-latest
+    # Use Node 24 for JS-based actions (checkout/setup-python) — avoids Node 20 deprecation warnings.
+    # See: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -41,9 +48,14 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p images/original images/optimized_final_with_text
+          shopt -s nullglob
+          paths=(images/original/*.jpg)
+          if [[ ${#paths[@]} -eq 0 ]]; then
+            echo "No JPGs in images/original yet."
+            exit 0
+          fi
           mapfile -t new_originals < <(
-            git status --porcelain -- images/original/*.jpg \
-              | awk '{print $2}'
+            git status --porcelain -- "${paths[@]}" | awk '{print $2}'
           )
 
           if [[ ${#new_originals[@]} -eq 0 ]]; then
@@ -68,7 +80,8 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "chore: monthly Thrasher cover update"
-            git push
+            # Explicit ref avoids ambiguous push (exit 128) on some runners
+            git push origin "HEAD:${GITHUB_REF#refs/heads/}"
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 

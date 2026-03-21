@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFont
 class FinalLayoutTester:
     def __init__(self):
         self.input_dir = "images/original"
-        self.output_dir = "images/final_layout_tests"
+        self.output_dir = "images/archive/final_layout_tests"
         self.lock_screen_size = (1179, 2556)  # iPhone 14 Pro Max
         
         os.makedirs(self.output_dir, exist_ok=True)

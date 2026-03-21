@@ -4,14 +4,8 @@ __pycache__/
 *.pyc
 .Python
 
-# Local experiments / one-off outputs
-images/badge_space_tests/
-images/compact_layout_tests/
-images/correct_layout_tests/
-images/final_layout_tests/
-images/perfect_centered_tests/
-images/position_tests/
-images/test_samples/
-images/optimized_final_with_text_backup/
+# Archived layout-development outputs (see images/archive/README.md)
+images/archive/*
+!images/archive/README.md
+
 recent_metadata_extracted.json
-test_bottom_check.jpg

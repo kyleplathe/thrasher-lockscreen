@@ -125,10 +125,38 @@ launchctl load ~/Library/LaunchAgents/com.thrasher.monthly-scraper.plist
 - Processing preserves the final text overlay layout with centered, bold dates
 - All images are optimized to iPhone Pro Max dimensions (1179x2556)
 
+## GitHub Actions (repo automation)
+
+The workflow [`.github/workflows/monthly-cover.yml`](../.github/workflows/monthly-cover.yml) runs in GitHub so you do not need cron on your Mac for the monthly check.
+
+**What it does**
+
+1. Checks out the repo on a Linux runner.
+2. Installs Python deps from `requirements.txt`.
+3. Runs `scripts/monthly_cover_scraper.py`.
+4. For each `images/original/*.jpg` that has no matching file in `images/optimized_final_with_text/`, runs `scripts/process_single_cover.py`.
+5. If anything changed, commits and pushes to the default branch (using the built-in `GITHUB_TOKEN`).
+
+**Enable and test**
+
+1. Push the workflow file to GitHub (on your default branch, usually `main`).
+2. In the repo on GitHub: **Actions** → **Monthly Thrasher cover** → **Run workflow** to test without waiting for the schedule.
+3. Confirm the run completes and, if there were changes, that a new commit appears on `main`.
+
+**Schedule**
+
+The cron in the workflow is `0 14 1 * *` (14:00 UTC on the 1st of each month). Edit the `cron` line in the workflow YAML to change timing ([syntax](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule)).
+
+**Permissions**
+
+`contents: write` lets the workflow push. If **branch protection** blocks the Actions bot from pushing to `main`, either allow GitHub Actions to bypass protection for that branch (repo **Settings** → **Branches** / **Rules**) or push automation to a separate branch and use a pull request workflow instead.
+
+**Secrets**
+
+No personal access token is required for pushing to the same repository; the default `GITHUB_TOKEN` is enough.
+
 ## Future Enhancements
 
-- Add automatic processing after download
-- Add email/notification when new covers are found
+- Notifications when new covers are found (Slack, email, GitHub Issues)
 - Add metadata extraction from alt text for skater/trick info
-- Add automatic GitHub commit/push via GitHub Actions
 

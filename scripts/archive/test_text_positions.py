@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 class PositionTester:
     def __init__(self):
         self.input_dir = "images/original"
-        self.output_dir = "images/position_tests"
+        self.output_dir = "images/archive/position_tests"
         self.lock_screen_size = (1179, 2556)  # iPhone 14 Pro Max
         
         # Create output directory

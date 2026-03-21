@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw, ImageFont
 class TestSampleCreator:
     def __init__(self):
         self.input_dir = "images/original"
-        self.output_dir = "images/test_samples"
+        self.output_dir = "images/archive/test_samples"
         self.lock_screen_size = (1179, 2556)  # iPhone 14 Pro Max
         
         # Create output directory

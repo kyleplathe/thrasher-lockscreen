@@ -1,0 +1,59 @@
+# Fetch new Thrasher covers, generate optimized + text overlays, commit if anything changed.
+# Schedule: 1st of each month 14:00 UTC (~morning US). Edit cron below to taste.
+name: Monthly Thrasher cover
+
+on:
+  schedule:
+    - cron: "0 14 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monthly-thrasher-cover
+  cancel-in-progress: false
+
+jobs:
+  update-covers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape new covers
+        run: python3 scripts/monthly_cover_scraper.py
+
+      - name: Process originals missing optimized output
+        run: |
+          set -euo pipefail
+          mkdir -p images/original images/optimized_final_with_text
+          shopt -s nullglob
+          for f in images/original/*.jpg; do
+            base=$(basename "$f")
+            if [[ ! -f "images/optimized_final_with_text/$base" ]]; then
+              echo "Processing $base ..."
+              python3 scripts/process_single_cover.py "$base"
+            fi
+          done
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/original images/optimized_final_with_text shortcuts_text_overlay_covers.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: monthly Thrasher cover update"
+            git push
+          fi

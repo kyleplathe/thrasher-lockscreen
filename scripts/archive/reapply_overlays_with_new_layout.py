@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw, ImageFont
 class OverlayReapplier:
     def __init__(self):
         self.json_file = "shortcuts_text_overlay_covers.json"
-        self.input_dir = "images/optimized_final_with_text_backup"  # Images without text
+        self.input_dir = "images/archive/optimized_final_with_text_backup"  # Images without text
         self.output_dir = "images/optimized_final_with_text"
         self.lock_screen_size = (1179, 2556)  # iPhone 14 Pro Max
         

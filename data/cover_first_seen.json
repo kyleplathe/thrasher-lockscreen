@@ -1,10 +1,15 @@
 {
   "note": "first_seen_utc = when this repo's automation first saved the cover (download + JSON). Compare to shop_published_at for Thrasher's listing time.",
-  "updated_at": "2026-04-22T15:20:59.968007+00:00",
+  "updated_at": "2026-05-15T16:05:41.926721+00:00",
   "covers": {
     "2026_06.jpg": {
       "first_seen_utc": "2026-04-22T15:20:59.968002+00:00",
       "shop_published_at": "2026-04-16T15:59:40-07:00",
+      "source": "shop"
+    },
+    "2026_07.jpg": {
+      "first_seen_utc": "2026-05-15T16:05:41.926715+00:00",
+      "shop_published_at": "2026-05-15T08:58:35-07:00",
       "source": "shop"
     }
   }

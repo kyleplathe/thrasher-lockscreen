@@ -18,29 +18,42 @@ class SingleCoverProcessor:
         os.makedirs(self.output_dir, exist_ok=True)
     
     def load_fonts(self):
-        """Load fonts with fallback"""
-        try:
-            font_paths = [
-                "/System/Library/Fonts/Helvetica.ttc",  # macOS
-            ]
-            
-            for path in font_paths:
-                if os.path.exists(path):
-                    try:
-                        font_large_bold = ImageFont.truetype(path, size=56, index=1)
-                    except:
-                        font_large_bold = ImageFont.truetype(path, 56)
-                    font_large = ImageFont.truetype(path, 56)
-                    font_medium = ImageFont.truetype(path, 48)
-                    return {
-                        "large_bold": font_large_bold,
-                        "large": font_large,
-                        "medium": font_medium
-                    }
-        except Exception:
-            pass
-        default = ImageFont.load_default()
-        return {"large_bold": default, "large": default, "medium": default}
+        """Load overlay fonts — Helvetica on macOS, DejaVu/Liberation on Linux CI."""
+        large_size, medium_size = 56, 48
+
+        helvetica = "/System/Library/Fonts/Helvetica.ttc"
+        if os.path.exists(helvetica):
+            try:
+                font_large_bold = ImageFont.truetype(helvetica, size=large_size, index=1)
+            except Exception:
+                font_large_bold = ImageFont.truetype(helvetica, large_size)
+            return {
+                "large_bold": font_large_bold,
+                "large": ImageFont.truetype(helvetica, large_size),
+                "medium": ImageFont.truetype(helvetica, medium_size),
+            }
+
+        ttf_pairs = [
+            (
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+            ),
+            (
+                "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+                "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+            ),
+        ]
+        for bold_path, regular_path in ttf_pairs:
+            if os.path.exists(bold_path) and os.path.exists(regular_path):
+                return {
+                    "large_bold": ImageFont.truetype(bold_path, large_size),
+                    "large": ImageFont.truetype(regular_path, large_size),
+                    "medium": ImageFont.truetype(regular_path, medium_size),
+                }
+
+        raise RuntimeError(
+            "No overlay fonts found. On macOS use Helvetica; on Linux install fonts-dejavu-core."
+        )
     
     def get_month_name(self, month_num):
         """Convert month number to name"""

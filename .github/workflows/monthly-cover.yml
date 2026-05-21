@@ -41,6 +41,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install fonts for text overlays
+        run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core
+
       - name: Scrape new covers
         run: python3 scripts/monthly_cover_scraper.py
 

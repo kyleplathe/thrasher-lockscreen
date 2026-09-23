@@ -73,6 +73,9 @@ jobs:
             python3 scripts/process_single_cover.py "$base"
           done
 
+      - name: Sync README cover stats
+        run: python3 scripts/update_readme_stats.py
+
       - name: Commit and push
         id: commit
         run: |
@@ -82,7 +85,7 @@ jobs:
           BRANCH="${GITHUB_REF#refs/heads/}"
 
           # Do NOT `git add` missing paths — `git add missing-file` exits 128 (fatal pathspec).
-          git add images/original images/optimized_final_with_text shortcuts_text_overlay_covers.json
+          git add images/original images/optimized_final_with_text shortcuts_text_overlay_covers.json README.md
           [[ -f data/cover_shop_publish_timestamps.json ]] && git add data/cover_shop_publish_timestamps.json
           [[ -f data/cover_first_seen.json ]] && git add data/cover_first_seen.json
 

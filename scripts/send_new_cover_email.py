@@ -116,30 +116,33 @@ def shortcuts_url() -> str:
     return (os.environ.get("SHORTCUTS_URL") or "").strip() or DEFAULT_SHORTCUTS_URL
 
 
-def build_email(changed: list[str], data: dict) -> tuple[str, str]:
+def collect_new_covers(changed: list[str], data: dict) -> list[tuple[str, str, str]]:
+    """Unique (filename, label, blurb) for new cover JPGs in this commit."""
     covers: list[tuple[str, str, str]] = []
+    seen: set[str] = set()
     for path in changed:
-        if "optimized_final_with_text/" not in path and "images/optimized_final_with_text/" not in path:
+        if not (
+            "images/optimized_final_with_text/" in path
+            or path.startswith("images/original/")
+            or "/optimized_final_with_text/" in path
+        ):
+            continue
+        if not path.lower().endswith(".jpg"):
             continue
         base = path.split("/")[-1]
+        if base in seen:
+            continue
         parsed = parse_cover_filename(base)
         if not parsed:
             continue
         label, _ = parsed
-        blurb = metadata_blurb(base, data)
-        covers.append((base, label, blurb))
+        seen.add(base)
+        covers.append((base, label, metadata_blurb(base, data)))
+    covers.sort(key=lambda x: x[0])
+    return covers
 
-    if not covers:
-        # Fallback: any new jpg under images/
-        for path in changed:
-            if not path.lower().endswith(".jpg"):
-                continue
-            base = path.split("/")[-1]
-            parsed = parse_cover_filename(base)
-            if parsed:
-                label, _ = parsed
-                covers.append((base, label, metadata_blurb(base, data)))
 
+def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str]:
     link = shortcuts_url()
     emoji = random.choice(SUBJECT_EMOJIS)
     if len(covers) == 1:
@@ -256,7 +259,12 @@ def main() -> int:
         return 1
 
     data = load_json(json_path)
-    subject, html = build_email(changed, data)
+    covers = collect_new_covers(changed, data)
+    if not covers:
+        print("No new cover JPGs in HEAD — skipping email (metadata-only commit).")
+        return 0
+
+    subject, html = build_email(covers)
 
     try:
         send_resend(api_key, to_addr, from_addr, subject, html)

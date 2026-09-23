@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: monthly-thrasher-cover
@@ -87,8 +88,16 @@ jobs:
 
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "new_covers=false" >> "$GITHUB_OUTPUT"
             echo "No changes to commit."
           else
+            # Detect real cover art before commit so metadata-only updates (shop timestamps)
+            # do not trigger "new cover" notifications.
+            if git diff --staged --name-only | grep -E '^images/(original|optimized_final_with_text)/.+\.jpg$' >/dev/null; then
+              echo "new_covers=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "new_covers=false" >> "$GITHUB_OUTPUT"
+            fi
             git commit -m "chore: monthly Thrasher cover update"
             git fetch origin "$BRANCH"
             git rebase "origin/${BRANCH}"
@@ -96,9 +105,17 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
+      # Always-on (no extra secrets): opens a GitHub Issue when real cover JPGs ship.
+      # Watch the repo / enable Issues emails in GitHub notification settings to get pinged.
+      - name: Notify via GitHub Issue
+        if: success() && steps.commit.outputs.new_covers == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/open_new_cover_issue.py
+
       # Optional: Resend API + NOTIFY_EMAIL secret — see scripts/AUTOMATION_SETUP.md
       - name: Notify email (Resend)
-        if: success() && steps.commit.outputs.changed == 'true'
+        if: success() && steps.commit.outputs.new_covers == 'true'
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
@@ -107,7 +124,7 @@ jobs:
 
       # Optional: install ntfy app (iOS/Android), pick a topic, add repo secret NTFY_TOPIC — see scripts/AUTOMATION_SETUP.md
       - name: Notify phone (ntfy.sh)
-        if: success() && steps.commit.outputs.changed == 'true'
+        if: success() && steps.commit.outputs.new_covers == 'true'
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
@@ -118,7 +135,7 @@ jobs:
           fi
           TITLE="Thrasher lock screen: new cover"
           BODY="$(git log -1 --oneline)"
-          FILES="$(git diff-tree --no-commit-id --name-only -r HEAD | tr '\n' ' ')"
+          FILES="$(git diff-tree --no-commit-id --name-only -r HEAD | grep -E 'images/(original|optimized_final_with_text)/' | tr '\n' ' ')"
           MSG="${BODY}"$'\n'"${FILES}"
           if [ -n "${NTFY_TOKEN}" ]; then
             curl -fsS \

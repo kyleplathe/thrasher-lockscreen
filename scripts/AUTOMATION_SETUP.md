@@ -63,9 +63,20 @@ New issues often show up in the Thrasher shop or on the site **mid-month**. Runn
 
 ## Push notifications when a **new** cover ships
 
-The workflow only notifies when it **committed and pushed** real changes (not on empty runs).
+The workflow only notifies when it **committed real cover JPGs** (under `images/original/` or `images/optimized_final_with_text/`). Metadata-only refreshes (shop timestamps) no longer ping you.
 
-### Option A — **Email** (fun subject line + short blurb)
+### Option A — **GitHub Issue** (works with zero secrets) ⭐ default
+
+When a new cover lands, the workflow opens an Issue labeled `new-cover` (title like `🛹 New Thrasher cover: November 2026`).
+
+To get emailed / pushed when that happens:
+
+1. Open the repo on GitHub → click **Watch** → **Custom** → enable **Issues** (and optionally **Pull requests**).
+2. Or in **GitHub → Settings → Notifications**, make sure Issues on watched repos are on.
+
+No Resend account, no ntfy app, no Action secrets required — `GITHUB_TOKEN` is enough. Script: `scripts/open_new_cover_issue.py`.
+
+### Option B — **Email** (fun subject line + short blurb)
 
 Uses [Resend](https://resend.com) (free tier is enough for occasional cover drops).
 
@@ -78,7 +89,7 @@ Uses [Resend](https://resend.com) (free tier is enough for occasional cover drop
 
 The script `scripts/send_new_cover_email.py` builds a promotional HTML email (Thrasher Cover Shortcut Automation + **Get the shortcut** button), emoji subjects, and—when present—**skater / trick / location** from `shortcuts_text_overlay_covers.json`. The default iCloud link is embedded in the script; you can override it with a **`SHORTCUTS_URL`** secret if you publish a new shortcut later.
 
-### Option B — **ntfy** (works great on iPhone / Android)
+### Option C — **ntfy** (works great on iPhone / Android)
 
 1. Install **ntfy** from the [App Store](https://apps.apple.com/app/ntfy/id1625396346) or [Google Play](https://play.google.com/store/apps/details?id=io.heckel.ntfy).
 2. Open the app → **Subscribe to topic** → choose a **long random topic name** (treat it like a password; anyone who knows it can send you messages on the public server).
@@ -88,9 +99,9 @@ The script `scripts/send_new_cover_email.py` builds a promotional HTML email (Th
 
 The workflow step **Notify phone (ntfy.sh)** runs only after a successful “new cover” commit. You’ll get a title + the commit line + changed file names.
 
-### Option C — GitHub only (no extra app)
+### Option D — GitHub Actions run emails (noisier)
 
-GitHub can email you about **workflow runs**, but it’s usually **all** runs (including no-op), so it’s noisier than ntfy.  
+GitHub can email you about **workflow runs**, but it’s usually **all** runs (including no-op), so it’s noisier than Issues / ntfy.  
 **Profile → Settings → Notifications** → adjust **Actions** / watched repos as you like.
 
 ## Monthly Workflow
@@ -216,6 +227,6 @@ No personal access token is required for pushing to the same repository; the def
 
 ## Future Enhancements
 
-- Notifications when new covers are found (Slack, email, GitHub Issues)
-- Add metadata extraction from alt text for skater/trick info
+- Richer skater/trick metadata extraction for brand-new issues (often blank until filled manually)
+- Optional Slack webhook notify alongside Issues / Resend / ntfy
 

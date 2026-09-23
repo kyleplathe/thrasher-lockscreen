@@ -33,7 +33,20 @@ python3 scripts/prune_orphan_optimized_covers.py --dry-run   # preview
 python3 scripts/prune_orphan_optimized_covers.py              # remove orphans
 ```
 
-### 3. `process_single_cover.py`
+### 3. `update_readme_stats.py`
+**Purpose**: Keeps `README.md` matched to the live JSON database.
+
+**What it does**:
+- Sets the hero image to the **latest** cover (`images/original/YYYY_MM.jpg`)
+- Rewrites cover **counts**, **year range** (e.g. `1981-2026`), and **span in years**
+
+The monthly GitHub Action runs this before every commit so the README does not drift.
+
+```bash
+python3 scripts/update_readme_stats.py
+```
+
+### 4. `process_single_cover.py`
 **Purpose**: Processes a single cover image with the final text overlay layout.
 
 **What it does**:
@@ -205,7 +218,8 @@ The workflow [`.github/workflows/monthly-cover.yml`](../.github/workflows/monthl
 2. Installs Python deps from `requirements.txt`.
 3. Runs `scripts/monthly_cover_scraper.py`.
 4. For each `images/original/*.jpg` that has no matching file in `images/optimized_final_with_text/`, runs `scripts/process_single_cover.py`.
-5. If anything changed, commits and pushes to the default branch (using the built-in `GITHUB_TOKEN`).
+5. Runs `scripts/update_readme_stats.py` so cover count / year range / hero image stay current.
+6. If anything changed, commits and pushes to the default branch (using the built-in `GITHUB_TOKEN`).
 
 **Enable and test**
 

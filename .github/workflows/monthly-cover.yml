@@ -10,6 +10,12 @@ on:
     - cron: "0 14 15 * *"
     - cron: "0 14 22 * *"
   workflow_dispatch:
+    inputs:
+      test_email:
+        description: "Send a test email for the latest cover even if nothing new was downloaded"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -117,12 +123,14 @@ jobs:
         run: python3 scripts/open_new_cover_issue.py
 
       # Optional: Resend API + NOTIFY_EMAIL secret — see scripts/AUTOMATION_SETUP.md
+      # Manual runs can set test_email so a Resend check does not wait for the next issue.
       - name: Notify email (Resend)
-        if: success() && steps.commit.outputs.new_covers == 'true'
+        if: success() && (steps.commit.outputs.new_covers == 'true' || inputs.test_email)
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          SEND_TEST_EMAIL: ${{ inputs.test_email && '1' || '' }}
         run: python3 scripts/send_new_cover_email.py
 
       # Optional: install ntfy app (iOS/Android), pick a topic, add repo secret NTFY_TOPIC — see scripts/AUTOMATION_SETUP.md

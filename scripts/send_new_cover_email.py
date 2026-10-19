@@ -13,7 +13,12 @@ Optional:
 Skips quietly if RESEND_API_KEY is not set.
 
 Optional:
-  SHORTCUTS_URL   — override iCloud Shortcuts link (default is set in this file).
+  SHORTCUTS_URL    — override iCloud Shortcuts link (default is set in this file).
+  SEND_TEST_EMAIL  — if "1" and this commit has no new cover JPG, email the latest
+                     monthly cover anyway (used to verify Resend without a new issue).
+
+Sends with curl. api.resend.com sits behind Cloudflare, which returns 403 / error
+1010 for Python urllib's default User-Agent. curl from GitHub Actions is allowed.
 """
 
 from __future__ import annotations
@@ -24,8 +29,6 @@ import random
 import re
 import subprocess
 import sys
-import urllib.error
-import urllib.request
 
 MONTHS = [
     "January",
@@ -142,6 +145,27 @@ def collect_new_covers(changed: list[str], data: dict) -> list[tuple[str, str, s
     return covers
 
 
+def latest_monthly_cover(data: dict) -> list[tuple[str, str, str]]:
+    """Newest YYYY_MM.jpg in the shortcut feed, for a Resend connectivity test."""
+    best: tuple[tuple[int, int], str, str, str] | None = None
+    for img in data.get("images", []):
+        filename = img.get("filename") or ""
+        match = re.match(r"^(?P<y>\d{4})_(?P<mm>\d{2})\.jpg$", filename, re.I)
+        if not match:
+            continue
+        month = int(match.group("mm"))
+        if not 1 <= month <= 12:
+            continue
+        key = (int(match.group("y")), month)
+        if best is None or key > best[0]:
+            label = f"{MONTHS[month - 1]} {key[0]}"
+            best = (key, filename, label, metadata_blurb(filename, data))
+    if best is None:
+        return []
+    _key, filename, label, blurb = best
+    return [(filename, label, blurb)]
+
+
 def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str]:
     link = shortcuts_url()
     emoji = random.choice(SUBJECT_EMOJIS)
@@ -209,7 +233,8 @@ def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str]:
     return subject, html
 
 
-def send_resend(api_key: str, to_addr: str, from_addr: str, subject: str, html: str) -> None:
+def send_resend(api_key: str, to_addr: str, from_addr: str, subject: str, html: str) -> str:
+    """POST the email via curl. Returns the Resend response body."""
     payload = json.dumps(
         {
             "from": from_addr,
@@ -217,20 +242,37 @@ def send_resend(api_key: str, to_addr: str, from_addr: str, subject: str, html: 
             "subject": subject,
             "html": html,
         }
-    ).encode("utf-8")
-    req = urllib.request.Request(
-        "https://api.resend.com/emails",
-        data=payload,
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        method="POST",
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        body = resp.read().decode("utf-8", errors="replace")
-        if resp.status not in (200, 201):
-            raise RuntimeError(f"Resend HTTP {resp.status}: {body}")
+    proc = subprocess.run(
+        [
+            "curl",
+            "--silent",
+            "--show-error",
+            "--fail-with-body",
+            "--max-time",
+            "30",
+            "-X",
+            "POST",
+            "https://api.resend.com/emails",
+            "-H",
+            f"Authorization: Bearer {api_key}",
+            "-H",
+            "Content-Type: application/json",
+            "-H",
+            "User-Agent: thrasher-lockscreen-notify/1.0",
+            "--data-binary",
+            "@-",
+        ],
+        input=payload,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    body = (proc.stdout or "").strip()
+    if proc.returncode != 0:
+        detail = body or (proc.stderr or "").strip() or f"curl exit {proc.returncode}"
+        raise RuntimeError(detail[:500])
+    return body
 
 
 def main() -> int:
@@ -259,24 +301,33 @@ def main() -> int:
         return 1
 
     data = load_json(json_path)
+    test_mode = (os.environ.get("SEND_TEST_EMAIL") or "").strip().lower() in {
+        "1",
+        "true",
+        "yes",
+    }
     covers = collect_new_covers(changed, data)
+    used_latest = False
+    if not covers and test_mode:
+        covers = latest_monthly_cover(data)
+        used_latest = True
     if not covers:
         print("No new cover JPGs in HEAD — skipping email (metadata-only commit).")
         return 0
 
     subject, html = build_email(covers)
+    if used_latest:
+        subject = f"Test: {subject}"
 
     try:
-        send_resend(api_key, to_addr, from_addr, subject, html)
-    except urllib.error.HTTPError as e:
-        err = e.read().decode("utf-8", errors="replace")
-        print(f"Resend HTTP error: {e.code} {err}", file=sys.stderr)
-        return 1
+        response = send_resend(api_key, to_addr, from_addr, subject, html)
     except Exception as e:
         print(f"Resend error: {e}", file=sys.stderr)
         return 1
 
     print("Email sent OK.")
+    if response:
+        print(response)
     return 0
 
 

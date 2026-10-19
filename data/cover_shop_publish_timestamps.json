@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-19T01:52:07.860726+00:00",
+  "generated_at_utc": "2026-10-19T02:04:45.895229+00:00",
   "source": "shop.thrashermagazine.com products.json (magazines collection)",
   "note": "Use published_at to see when each issue appeared in the shop. Website scrape has no reliable post time.",
   "issues": [
@@ -8,7 +8,7 @@
       "issue": "December 2026",
       "published_at": "2026-10-18T09:19:52-07:00",
       "created_at": "2026-10-18T09:15:12-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE DECEMBER 2026"
     },
     {
@@ -16,7 +16,7 @@
       "issue": "June 2019",
       "published_at": "2026-10-16T16:12:24-07:00",
       "created_at": "2023-04-18T12:27:43-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine June 2019"
     },
     {
@@ -24,7 +24,7 @@
       "issue": "January 2002",
       "published_at": "2026-10-16T16:06:42-07:00",
       "created_at": "2023-04-18T11:47:23-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "January 2002 Issue"
     },
     {
@@ -32,7 +32,7 @@
       "issue": "November 2002",
       "published_at": "2026-10-16T16:04:30-07:00",
       "created_at": "2023-04-18T11:47:46-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "November 2002 Issue"
     },
     {
@@ -40,7 +40,7 @@
       "issue": "June 2002",
       "published_at": "2026-10-16T16:03:06-07:00",
       "created_at": "2023-04-18T11:47:29-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "June 2002 Issue"
     },
     {
@@ -48,7 +48,7 @@
       "issue": "February 2003",
       "published_at": "2026-10-16T15:57:22-07:00",
       "created_at": "2023-04-18T11:48:00-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "February 2003 Issue"
     },
     {
@@ -56,7 +56,7 @@
       "issue": "March 2003",
       "published_at": "2026-10-16T15:56:15-07:00",
       "created_at": "2023-04-18T11:48:04-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "March 2003 Issue"
     },
     {
@@ -64,7 +64,7 @@
       "issue": "November 2003",
       "published_at": "2026-10-16T15:52:09-07:00",
       "created_at": "2023-04-18T11:48:37-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "November 2003 Issue"
     },
     {
@@ -72,7 +72,7 @@
       "issue": "July 2003",
       "published_at": "2026-10-16T15:48:17-07:00",
       "created_at": "2023-04-18T11:48:18-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "July 2003 Issue"
     },
     {
@@ -80,7 +80,7 @@
       "issue": "June 2003",
       "published_at": "2026-10-16T15:42:54-07:00",
       "created_at": "2023-04-18T11:48:14-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "June 2003 Issue"
     },
     {
@@ -88,7 +88,7 @@
       "issue": "April 2003",
       "published_at": "2026-10-16T15:38:57-07:00",
       "created_at": "2023-04-18T11:48:10-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "April 2003 Issue"
     },
     {
@@ -96,7 +96,7 @@
       "issue": "March 2004",
       "published_at": "2026-10-16T14:10:20-07:00",
       "created_at": "2023-04-18T11:48:51-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "March 2004 Issue"
     },
     {
@@ -104,7 +104,7 @@
       "issue": "December 2003",
       "published_at": "2026-10-16T14:08:41-07:00",
       "created_at": "2023-04-18T11:48:41-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "December 2003 Issue"
     },
     {
@@ -112,7 +112,7 @@
       "issue": "August 2004",
       "published_at": "2026-10-16T14:06:36-07:00",
       "created_at": "2023-04-18T11:49:13-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "August 2004 Issue"
     },
     {
@@ -120,7 +120,7 @@
       "issue": "January 2004",
       "published_at": "2026-10-16T14:04:37-07:00",
       "created_at": "2023-04-18T11:51:21-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "January 2004 Issue King of the Road"
     },
     {
@@ -128,7 +128,7 @@
       "issue": "December 2004",
       "published_at": "2026-10-15T16:26:24-07:00",
       "created_at": "2023-04-18T11:51:25-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "December 2004 Issue King of the Road"
     },
     {
@@ -136,7 +136,7 @@
       "issue": "August 2005",
       "published_at": "2026-10-15T16:20:09-07:00",
       "created_at": "2023-04-18T11:49:45-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "August 2005 Issue"
     },
     {
@@ -144,7 +144,7 @@
       "issue": "September 2005",
       "published_at": "2026-10-15T16:18:36-07:00",
       "created_at": "2023-04-18T11:49:49-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "September 2005 Issue"
     },
     {
@@ -152,7 +152,7 @@
       "issue": "November 2005",
       "published_at": "2026-10-15T16:16:48-07:00",
       "created_at": "2023-04-18T11:49:58-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "November 2005 Issue"
     },
     {
@@ -160,7 +160,7 @@
       "issue": "June 2005",
       "published_at": "2026-10-15T16:09:18-07:00",
       "created_at": "2023-04-18T11:49:35-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "June 2005 Issue"
     },
     {
@@ -168,7 +168,7 @@
       "issue": "June 2007",
       "published_at": "2026-10-15T16:06:18-07:00",
       "created_at": "2023-04-18T11:51:38-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "June 2007 Issue"
     },
     {
@@ -176,7 +176,7 @@
       "issue": "May 2007",
       "published_at": "2026-10-15T16:03:35-07:00",
       "created_at": "2023-04-18T11:51:34-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "May 2007 Issue"
     },
     {
@@ -184,7 +184,7 @@
       "issue": "June 2012",
       "published_at": "2026-10-14T16:30:03-07:00",
       "created_at": "2023-04-18T11:56:41-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Limited-Edition June 2012  Skate Rock Cover"
     },
     {
@@ -192,7 +192,7 @@
       "issue": "October 2017",
       "published_at": "2026-10-14T16:21:13-07:00",
       "created_at": "2023-04-18T12:20:35-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine October 2017"
     },
     {
@@ -200,7 +200,7 @@
       "issue": "November 2019",
       "published_at": "2026-10-14T16:18:02-07:00",
       "created_at": "2023-04-18T12:29:31-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2019"
     },
     {
@@ -208,7 +208,7 @@
       "issue": "February 2019",
       "published_at": "2026-10-14T16:13:50-07:00",
       "created_at": "2023-04-18T12:26:27-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine February 2019"
     },
     {
@@ -216,7 +216,7 @@
       "issue": "February 2017",
       "published_at": "2026-10-14T16:11:16-07:00",
       "created_at": "2023-04-18T12:18:14-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine February 2017"
     },
     {
@@ -224,7 +224,7 @@
       "issue": "May 2019",
       "published_at": "2026-10-14T16:10:02-07:00",
       "created_at": "2023-04-18T12:27:47-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine May 2019"
     },
     {
@@ -232,7 +232,7 @@
       "issue": "February 2018",
       "published_at": "2026-10-14T16:06:37-07:00",
       "created_at": "2023-04-18T12:21:27-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine February 2018"
     },
     {
@@ -240,7 +240,7 @@
       "issue": "November 2018",
       "published_at": "2026-10-14T16:03:18-07:00",
       "created_at": "2023-04-18T12:25:10-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2018"
     },
     {
@@ -248,7 +248,7 @@
       "issue": "May 2006",
       "published_at": "2026-10-14T15:59:35-07:00",
       "created_at": "2023-04-18T11:50:59-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "May 2006 Issue"
     },
     {
@@ -256,7 +256,7 @@
       "issue": "June 2006",
       "published_at": "2026-10-14T15:56:23-07:00",
       "created_at": "2023-06-12T12:49:30-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "June 2006 Issue"
     },
     {
@@ -264,7 +264,7 @@
       "issue": "July 2006",
       "published_at": "2026-10-14T15:54:17-07:00",
       "created_at": "2023-04-18T11:50:50-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "July 2006 Issue"
     },
     {
@@ -272,7 +272,7 @@
       "issue": "September 2006",
       "published_at": "2026-10-14T15:50:58-07:00",
       "created_at": "2023-04-18T11:50:37-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "September 2006 Issue"
     },
     {
@@ -280,7 +280,7 @@
       "issue": "October 2006",
       "published_at": "2026-10-14T15:46:32-07:00",
       "created_at": "2023-04-18T11:50:32-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "October 2006 Issue"
     },
     {
@@ -288,7 +288,7 @@
       "issue": "September 2007",
       "published_at": "2026-10-14T15:33:43-07:00",
       "created_at": "2023-04-18T11:51:55-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "September 2007 Issue"
     },
     {
@@ -296,7 +296,7 @@
       "issue": "December 2007",
       "published_at": "2026-10-14T15:25:44-07:00",
       "created_at": "2023-04-18T11:52:46-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "December 2007 Issue King of the Road"
     },
     {
@@ -304,7 +304,7 @@
       "issue": "October 2007",
       "published_at": "2026-10-14T15:23:01-07:00",
       "created_at": "2023-04-18T11:52:37-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "October 2007 Issue"
     },
     {
@@ -312,7 +312,7 @@
       "issue": "January 2018",
       "published_at": "2026-10-09T12:00:51-07:00",
       "created_at": "2023-04-18T12:21:24-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine January 2018"
     },
     {
@@ -320,7 +320,7 @@
       "issue": "February 2006",
       "published_at": "2026-10-08T15:34:18-07:00",
       "created_at": "2023-04-18T11:51:12-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "February 2006 Issue"
     },
     {
@@ -328,7 +328,7 @@
       "issue": "January 2006",
       "published_at": "2026-10-08T15:25:30-07:00",
       "created_at": "2023-04-18T11:51:17-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "January 2006 Issue  25th Anniversary Issue"
     },
     {
@@ -336,7 +336,7 @@
       "issue": "September 2008",
       "published_at": "2026-10-08T15:16:05-07:00",
       "created_at": "2023-04-18T11:53:28-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "September 2008 Thrasher Magazine"
     },
     {
@@ -344,7 +344,7 @@
       "issue": "June 2012",
       "published_at": "2026-10-08T15:12:27-07:00",
       "created_at": "2023-04-18T11:56:37-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "June 2012 Thrasher Magazine"
     },
     {
@@ -352,7 +352,7 @@
       "issue": "May 2011",
       "published_at": "2026-10-08T15:09:25-07:00",
       "created_at": "2023-04-18T11:55:49-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "May 2011 Thrasher Magazine"
     },
     {
@@ -360,7 +360,7 @@
       "issue": "August 2008",
       "published_at": "2026-10-08T15:06:45-07:00",
       "created_at": "2023-04-18T11:53:24-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "August 2008 Thrasher Magazine"
     },
     {
@@ -368,7 +368,7 @@
       "issue": "June 2008",
       "published_at": "2026-10-08T15:04:17-07:00",
       "created_at": "2023-04-18T11:53:11-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "June 2008 Thrasher Magazine"
     },
     {
@@ -376,7 +376,7 @@
       "issue": "May 2008",
       "published_at": "2026-10-08T15:02:44-07:00",
       "created_at": "2023-04-18T11:53:06-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "May 2008 Issue  SOTY Marc Johnson Thrasher Magazine"
     },
     {
@@ -384,7 +384,7 @@
       "issue": "February 2012",
       "published_at": "2026-10-08T15:00:24-07:00",
       "created_at": "2023-04-18T11:56:28-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "February 2012 Thrasher Magazine"
     },
     {
@@ -392,7 +392,7 @@
       "issue": "December 2006",
       "published_at": "2026-10-08T14:58:02-07:00",
       "created_at": "2023-04-18T11:50:24-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "December 2006 Issue  King of the Road"
     },
     {
@@ -400,7 +400,7 @@
       "issue": "March 2006",
       "published_at": "2026-10-08T14:54:31-07:00",
       "created_at": "2023-04-18T11:51:08-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "March 2006 Issue"
     },
     {
@@ -408,7 +408,7 @@
       "issue": "December 2011",
       "published_at": "2026-10-08T14:51:26-07:00",
       "created_at": "2023-04-18T11:56:20-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "December 2011 Thrasher Magazine"
     },
     {
@@ -416,7 +416,7 @@
       "issue": "January 2008",
       "published_at": "2026-10-08T14:46:26-07:00",
       "created_at": "2023-04-18T11:52:49-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "January 2008 Issue"
     },
     {
@@ -424,7 +424,7 @@
       "issue": "August 2006",
       "published_at": "2026-10-08T14:43:03-07:00",
       "created_at": "2023-04-18T11:50:41-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "August 2006 Issue"
     },
     {
@@ -432,7 +432,7 @@
       "issue": "April 2006",
       "published_at": "2026-10-08T14:36:51-07:00",
       "created_at": "2023-04-18T11:51:04-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "April 2006 Issue SOTY Chris Cole"
     },
     {
@@ -440,7 +440,7 @@
       "issue": "September 2011",
       "published_at": "2026-10-06T16:34:01-07:00",
       "created_at": "2023-04-18T11:56:06-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "September 2011 Thrasher Magazine"
     },
     {
@@ -448,7 +448,7 @@
       "issue": "September 2012",
       "published_at": "2026-10-06T16:29:43-07:00",
       "created_at": "2023-04-18T11:56:50-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "September 2012 Thrasher Magazine"
     },
     {
@@ -456,7 +456,7 @@
       "issue": "July 2011",
       "published_at": "2026-10-06T16:22:11-07:00",
       "created_at": "2023-04-18T11:55:58-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "July 2011 Thrasher Magazine"
     },
     {
@@ -464,7 +464,7 @@
       "issue": "November 2011",
       "published_at": "2026-10-06T16:19:37-07:00",
       "created_at": "2023-04-18T11:56:14-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "November 2011 Thrasher Magazine"
     },
     {
@@ -472,7 +472,7 @@
       "issue": "February 2011",
       "published_at": "2026-10-06T16:17:26-07:00",
       "created_at": "2023-04-18T11:55:35-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "February 2011 (King of the Road Issue) Thrasher Magazine"
     },
     {
@@ -480,7 +480,7 @@
       "issue": "April 2011",
       "published_at": "2026-10-06T16:14:57-07:00",
       "created_at": "2023-04-18T11:55:44-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "April 2011 (Leo Romero SOTY Issue) Thrasher Magazine"
     },
     {
@@ -488,7 +488,7 @@
       "issue": "March 2011",
       "published_at": "2026-10-06T16:13:08-07:00",
       "created_at": "2023-04-18T11:55:40-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "March 2011 Thrasher Magazine"
     },
     {
@@ -496,7 +496,7 @@
       "issue": "August 2011",
       "published_at": "2026-10-06T16:11:07-07:00",
       "created_at": "2023-04-18T11:56:01-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "August 2011 Thrasher Magazine"
     },
     {
@@ -504,7 +504,7 @@
       "issue": "October 2012",
       "published_at": "2026-10-06T16:05:22-07:00",
       "created_at": "2023-04-18T11:56:54-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "October 2012"
     },
     {
@@ -512,7 +512,7 @@
       "issue": "June 2017",
       "published_at": "2026-10-06T16:01:40-07:00",
       "created_at": "2023-04-18T12:19:39-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine June 2017"
     },
     {
@@ -520,7 +520,7 @@
       "issue": "July 2017",
       "published_at": "2026-10-06T15:58:12-07:00",
       "created_at": "2023-04-18T12:19:46-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine July 2017"
     },
     {
@@ -528,7 +528,7 @@
       "issue": "July 2016",
       "published_at": "2026-10-06T15:50:00-07:00",
       "created_at": "2023-04-18T12:15:57-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine July 2016"
     },
     {
@@ -536,7 +536,7 @@
       "issue": "January 2017",
       "published_at": "2026-10-06T15:38:04-07:00",
       "created_at": "2023-04-18T12:17:34-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine January 2017 (Dylan Cover)"
     },
     {
@@ -544,7 +544,7 @@
       "issue": "October 2016",
       "published_at": "2026-10-06T15:35:34-07:00",
       "created_at": "2023-04-18T12:17:06-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine October 2016"
     },
     {
@@ -552,7 +552,7 @@
       "issue": "March 2014",
       "published_at": "2026-10-01T11:43:17-07:00",
       "created_at": "2023-04-18T12:05:37-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine March 2014 + Free Poster"
     },
     {
@@ -560,7 +560,7 @@
       "issue": "May 2013",
       "published_at": "2026-10-01T11:27:00-07:00",
       "created_at": "2023-04-18T11:57:25-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher May 2013 + FREE Creature DVD"
     },
     {
@@ -568,7 +568,7 @@
       "issue": "November 2013",
       "published_at": "2026-10-01T11:16:51-07:00",
       "created_at": "2023-04-18T12:01:48-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "November 2013 Thrasher Magazine"
     },
     {
@@ -576,7 +576,7 @@
       "issue": "October 2013",
       "published_at": "2026-10-01T10:52:15-07:00",
       "created_at": "2023-04-18T12:01:33-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "October 2013 Thrasher Magazine"
     },
     {
@@ -584,7 +584,7 @@
       "issue": "November 2016",
       "published_at": "2026-10-01T10:47:40-07:00",
       "created_at": "2023-04-18T12:17:14-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2016"
     },
     {
@@ -592,7 +592,7 @@
       "issue": "November 2017",
       "published_at": "2026-10-01T10:45:16-07:00",
       "created_at": "2023-04-18T12:20:38-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2017"
     },
     {
@@ -600,7 +600,7 @@
       "issue": "December 2017",
       "published_at": "2026-10-01T10:42:57-07:00",
       "created_at": "2023-04-18T12:20:41-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2017"
     },
     {
@@ -608,7 +608,7 @@
       "issue": "April 2018",
       "published_at": "2026-09-25T13:55:01-07:00",
       "created_at": "2023-04-18T12:21:37-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine April 2018"
     },
     {
@@ -616,7 +616,7 @@
       "issue": "October 2018",
       "published_at": "2026-09-25T13:51:51-07:00",
       "created_at": "2023-04-18T12:25:05-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine October 2018"
     },
     {
@@ -624,7 +624,7 @@
       "issue": "February 2020",
       "published_at": "2026-09-25T13:49:25-07:00",
       "created_at": "2023-04-18T12:30:58-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine February 2020"
     },
     {
@@ -632,7 +632,7 @@
       "issue": "May 2020",
       "published_at": "2026-09-25T13:46:34-07:00",
       "created_at": "2023-04-18T12:31:39-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine  May 2020"
     },
     {
@@ -640,7 +640,7 @@
       "issue": "November 2012",
       "published_at": "2026-09-24T14:28:53-07:00",
       "created_at": "2023-04-18T11:56:59-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "November 2012 Thrasher Magazine"
     },
     {
@@ -648,7 +648,7 @@
       "issue": "February 2021",
       "published_at": "2026-09-24T14:17:32-07:00",
       "created_at": "2023-04-18T12:37:07-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine February 2021"
     },
     {
@@ -656,7 +656,7 @@
       "issue": "December 2020",
       "published_at": "2026-09-24T14:14:48-07:00",
       "created_at": "2023-04-18T12:34:48-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2020"
     },
     {
@@ -664,7 +664,7 @@
       "issue": "December 2018",
       "published_at": "2026-09-24T14:12:16-07:00",
       "created_at": "2023-04-18T12:25:17-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2018"
     },
     {
@@ -672,7 +672,7 @@
       "issue": "March 2020",
       "published_at": "2026-09-24T14:11:07-07:00",
       "created_at": "2023-04-18T12:31:04-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine March 2020"
     },
     {
@@ -680,7 +680,7 @@
       "issue": "March 2021",
       "published_at": "2026-09-24T14:09:30-07:00",
       "created_at": "2023-04-18T12:37:20-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine March 2021"
     },
     {
@@ -688,7 +688,7 @@
       "issue": "January 2021",
       "published_at": "2026-09-24T14:02:57-07:00",
       "created_at": "2023-04-18T12:34:56-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine January 2021"
     },
     {
@@ -696,7 +696,7 @@
       "issue": "January 2007",
       "published_at": "2026-09-23T12:18:12-07:00",
       "created_at": "2023-04-18T11:50:06-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "January  2007 Issue"
     },
     {
@@ -704,7 +704,7 @@
       "issue": "February 2007",
       "published_at": "2026-09-23T12:16:40-07:00",
       "created_at": "2023-04-18T11:50:11-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "February 2007 Issue"
     },
     {
@@ -712,7 +712,7 @@
       "issue": "March 2007",
       "published_at": "2026-09-23T12:12:14-07:00",
       "created_at": "2023-04-18T11:50:15-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "March 2007 Issue"
     },
     {
@@ -720,7 +720,7 @@
       "issue": "April 2007",
       "published_at": "2026-09-23T12:08:48-07:00",
       "created_at": "2023-04-18T11:50:19-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "April 2007 Issue SOTY Daewon Song"
     },
     {
@@ -728,7 +728,7 @@
       "issue": "July 2007",
       "published_at": "2026-09-23T12:07:18-07:00",
       "created_at": "2023-04-18T11:51:42-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "July 2007 Issue"
     },
     {
@@ -736,7 +736,7 @@
       "issue": "August 2007",
       "published_at": "2026-09-23T12:05:07-07:00",
       "created_at": "2023-04-18T11:51:50-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "August  2007 Issue"
     },
     {
@@ -744,7 +744,7 @@
       "issue": "November 2007",
       "published_at": "2026-09-23T12:04:15-07:00",
       "created_at": "2023-04-18T11:52:41-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "November 2007 Issue"
     },
     {
@@ -752,7 +752,7 @@
       "issue": "February 2008",
       "published_at": "2026-09-23T12:02:45-07:00",
       "created_at": "2023-04-18T11:52:53-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "February 2008 Issue"
     },
     {
@@ -760,7 +760,7 @@
       "issue": "March 2008",
       "published_at": "2026-09-23T11:59:23-07:00",
       "created_at": "2023-04-18T11:52:58-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "March 2008 Issue"
     },
     {
@@ -768,7 +768,7 @@
       "issue": "August 2009",
       "published_at": "2026-09-23T11:57:15-07:00",
       "created_at": "2023-04-18T11:54:21-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "August 2009 Thrasher Magazine"
     },
     {
@@ -776,7 +776,7 @@
       "issue": "July 2008",
       "published_at": "2026-09-23T11:52:00-07:00",
       "created_at": "2023-04-18T11:53:15-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "July 2008 Thrasher Magazine"
     },
     {
@@ -784,7 +784,7 @@
       "issue": "October 2008",
       "published_at": "2026-09-23T11:50:36-07:00",
       "created_at": "2023-04-18T11:53:32-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "October 2008 Thrasher Magazine"
     },
     {
@@ -792,7 +792,7 @@
       "issue": "November 2008",
       "published_at": "2026-09-23T11:42:04-07:00",
       "created_at": "2023-04-18T11:53:37-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "November 2008 Thrasher Magazine"
     },
     {
@@ -800,7 +800,7 @@
       "issue": "December 2008",
       "published_at": "2026-09-23T11:40:30-07:00",
       "created_at": "2023-04-18T11:53:41-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "December 2008 Thrasher Magazine"
     },
     {
@@ -808,7 +808,7 @@
       "issue": "January 2009",
       "published_at": "2026-09-23T11:38:56-07:00",
       "created_at": "2023-04-18T11:53:45-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "January 2009 Thrasher Magazine"
     },
     {
@@ -816,7 +816,7 @@
       "issue": "February 2009",
       "published_at": "2026-09-23T11:36:01-07:00",
       "created_at": "2023-04-18T11:53:50-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "February 2009 Thrasher Magazine"
     },
     {
@@ -824,7 +824,7 @@
       "issue": "March 2009",
       "published_at": "2026-09-23T11:35:27-07:00",
       "created_at": "2023-04-18T11:53:54-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "March 2009 Thrasher Magazine"
     },
     {
@@ -832,7 +832,7 @@
       "issue": "May 2009",
       "published_at": "2026-09-23T11:34:07-07:00",
       "created_at": "2023-04-18T11:54:03-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "May 2009 Thrasher Magazine"
     },
     {
@@ -840,7 +840,7 @@
       "issue": "July 2009",
       "published_at": "2026-09-23T11:30:28-07:00",
       "created_at": "2023-04-18T11:54:12-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "July 2009 Thrasher Magazine"
     },
     {
@@ -848,7 +848,7 @@
       "issue": "September 2009",
       "published_at": "2026-09-23T11:28:09-07:00",
       "created_at": "2023-04-18T11:54:26-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "September 2009 Thrasher Magazine"
     },
     {
@@ -856,7 +856,7 @@
       "issue": "November 2009",
       "published_at": "2026-09-22T16:37:16-07:00",
       "created_at": "2023-04-18T11:54:35-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "November 2009 Thrasher Magazine"
     },
     {
@@ -864,7 +864,7 @@
       "issue": "February 2010",
       "published_at": "2026-09-22T16:34:10-07:00",
       "created_at": "2023-04-18T11:54:46-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "February 2010 Thrasher Magazine"
     },
     {
@@ -872,7 +872,7 @@
       "issue": "May 2010",
       "published_at": "2026-09-22T16:30:12-07:00",
       "created_at": "2023-04-18T11:54:59-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "May 2010 Thrasher Magazine"
     },
     {
@@ -880,7 +880,7 @@
       "issue": "December 2010",
       "published_at": "2026-09-22T16:27:13-07:00",
       "created_at": "2023-04-18T11:55:27-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "December 2010 Thrasher Magazine"
     },
     {
@@ -888,7 +888,7 @@
       "issue": "April 2013",
       "published_at": "2026-09-22T16:24:54-07:00",
       "created_at": "2023-04-18T11:57:20-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "April 2013"
     },
     {
@@ -896,7 +896,7 @@
       "issue": "May 2014",
       "published_at": "2026-09-22T16:20:11-07:00",
       "created_at": "2023-04-18T12:06:12-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine May 2014 with Free Poster"
     },
     {
@@ -904,7 +904,7 @@
       "issue": "August 2014",
       "published_at": "2026-09-22T16:13:22-07:00",
       "created_at": "2023-04-18T12:06:51-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine August 2014"
     },
     {
@@ -912,7 +912,7 @@
       "issue": "October 2020",
       "published_at": "2026-09-22T15:17:36-07:00",
       "created_at": "2023-04-18T12:34:17-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine October 2020"
     },
     {
@@ -920,7 +920,7 @@
       "issue": "December 2015",
       "published_at": "2026-09-22T15:11:34-07:00",
       "created_at": "2023-04-18T12:13:36-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2015"
     },
     {
@@ -928,7 +928,7 @@
       "issue": "February 2015",
       "published_at": "2026-09-22T15:08:03-07:00",
       "created_at": "2023-04-18T12:08:55-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine February 2015 Plus Hell of a Year DVD"
     },
     {
@@ -936,7 +936,7 @@
       "issue": "August 2019",
       "published_at": "2026-09-22T12:35:00-07:00",
       "created_at": "2023-04-18T12:28:21-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine  August 2019"
     },
     {
@@ -944,7 +944,7 @@
       "issue": "December 2019",
       "published_at": "2026-09-22T12:27:23-07:00",
       "created_at": "2023-04-18T12:29:38-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2019"
     },
     {
@@ -952,7 +952,7 @@
       "issue": "January 2019",
       "published_at": "2026-09-22T12:11:38-07:00",
       "created_at": "2023-04-18T12:26:04-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine January 2019"
     },
     {
@@ -960,7 +960,7 @@
       "issue": "September 2018",
       "published_at": "2026-09-22T12:01:34-07:00",
       "created_at": "2023-04-18T12:23:55-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine September 2018"
     },
     {
@@ -968,7 +968,7 @@
       "issue": "July 2018",
       "published_at": "2026-09-22T11:55:32-07:00",
       "created_at": "2023-04-18T12:23:43-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine July 2018"
     },
     {
@@ -976,7 +976,7 @@
       "issue": "January 2020",
       "published_at": "2026-09-22T11:29:05-07:00",
       "created_at": "2023-04-18T12:30:47-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine January 2020"
     },
     {
@@ -984,7 +984,7 @@
       "issue": "April 2020",
       "published_at": "2026-09-22T11:25:49-07:00",
       "created_at": "2023-04-18T12:31:35-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine April 2020"
     },
     {
@@ -992,7 +992,7 @@
       "issue": "December 2021",
       "published_at": "2026-09-22T09:41:30-07:00",
       "created_at": "2023-04-18T12:43:28-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2021"
     },
     {
@@ -1000,7 +1000,7 @@
       "issue": "May 2021",
       "published_at": "2026-09-22T09:40:05-07:00",
       "created_at": "2023-04-18T12:37:59-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine May 2021"
     },
     {
@@ -1008,7 +1008,7 @@
       "issue": "July 2020",
       "published_at": "2026-09-21T16:06:29-07:00",
       "created_at": "2023-04-18T12:32:11-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine July 2020"
     },
     {
@@ -1016,7 +1016,7 @@
       "issue": "September 2020",
       "published_at": "2026-09-21T16:02:16-07:00",
       "created_at": "2023-04-18T12:33:56-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine September 2020"
     },
     {
@@ -1024,7 +1024,7 @@
       "issue": "November 2020",
       "published_at": "2026-09-21T15:51:23-07:00",
       "created_at": "2023-04-18T12:34:39-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2020"
     },
     {
@@ -1032,7 +1032,7 @@
       "issue": "August 2021",
       "published_at": "2026-09-21T15:47:27-07:00",
       "created_at": "2023-04-18T12:40:26-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine August 2021"
     },
     {
@@ -1040,7 +1040,7 @@
       "issue": "August 2021",
       "published_at": "2026-09-21T15:45:32-07:00",
       "created_at": "2023-04-18T12:41:13-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine September 2021"
     },
     {
@@ -1048,7 +1048,7 @@
       "issue": "October 2021",
       "published_at": "2026-09-21T15:40:23-07:00",
       "created_at": "2023-04-18T12:43:19-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine October 2021"
     },
     {
@@ -1056,7 +1056,7 @@
       "issue": "August 2017",
       "published_at": "2026-09-21T15:20:17-07:00",
       "created_at": "2023-04-18T12:19:51-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine August 2017"
     },
     {
@@ -1064,7 +1064,7 @@
       "issue": "April 2017",
       "published_at": "2026-09-18T15:56:19-07:00",
       "created_at": "2023-04-18T12:19:06-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine April 2017"
     },
     {
@@ -1072,7 +1072,7 @@
       "issue": "March 2017",
       "published_at": "2026-09-18T15:55:13-07:00",
       "created_at": "2023-04-18T12:18:25-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine March 2017"
     },
     {
@@ -1080,7 +1080,7 @@
       "issue": "December 2016",
       "published_at": "2026-09-18T15:52:50-07:00",
       "created_at": "2023-04-18T12:17:17-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2016"
     },
     {
@@ -1088,7 +1088,7 @@
       "issue": "September 2016",
       "published_at": "2026-09-18T15:48:29-07:00",
       "created_at": "2023-04-18T12:17:01-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine September 2016"
     },
     {
@@ -1096,7 +1096,7 @@
       "issue": "August 2016",
       "published_at": "2026-09-18T15:47:34-07:00",
       "created_at": "2023-04-18T12:16:02-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine August 2016"
     },
     {
@@ -1104,7 +1104,7 @@
       "issue": "June 2016",
       "published_at": "2026-09-18T15:46:24-07:00",
       "created_at": "2023-04-18T12:15:36-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine June 2016"
     },
     {
@@ -1112,7 +1112,7 @@
       "issue": "November 2015",
       "published_at": "2026-09-18T15:45:12-07:00",
       "created_at": "2023-04-18T12:13:25-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2015"
     },
     {
@@ -1120,7 +1120,7 @@
       "issue": "July 2015",
       "published_at": "2026-09-18T15:43:52-07:00",
       "created_at": "2023-04-18T12:11:10-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine July 2015"
     },
     {
@@ -1128,7 +1128,7 @@
       "issue": "June 2015",
       "published_at": "2026-09-18T15:40:39-07:00",
       "created_at": "2023-04-18T12:11:07-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine June 2015"
     },
     {
@@ -1136,7 +1136,7 @@
       "issue": "May 2015",
       "published_at": "2026-09-18T15:39:35-07:00",
       "created_at": "2023-04-18T12:10:51-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine May 2015"
     },
     {
@@ -1144,7 +1144,7 @@
       "issue": "April 2015",
       "published_at": "2026-09-18T15:37:49-07:00",
       "created_at": "2023-04-18T12:10:36-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine April 2015"
     },
     {
@@ -1152,7 +1152,7 @@
       "issue": "March 2015",
       "published_at": "2026-09-18T15:36:56-07:00",
       "created_at": "2023-04-18T12:10:28-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine March 2015"
     },
     {
@@ -1160,7 +1160,7 @@
       "issue": "November 2014",
       "published_at": "2026-09-18T15:34:33-07:00",
       "created_at": "2023-04-18T12:07:58-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2014"
     },
     {
@@ -1168,7 +1168,7 @@
       "issue": "September 2014",
       "published_at": "2026-09-18T15:29:46-07:00",
       "created_at": "2023-04-18T12:07:01-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine September 2014"
     },
     {
@@ -1176,7 +1176,7 @@
       "issue": "September 2013",
       "published_at": "2026-09-18T15:20:32-07:00",
       "created_at": "2023-04-18T11:57:43-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "September 2013 Thrasher Magazine"
     },
     {
@@ -1184,7 +1184,7 @@
       "issue": "August 2013",
       "published_at": "2026-09-18T15:18:02-07:00",
       "created_at": "2023-04-18T11:57:38-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "August 2013 Thrasher Magazine"
     },
     {
@@ -1192,7 +1192,7 @@
       "issue": "July 2013",
       "published_at": "2026-09-18T15:14:57-07:00",
       "created_at": "2023-04-18T11:57:33-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "July 2013 + FREE Stickers AND Poster Thrasher Magazine"
     },
     {
@@ -1200,7 +1200,7 @@
       "issue": "June 2013",
       "published_at": "2026-09-18T13:13:35-07:00",
       "created_at": "2023-04-18T11:57:29-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "June 2013 Thrasher Magazine"
     },
     {
@@ -1208,7 +1208,7 @@
       "issue": "November 2026",
       "published_at": "2026-09-18T09:21:22-07:00",
       "created_at": "2026-09-17T12:06:24-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE NOVEMBER 2026"
     },
     {
@@ -1216,7 +1216,7 @@
       "issue": "October 2026",
       "published_at": "2026-08-14T17:48:14-07:00",
       "created_at": "2026-08-13T15:51:05-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE OCTOBER 2026"
     },
     {
@@ -1224,7 +1224,7 @@
       "issue": "September 2026",
       "published_at": "2026-07-14T16:23:58-07:00",
       "created_at": "2026-07-07T12:34:45-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE SEPTEMBER 2026"
     },
     {
@@ -1232,7 +1232,7 @@
       "issue": "October 2019",
       "published_at": "2026-06-24T12:32:31-07:00",
       "created_at": "2023-04-18T12:29:24-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine October 2019"
     },
     {
@@ -1240,7 +1240,7 @@
       "issue": "September 2019",
       "published_at": "2026-06-24T12:27:59-07:00",
       "created_at": "2023-04-18T12:29:17-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine September 2019"
     },
     {
@@ -1248,7 +1248,7 @@
       "issue": "July 2019",
       "published_at": "2026-06-24T12:20:39-07:00",
       "created_at": "2023-04-18T12:28:12-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine July 2019"
     },
     {
@@ -1256,7 +1256,7 @@
       "issue": "May 2017",
       "published_at": "2026-06-24T12:18:49-07:00",
       "created_at": "2023-04-18T12:19:28-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "May 2017"
     },
     {
@@ -1264,7 +1264,7 @@
       "issue": "March 2019",
       "published_at": "2026-06-24T12:15:34-07:00",
       "created_at": "2023-04-18T12:26:38-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine March 2019"
     },
     {
@@ -1272,7 +1272,7 @@
       "issue": "August 2026",
       "published_at": "2026-06-10T15:44:53-07:00",
       "created_at": "2026-06-10T13:43:35-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE AUGUST 2026"
     },
     {
@@ -1280,7 +1280,7 @@
       "issue": "July 2026",
       "published_at": "2026-05-15T08:58:35-07:00",
       "created_at": "2026-05-08T13:23:40-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE JULY 2026"
     },
     {
@@ -1288,7 +1288,7 @@
       "issue": "June 2026",
       "published_at": "2026-04-16T15:59:40-07:00",
       "created_at": "2026-04-07T14:01:51-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE JUNE 2026"
     },
     {
@@ -1296,7 +1296,7 @@
       "issue": "May 2026",
       "published_at": "2026-03-11T12:59:05-07:00",
       "created_at": "2026-03-10T11:03:43-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE MAY 2026"
     },
     {
@@ -1304,7 +1304,7 @@
       "issue": "April 2026",
       "published_at": "2026-02-11T15:36:04-08:00",
       "created_at": "2026-02-11T10:12:14-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE APRIL 2026"
     },
     {
@@ -1312,7 +1312,7 @@
       "issue": "March 2026",
       "published_at": "2026-01-09T13:23:25-08:00",
       "created_at": "2026-01-05T15:16:41-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE MARCH 2026"
     },
     {
@@ -1320,7 +1320,7 @@
       "issue": "February 2026",
       "published_at": "2025-12-15T11:31:46-08:00",
       "created_at": "2025-12-09T15:18:45-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE FEBRUARY 2026"
     },
     {
@@ -1328,7 +1328,7 @@
       "issue": "January 2026",
       "published_at": "2025-11-13T15:57:00-08:00",
       "created_at": "2025-11-13T15:54:26-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE JANUARY 2026"
     },
     {
@@ -1336,7 +1336,7 @@
       "issue": "December 2025",
       "published_at": "2025-10-16T16:36:55-07:00",
       "created_at": "2025-10-16T09:51:02-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE DECEMBER 2025"
     },
     {
@@ -1344,7 +1344,7 @@
       "issue": "November 2025",
       "published_at": "2025-09-15T15:04:32-07:00",
       "created_at": "2025-09-10T13:06:26-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE NOVEMBER 2025"
     },
     {
@@ -1352,7 +1352,7 @@
       "issue": "October 2025",
       "published_at": "2025-08-14T12:47:31-07:00",
       "created_at": "2025-08-07T10:45:54-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE OCTOBER 2025"
     },
     {
@@ -1360,7 +1360,7 @@
       "issue": "September 2025",
       "published_at": "2025-07-15T08:39:08-07:00",
       "created_at": "2025-07-14T10:11:33-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE SEPTEMBER 2025"
     },
     {
@@ -1368,7 +1368,7 @@
       "issue": "August 2025",
       "published_at": "2025-06-11T15:49:41-07:00",
       "created_at": "2025-06-09T10:01:38-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE AUGUST 2025"
     },
     {
@@ -1376,7 +1376,7 @@
       "issue": "July 2025",
       "published_at": "2025-05-08T15:02:29-07:00",
       "created_at": "2025-05-01T09:44:24-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE JULY 2025"
     },
     {
@@ -1384,7 +1384,7 @@
       "issue": "June 2025",
       "published_at": "2025-04-08T15:08:30-07:00",
       "created_at": "2025-04-08T09:48:12-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE JUNE 2025"
     },
     {
@@ -1392,7 +1392,7 @@
       "issue": "May 2025",
       "published_at": "2025-03-13T08:55:06-07:00",
       "created_at": "2025-03-06T10:27:50-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE MAY 2025"
     },
     {
@@ -1400,7 +1400,7 @@
       "issue": "April 2025",
       "published_at": "2025-02-04T16:03:08-08:00",
       "created_at": "2025-02-04T14:20:18-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE APRIL 2025"
     },
     {
@@ -1408,7 +1408,7 @@
       "issue": "June 2021",
       "published_at": "2025-01-29T10:41:59-08:00",
       "created_at": "2023-04-18T12:39:31-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine July 2021"
     },
     {
@@ -1416,7 +1416,7 @@
       "issue": "March 2025",
       "published_at": "2025-01-08T15:36:39-08:00",
       "created_at": "2025-01-06T09:59:23-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE MARCH 2025"
     },
     {
@@ -1424,7 +1424,7 @@
       "issue": "February 2025",
       "published_at": "2024-12-05T09:24:47-08:00",
       "created_at": "2024-12-04T12:51:40-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "THRASHER MAGAZINE FEBRUARY 2025"
     },
     {
@@ -1432,7 +1432,7 @@
       "issue": "January 2025",
       "published_at": "2024-10-31T15:39:12-07:00",
       "created_at": "2024-10-31T11:33:03-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine January 2025"
     },
     {
@@ -1440,7 +1440,7 @@
       "issue": "December 2024",
       "published_at": "2024-10-01T16:30:27-07:00",
       "created_at": "2024-10-01T09:46:47-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2024"
     },
     {
@@ -1448,7 +1448,7 @@
       "issue": "November 2024",
       "published_at": "2024-09-05T16:14:21-07:00",
       "created_at": "2024-09-05T09:53:54-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2024"
     },
     {
@@ -1456,7 +1456,7 @@
       "issue": "October 2024",
       "published_at": "2024-08-07T14:00:06-07:00",
       "created_at": "2024-08-07T11:54:02-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine October 2024"
     },
     {
@@ -1464,7 +1464,7 @@
       "issue": "September 2024",
       "published_at": "2024-07-15T10:29:40-07:00",
       "created_at": "2024-07-15T09:50:39-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine September 2024"
     },
     {
@@ -1472,7 +1472,7 @@
       "issue": "August 2024",
       "published_at": "2024-06-07T12:37:11-07:00",
       "created_at": "2024-06-07T10:53:04-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine August 2024"
     },
     {
@@ -1480,7 +1480,7 @@
       "issue": "July 2024",
       "published_at": "2024-05-03T10:57:44-07:00",
       "created_at": "2024-05-03T10:53:40-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine July 2024"
     },
     {
@@ -1488,7 +1488,7 @@
       "issue": "June 2024",
       "published_at": "2024-04-08T15:44:02-07:00",
       "created_at": "2024-04-08T12:36:02-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine June 2024"
     },
     {
@@ -1496,7 +1496,7 @@
       "issue": "May 2024",
       "published_at": "2024-03-08T10:24:36-08:00",
       "created_at": "2024-03-08T10:20:03-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine May 2024"
     },
     {
@@ -1504,7 +1504,7 @@
       "issue": "April 2024",
       "published_at": "2024-02-01T10:51:51-08:00",
       "created_at": "2024-02-01T07:11:43-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine April 2024"
     },
     {
@@ -1512,7 +1512,7 @@
       "issue": "March 2024",
       "published_at": "2024-01-05T12:18:25-08:00",
       "created_at": "2024-01-05T09:27:36-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine March 2024"
     },
     {
@@ -1520,7 +1520,7 @@
       "issue": "February 2024",
       "published_at": "2023-12-07T12:31:38-08:00",
       "created_at": "2023-12-07T08:31:14-08:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine February 2024"
     },
     {
@@ -1528,7 +1528,7 @@
       "issue": "January 2024",
       "published_at": "2023-11-03T21:00:00-07:00",
       "created_at": "2023-11-02T12:07:25-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine January 2024"
     },
     {
@@ -1536,7 +1536,7 @@
       "issue": "December 2023",
       "published_at": "2023-10-09T14:17:01-07:00",
       "created_at": "2023-10-05T09:33:00-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2023"
     },
     {
@@ -1544,7 +1544,7 @@
       "issue": "November 2023",
       "published_at": "2023-09-08T13:53:34-07:00",
       "created_at": "2023-09-07T14:51:37-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2023"
     },
     {
@@ -1552,7 +1552,7 @@
       "issue": "October 2023",
       "published_at": "2023-08-15T10:36:54-07:00",
       "created_at": "2023-08-10T12:09:48-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine October 2023"
     },
     {
@@ -1560,7 +1560,7 @@
       "issue": "September 2023",
       "published_at": "2023-07-17T13:54:28-07:00",
       "created_at": "2023-07-11T10:41:56-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine September 2023"
     },
     {
@@ -1568,7 +1568,7 @@
       "issue": "August 2023",
       "published_at": "2023-06-29T10:00:51-07:00",
       "created_at": "2023-06-08T10:26:25-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine August 2023"
     },
     {
@@ -1576,7 +1576,7 @@
       "issue": "July 2023",
       "published_at": "2023-06-09T17:35:18-07:00",
       "created_at": "2023-06-09T17:35:18-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine July 2023"
     },
     {
@@ -1584,7 +1584,7 @@
       "issue": "June 2023",
       "published_at": "2023-04-18T12:54:59-07:00",
       "created_at": "2023-04-18T12:54:59-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine June 2023"
     },
     {
@@ -1592,7 +1592,7 @@
       "issue": "May 2023",
       "published_at": "2023-04-18T12:54:53-07:00",
       "created_at": "2023-04-18T12:54:53-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine May 2023"
     },
     {
@@ -1600,7 +1600,7 @@
       "issue": "April 2023",
       "published_at": "2023-04-18T12:53:43-07:00",
       "created_at": "2023-04-18T12:53:43-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine April 2023"
     },
     {
@@ -1608,7 +1608,7 @@
       "issue": "March 2023",
       "published_at": "2023-04-18T12:53:41-07:00",
       "created_at": "2023-04-18T12:53:41-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine March 2023"
     },
     {
@@ -1616,7 +1616,7 @@
       "issue": "February 2023",
       "published_at": "2023-04-18T12:53:26-07:00",
       "created_at": "2023-04-18T12:53:26-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine February 2023"
     },
     {
@@ -1624,7 +1624,7 @@
       "issue": "January 2023",
       "published_at": "2023-04-18T12:52:07-07:00",
       "created_at": "2023-04-18T12:52:07-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine January 2023"
     },
     {
@@ -1632,7 +1632,7 @@
       "issue": "November 2022",
       "published_at": "2023-04-18T12:51:43-07:00",
       "created_at": "2023-04-18T12:51:43-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2022"
     },
     {
@@ -1640,7 +1640,7 @@
       "issue": "October 2022",
       "published_at": "2023-04-18T12:51:10-07:00",
       "created_at": "2023-04-18T12:51:10-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2022"
     },
     {
@@ -1648,7 +1648,7 @@
       "issue": "October 2022",
       "published_at": "2023-04-18T12:50:18-07:00",
       "created_at": "2023-04-18T12:50:18-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine October 2022"
     },
     {
@@ -1656,7 +1656,7 @@
       "issue": "September 2022",
       "published_at": "2023-04-18T12:49:42-07:00",
       "created_at": "2023-04-18T12:49:42-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine September 2022"
     },
     {
@@ -1664,7 +1664,7 @@
       "issue": "June 2022",
       "published_at": "2023-04-18T12:48:59-07:00",
       "created_at": "2023-04-18T12:48:59-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine July 2022"
     },
     {
@@ -1672,7 +1672,7 @@
       "issue": "May 2022",
       "published_at": "2023-04-18T12:48:50-07:00",
       "created_at": "2023-04-18T12:48:50-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine June 2022"
     },
     {
@@ -1680,7 +1680,7 @@
       "issue": "April 2022",
       "published_at": "2023-04-18T12:47:30-07:00",
       "created_at": "2023-04-18T12:47:30-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine May 2022"
     },
     {
@@ -1688,7 +1688,7 @@
       "issue": "November 2021",
       "published_at": "2023-04-18T12:41:43-07:00",
       "created_at": "2023-04-18T12:41:43-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine November 2021"
     },
     {
@@ -1696,7 +1696,7 @@
       "issue": "June 2021",
       "published_at": "2023-04-18T12:39:06-07:00",
       "created_at": "2023-04-18T12:39:06-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine June 2021"
     },
     {
@@ -1704,7 +1704,7 @@
       "issue": "April 2021",
       "published_at": "2023-04-18T12:37:50-07:00",
       "created_at": "2023-04-18T12:37:50-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine April 2021"
     },
     {
@@ -1712,7 +1712,7 @@
       "issue": "August 2020",
       "published_at": "2023-04-18T12:32:23-07:00",
       "created_at": "2023-04-18T12:32:23-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine August 2020"
     },
     {
@@ -1720,7 +1720,7 @@
       "issue": "June 2018",
       "published_at": "2023-04-18T12:22:14-07:00",
       "created_at": "2023-04-18T12:22:14-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine June 2018"
     },
     {
@@ -1728,7 +1728,7 @@
       "issue": "March 2018",
       "published_at": "2023-04-18T12:21:34-07:00",
       "created_at": "2023-04-18T12:21:34-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine March 2018"
     },
     {
@@ -1736,7 +1736,7 @@
       "issue": "September 2017",
       "published_at": "2023-04-18T12:19:54-07:00",
       "created_at": "2023-04-18T12:19:54-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine September 2017"
     },
     {
@@ -1744,7 +1744,7 @@
       "issue": "December 2014",
       "published_at": "2023-04-18T12:08:34-07:00",
       "created_at": "2023-04-18T12:08:34-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine December 2014"
     },
     {
@@ -1752,7 +1752,7 @@
       "issue": "October 2014",
       "published_at": "2023-04-18T12:07:07-07:00",
       "created_at": "2023-04-18T12:07:07-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine October 2014"
     },
     {
@@ -1760,7 +1760,7 @@
       "issue": "June 2014",
       "published_at": "2023-04-18T12:06:21-07:00",
       "created_at": "2023-04-18T12:06:21-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "Thrasher Magazine June 2014"
     },
     {
@@ -1768,7 +1768,7 @@
       "issue": "March 2010",
       "published_at": "2023-04-18T11:54:50-07:00",
       "created_at": "2023-04-18T11:54:50-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "March 2010 Thrasher Magazine"
     },
     {
@@ -1776,7 +1776,7 @@
       "issue": "December 2009",
       "published_at": "2023-04-18T11:54:40-07:00",
       "created_at": "2023-04-18T11:54:40-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "December 2009 Thrasher Magazine"
     },
     {
@@ -1784,7 +1784,7 @@
       "issue": "June 2009",
       "published_at": "2023-04-18T11:54:07-07:00",
       "created_at": "2023-04-18T11:54:07-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "June 2009 Thrasher Magazine"
     },
     {
@@ -1792,7 +1792,7 @@
       "issue": "April 2008",
       "published_at": "2023-04-18T11:53:02-07:00",
       "created_at": "2023-04-18T11:53:02-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "April 2008 Thrasher Magazine"
     },
     {
@@ -1800,7 +1800,7 @@
       "issue": "November 2006",
       "published_at": "2023-04-18T11:50:28-07:00",
       "created_at": "2023-04-18T11:50:28-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "November 2006 Issue"
     },
     {
@@ -1808,7 +1808,7 @@
       "issue": "January 2005",
       "published_at": "2023-04-18T11:49:18-07:00",
       "created_at": "2023-04-18T11:49:18-07:00",
-      "updated_at": "2026-10-18T18:52:07-07:00",
+      "updated_at": "2026-10-18T19:04:45-07:00",
       "title": "January 2005 Issue"
     }
   ]

@@ -1,0 +1,528 @@
+{
+  "source": "Thrasher shop blurbs and covers archive filenames",
+  "issues": [
+    {
+      "filename": "2024_01.jpg",
+      "year": 2024,
+      "month": 1,
+      "archive_filename": "CV1TH0124_1x.jpg",
+      "shop_title": "Thrasher Magazine January 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-january-2024",
+      "blurb": "There’s a fine line between stupid and clever—a line Ducky Kovacs walks regularly, or in this case, drops in on. Speaking of crazy, we’ve got full Death Match coverage, Antihero in the EU, Tony Hawk’s 5 Greats, a Dylan Jaeb interview and much more in this January issue. Gonna be a heavy 2024…",
+      "lede": "There’s a fine line between stupid and clever—a line Ducky Kovacs walks regularly, or in this case, drops in on. Speaking of crazy, we’ve got full Death Match coverage, Antihero in the EU, Tony Hawk’s 5 Greats, a Dylan Jaeb interview and much more in this January issue. Gonna be a heavy 2024…",
+      "credits": {
+        "skater": "ducky kovacs"
+      }
+    },
+    {
+      "filename": "2024_02.jpg",
+      "year": 2024,
+      "month": 2,
+      "archive_filename": "CV1TH0224_1x.jpg",
+      "shop_title": "Thrasher Magazine February 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-february-2024",
+      "blurb": "GX powerhouse Jeff Carlyle tastes the rainbow with a switch grind in Basque Country. Get the full GX España coverage here. On the other side of the Mediterranean, Etnies takes over the Czech Republic. Plus, get the scoop on skating for a living. Is it all it's cracked up to be? Not to mention the collaboration of a lifetime: Boygenius x Nora in Zounds! Stop looking. You’ve found your pot of gold.",
+      "lede": "GX powerhouse Jeff Carlyle tastes the rainbow with a switch grind in Basque Country. Get the full GX España coverage here. On the other side of the Mediterranean, Etnies takes over the Czech Republic.",
+      "credits": {
+        "skater": "jeff carlyle",
+        "location": "Basque Country"
+      }
+    },
+    {
+      "filename": "2024_03.jpg",
+      "year": 2024,
+      "month": 3,
+      "archive_filename": "CV1TH0324_1x.jpg",
+      "shop_title": "Thrasher Magazine March 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-march-2024",
+      "blurb": "Not only one of the greatest to ever do it, but Elissa Steamer is also the most veteran skater to ever land the cover of the mag. We love you, Elissa. Also in this mag, we got REAL in France, Beagle spittin' on the new Baker x Deathwish vid, and the Drifters hit Budapest. Grab a copy now!",
+      "lede": "Not only one of the greatest to ever do it, but Elissa Steamer is also the most veteran skater to ever land the cover of the mag. We love you, Elissa.",
+      "credits": {
+        "skater": "elissa steamer"
+      }
+    },
+    {
+      "filename": "2024_04.jpg",
+      "year": 2024,
+      "month": 4,
+      "archive_filename": "CV1TH0424_1x.jpg",
+      "shop_title": "Thrasher Magazine April 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-april-2024",
+      "blurb": "Filipe Mota breaks new ground at Hollywood High, stomping a KF FS BLUNT onto the cover and into the history books. Inside this 200 page issue you'll find interviews with Vincent Alvarez, Dakota Servold, as well as Vans on the road, Peter Hewitt, Elijah Berle, Wes Kremer, Epic Spots and much more. Dig in.",
+      "lede": "Filipe Mota breaks new ground at Hollywood High, stomping a KF FS BLUNT onto the cover and into the history books.",
+      "credits": {
+        "skater": "filipe mota",
+        "spot": "Hollywood High",
+        "location": "Los Angeles, CA",
+        "trick": "kickflip fs blunt"
+      }
+    },
+    {
+      "filename": "2024_05.jpg",
+      "year": 2024,
+      "month": 5,
+      "archive_filename": "CV1TH0524_1x.jpg",
+      "shop_title": "Thrasher Magazine May 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-may-2024",
+      "blurb": "Congrats to our 2023 Skater of the Year—Miles Silvas! Miles gets the gang together for a trip down to Mexico City. Tiago, Ishod, P-Rod and Shanahan all make appearances. Talk about star-studded. More SOTY coverage includes: BA’s Rusty trophy on eBay, TNT’s People I’ve Known, Silas Baxter-Neal dishes on when he got it, and Tyshawn passes the torch. Plus—Gregson Mashes through the Baltics, Nike heads to NZ and the Swampfest gets covered (with mud). Not to mention a sticker sheet AND poster… Don’t blow it; get yours.",
+      "lede": "Congrats to our 2023 Skater of the Year—Miles Silvas! Miles gets the gang together for a trip down to Mexico City. Tiago, Ishod, P-Rod and Shanahan all make appearances.",
+      "credits": {
+        "skater": "miles silvas",
+        "location": "Mexico City, Mexico"
+      }
+    },
+    {
+      "filename": "2024_06.jpg",
+      "year": 2024,
+      "month": 6,
+      "archive_filename": "CV1TH0624_Sml_1x.jpg",
+      "shop_title": "Thrasher Magazine June 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-june-2024",
+      "blurb": "Kader finally gives us an excuse to put him on the front—booming switch frontside flip from Chinatown straight to your eyeballs. More for your eyeballs in this issue include, but definitely not limited to: Jereme Knibbs, Braden Hoban, Frankie Spears, Vans in Australia. Get yours today.",
+      "lede": "Kader finally gives us an excuse to put him on the front—booming switch frontside flip from Chinatown straight to your eyeballs.",
+      "credits": {
+        "skater": "kader",
+        "spot": "Chinatown",
+        "trick": "switch frontside flip"
+      }
+    },
+    {
+      "filename": "2024_07.jpg",
+      "year": 2024,
+      "month": 7,
+      "archive_filename": "CV1TH0724_Sml_1x.jpg",
+      "shop_title": "Thrasher Magazine July 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-july-2024",
+      "blurb": "Chris Russell floats an Eggplant in OZ for the cover of July 2024, an issue packed from start to finish. GX hits Japan, Bannerot crawls walls, Lou bombs elephants, and Jhancarlos humbles the heaviest rails. Secure 200 pages of stoke before it’s too late.",
+      "lede": "Chris Russell floats an Eggplant in OZ for the cover of July 2024, an issue packed from start to finish. GX hits Japan, Bannerot crawls walls, Lou bombs elephants, and Jhancarlos humbles the heaviest rails. Secure 200 pages of stoke before it’s too late.",
+      "credits": {
+        "skater": "chris russell",
+        "location": "Australia",
+        "trick": "eggplant"
+      }
+    },
+    {
+      "filename": "2024_08.jpg",
+      "year": 2024,
+      "month": 8,
+      "archive_filename": "CV1TH0824_Sml_1x.jpg",
+      "shop_title": "Thrasher Magazine August 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-august-2024",
+      "blurb": "The spirit of Lance Mountain will grind hips and play skateboards 'til the end of time. Lance walks us down memory lane, charting his journey throughout the years to celebrate his 60th birthday. Also in this issue we have Antihero in ATL, Elijah Berle’s 5 Greats, the P-Stone Cup, Monster brings the energy in Portugal, GWAR plus more in this rev’d up issue.",
+      "lede": "The spirit of Lance Mountain will grind hips and play skateboards 'til the end of time. Lance walks us down memory lane, charting his journey throughout the years to celebrate his 60th birthday.",
+      "credits": {
+        "skater": "lance mountain"
+      }
+    },
+    {
+      "filename": "2024_09.jpg",
+      "year": 2024,
+      "month": 9,
+      "archive_filename": "CV1TH0924_1x.jpg",
+      "shop_title": "Thrasher Magazine September 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-september-2024",
+      "blurb": "Alexis Sablone is an architect, coach, artist and icon, with pro shoes on two different companies at the same time. Congrats on the front, Alexis! Speaking of powerful women in skating—Elissa dishes on people she’s known and we’ve got coverage of the 12th annual Wheels of Fortune brought to you by Skate like a Girl. We also have the Nike team posted up in Puerto Rico, a 12-pager on skaters and their dogs (woof), a behind-the-scenes look at the making of Blokes 2, Daan Van Der Linden gets the interview treatment and more! Pick one up today.",
+      "lede": "Alexis Sablone is an architect, coach, artist and icon, with pro shoes on two different companies at the same time. Congrats on the front, Alexis! Speaking of powerful women in skating—Elissa dishes on people she’s known and we’ve got coverage of the 12th annual Wheels of Fortune brought to you by Skate like a Girl.",
+      "credits": {
+        "skater": "alexis sablone"
+      }
+    },
+    {
+      "filename": "2024_10.jpg",
+      "year": 2024,
+      "month": 10,
+      "archive_filename": "CV1TH1024_1x.jpg",
+      "shop_title": "Thrasher Magazine October 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-october-2024",
+      "blurb": "Elijah Berle powers up to a grind on a barbed-wire topped cinderblock—part finesse, part aggression. Fun fact: The wallride was invented in Dogtown. In this issue we've got the Supreme team on the Isle, from London to Scotland, these kings know how to royally F it up (Tyshawn-Southbank poster included). Deedz, Zion Effs and Chris Athans got the interview treatment; Joseph Campos talks Five Greats; Antonio Durao and Karim Callender dish on NY skating and the new Nike video. Photo Feature for days, featuring your favorite skater’s favorite skaters and Zounds brings us Ray Stevens II—Skate Rock royalty. Don't miss it.",
+      "lede": "Elijah Berle powers up to a grind on a barbed-wire topped cinderblock—part finesse, part aggression.",
+      "credits": {
+        "skater": "elijah berle"
+      }
+    },
+    {
+      "filename": "2024_11.jpg",
+      "year": 2024,
+      "month": 11,
+      "archive_filename": "2024_11_Thrasher_Magazine_Cover_Tiago_Lemos_1080_1x.jpg",
+      "shop_title": "Thrasher Magazine November 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-november-2024",
+      "blurb": "A top-shelf trick on a storied SF stone—Tiago busts an unthinkable switch backside noseblunt on the Bay Blocks, immortalized in skateboard history with the cover of our November ‘24 mag. Speaking of skateboard history, we got Washington Street’s 25-year recap. The Dickies team put in the hard work for their full-length, Honeymoon . Smoke rises a mile high as Spitfire sets Colorado ablaze. Plus we packed in 5 Greats with Brian O’Dwyer, interviews with Mike Anderson, Emile Laurent and much, much more.",
+      "lede": "A top-shelf trick on a storied SF stone—Tiago busts an unthinkable switch backside noseblunt on the Bay Blocks, immortalized in skateboard history with the cover of our November ‘24 mag. Speaking of skateboard history, we got Washington Street’s 25-year recap. The Dickies team put in the hard work for their full-length, Honeymoon .",
+      "credits": {
+        "skater": "tiago lemos",
+        "spot": "Bay Blocks",
+        "location": "San Francisco, CA",
+        "trick": "switch backside noseblunt"
+      }
+    },
+    {
+      "filename": "2024_12.jpg",
+      "year": 2024,
+      "month": 12,
+      "archive_filename": "2024_12_Thrasher_Magazine_Cover_Jamie_Foy_1080_1x.jpg",
+      "shop_title": "Thrasher Magazine December 2024",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-december-2024",
+      "blurb": "Handrail heavyweight Jamie Foy delivers a knockout punch to the final cover of 2024—16 down, six up and the grind of a lifetime. We caught up with the former SOTY to talk handrails, contests, and terrain. We got interviews with Brandon Westgate and Chris Russell. Full Death Match coverage, and last but certainly not least, YETI took the gang on a wild adventure to the Oregon Coast. Heavy issue, don’t miss it!",
+      "lede": "Handrail heavyweight Jamie Foy delivers a knockout punch to the final cover of 2024—16 down, six up and the grind of a lifetime. We caught up with the former SOTY to talk handrails, contests, and terrain. We got interviews with Brandon Westgate and Chris Russell.",
+      "credits": {
+        "skater": "jamie foy"
+      }
+    },
+    {
+      "filename": "2025_01.jpg",
+      "year": 2025,
+      "month": 1,
+      "archive_filename": "25_01_Thrasher_Cover_Grant_Taylor_Ollie_Burnett_1080_1x.jpg",
+      "shop_title": "Thrasher Magazine January 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-january-2025",
+      "blurb": "Off the dock and onto a rock, GT’s got this shit dialed. In this issue, we’ve got Pass-Port in Finland, a massive Tiago Lemos interview, Monster taking on the Copenhell festival and a glance into Elijah Berle’s life. Sink your teeth in and enjoy.",
+      "lede": "Off the dock and onto a rock, GT’s got this shit dialed.",
+      "credits": {
+        "skater": "grant taylor",
+        "trick": "ollie",
+        "photographer": "burnett"
+      }
+    },
+    {
+      "filename": "2025_02.jpg",
+      "year": 2025,
+      "month": 2,
+      "archive_filename": "25_02_Thrasher_Cover_Greyson_Fletcher_One_Foot_Aguilar_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE FEBRUARY 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-february-2025",
+      "blurb": "Greyson Fletcher let's it dangle with a barefoot one-footer high above Oahu's North Shore. In this issue we've got GX1000 in Okinawa, Indy in Germany, Atlantic Drift in Kazakstan. Plus interviews with Shawn Hale, Donovon Piscopo and Greyson Fletcher himself.",
+      "lede": "Greyson Fletcher let's it dangle with a barefoot one-footer high above Oahu's North Shore.",
+      "credits": {
+        "skater": "greyson fletcher",
+        "location": "Oahu, Hawaii",
+        "trick": "one foot",
+        "photographer": "aguilar"
+      }
+    },
+    {
+      "filename": "2025_03.jpg",
+      "year": 2025,
+      "month": 3,
+      "archive_filename": "25_03_Thrasher-Cover_Andrew_Reynollds_Kickflip_Wallride_Darwen_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE MARCH 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-march-2025",
+      "blurb": "The Boss is back in the Bible. Reynolds sticks a kickflip wallride for his fifth front. In this mag we've got the coveted T-Eddys, 10 years of WKND, skating in Botswana, and Nike and Cons in the EU. Grab a copy today.",
+      "lede": "The Boss is back in the Bible. Reynolds sticks a kickflip wallride for his fifth front.",
+      "credits": {
+        "trick": "kickflip wallride",
+        "skater": "andrew reynolds",
+        "photographer": "darwen"
+      }
+    },
+    {
+      "filename": "2025_04.jpg",
+      "year": 2025,
+      "month": 4,
+      "archive_filename": "25_04_Thrasher_Cover_Tristan_Funkhouser_Tree_Ride_Marco_Hernandez_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE APRIL 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-april-2025",
+      "blurb": "T-Funk on the tree trunk. Tristan Funkhouser barks hard with a wrong-way tree transfer at a classic Natas spot. In this issue we have Blake Carpenter and Tom Schaar interviews, Chris Joslin's 5 Greats, a behind-the-scenes look at \"War Cry,\" and a Monster mission to Europe. Get yours.",
+      "lede": "T-Funk on the tree trunk. Tristan Funkhouser barks hard with a wrong-way tree transfer at a classic Natas spot.",
+      "credits": {
+        "skater": "tristan funkhouser",
+        "trick": "tree ride",
+        "photographer": "marco hernandez"
+      }
+    },
+    {
+      "filename": "2025_05.jpg",
+      "year": 2025,
+      "month": 5,
+      "archive_filename": "25_05_Jamie_Foy_Burnett_Frontside_Half_Cab_Nosegrind_CV1TH0525_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE MAY 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-may-2025",
+      "blurb": "The 2X SOTY keeps raising the bar. FS half-Cab to backside overcrooks? We're gonna need to see the footy. Congrats again, Jamie! This issue is filled with SOTY material, from Leo Romero reflecting on his title, to Miles passing the torch. Plus a lot more! Get your copy now.",
+      "lede": "The 2X SOTY keeps raising the bar. FS half-Cab to backside overcrooks? We're gonna need to see the footy.",
+      "credits": {
+        "trick": "frontside half cab nosegrind",
+        "skater": "jamie foy",
+        "photographer": "burnett"
+      }
+    },
+    {
+      "filename": "2025_06.jpg",
+      "year": 2025,
+      "month": 6,
+      "archive_filename": "0625_Thrasher_Cover_Alex_Midler_Back_Lip_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE JUNE 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-june-2025",
+      "blurb": "Alex Midler tops the list of “Scariest Senders”, and with this Texas-sized backlip, we have to agree. In this issue we’ve got full Swampfest coverage, Santa Cruz from NZ to OZ, Supreme in Miami, plus lots more. Get yours today.",
+      "lede": "Alex Midler tops the list of “Scariest Senders”, and with this Texas-sized backlip, we have to agree.",
+      "credits": {
+        "skater": "alex midler",
+        "trick": "back lip"
+      }
+    },
+    {
+      "filename": "2025_07.jpg",
+      "year": 2025,
+      "month": 7,
+      "archive_filename": "0725_Thrasher_Cover_Cody_Chapman_Kickflip_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE JULY 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-july-2025",
+      "blurb": "Cody Chapman kickflips into a mountain in the shadow of the Golden Gate Bridge for the cover of our new issue, which is packed to the brim with heavy hits, featuring everyone from Chris Colbourn and Nik Stain to Ice Cube. Grab a copy ASAP!",
+      "lede": "Cody Chapman kickflips into a mountain in the shadow of the Golden Gate Bridge for the cover of our new issue, which is packed to the brim with heavy hits, featuring everyone from Chris Colbourn and Nik Stain to Ice Cube. Grab a copy ASAP!",
+      "credits": {
+        "skater": "cody chapman",
+        "location": "San Francisco, CA",
+        "trick": "kickflip"
+      }
+    },
+    {
+      "filename": "2025_08.jpg",
+      "year": 2025,
+      "month": 8,
+      "archive_filename": "0825_Thrasher_Cover_Curren_Caples_50_50_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE AUGUST 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-august-2025",
+      "blurb": "Before you get the wave pool, you gotta pay your dues in the sewer. Curren Caples will never stop grinding fences. Congrats Curren! In this issue we have an inside look at Ray Barbee's photo book, an epic Thrasher Vacation trip to Spain, and Curren answers questions from his fans. Get yours today.",
+      "lede": "Before you get the wave pool, you gotta pay your dues in the sewer. Curren Caples will never stop grinding fences. Congrats Curren!",
+      "credits": {
+        "skater": "curren caples",
+        "trick": "50-50"
+      }
+    },
+    {
+      "filename": "2025_09.jpg",
+      "year": 2025,
+      "month": 9,
+      "archive_filename": "09_25_Thrasher_Cover_Jerry_Hsu_Darkslide_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE SEPTEMBER 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-september-2025",
+      "blurb": "Jerry Hsu once again graces the cover with a darkslide at dusk. His epic Life and Times article shines bright this issue. Also in this issue: Girl saves skateboarding, the rebirth of Turf and a full Turnstile takeover. Get yours today",
+      "lede": "Jerry Hsu once again graces the cover with a darkslide at dusk. His epic Life and Times article shines bright this issue.",
+      "credits": {
+        "skater": "jerry hsu",
+        "trick": "darkslide"
+      }
+    },
+    {
+      "filename": "2025_10.jpg",
+      "year": 2025,
+      "month": 10,
+      "archive_filename": "CV1TH1025_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE OCTOBER 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-october-2025",
+      "blurb": "Nick Michel stays one step ahead of security, blasting over a sign in SF. In this issue we've got a massive TJ Rogers interview, adidas in Texas, an interview with Peter Raffin, plus much more. Get yours today,",
+      "lede": "Nick Michel stays one step ahead of security, blasting over a sign in SF.",
+      "credits": {
+        "skater": "nick michel",
+        "location": "San Francisco, CA"
+      }
+    },
+    {
+      "filename": "2025_11.jpg",
+      "year": 2025,
+      "month": 11,
+      "archive_filename": "CV1TH1125_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE NOVEMBER 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-november-2025",
+      "blurb": "Nothin’ sweeter than revenge, Chris Joslin returns to El Toro and detonates an unbelievable tré bomb for the cover of our November ’25 issue. Congrats, Chris! Dig into the mag and you’ll see a packed lineup of features, from Atiba takin’ the Vans crew to his old haunts in Colorado to a world-wide tour with Fabi, Ruby, Shari and the Monster team. Interviews too, with Stu Kirst and Toby Ryan, and Poe Pinson. Get it now while you can!",
+      "lede": "Nothin’ sweeter than revenge, Chris Joslin returns to El Toro and detonates an unbelievable tré bomb for the cover of our November ’25 issue. Congrats, Chris!",
+      "credits": {
+        "skater": "chris joslin",
+        "spot": "El Toro"
+      }
+    },
+    {
+      "filename": "2025_12.jpg",
+      "year": 2025,
+      "month": 12,
+      "archive_filename": "Thrasher_Magazine_Cover_Tom_Schaar_Disaster_FDR_Heikkila_12_2025_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE DECEMBER 2025",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-december-2025",
+      "blurb": "No pads? No problem! Tom Schaar smacks the top rope at FDR with an unthinkable disaster to seal the deal for the cover of issue #545. In other feats of gnar, we’ve got 5 Greats from Kevin Bækkel and Sandro Dias’ skyscraper drop in. Further in you’ll find Daiki Hoshino in the Lunatic Fringe and a packed interview from Eetu Toropainen. We loaded 28 pages full of burnin’ urethane in The Bay from Spitfire’s A team as they wrap up their SF-focused feature. Keep your archive complete and pick up the mag!",
+      "lede": "No pads? No problem! Tom Schaar smacks the top rope at FDR with an unthinkable disaster to seal the deal for the cover of issue #545.",
+      "credits": {
+        "skater": "tom schaar",
+        "spot": "FDR",
+        "trick": "disaster",
+        "photographer": "heikkila"
+      }
+    },
+    {
+      "filename": "2026_01.jpg",
+      "year": 2026,
+      "month": 1,
+      "archive_filename": "01_26_Thrasher_Magazine_Daan_Van_Der_Linden_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE JANUARY 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-january-2026",
+      "blurb": "Look up! Yep, that’s Daan Van Der Linden rolling into a massive brick wall for the front of our January ‘26 mag. Open up the issue and dig into his interview from the icon Elissa Steamer. Further in, you’ve got your pick of features from one of our most packed mags: Greyson Fletcher goes bull riding, Creature and Monster embark on a collab viking quest, Gabbers dishes on his new crew and busted thumb, and Antonio Durao drops his hilarious lists for 5 Greats. More of a history lover? We got you with the Butcher’s ode to Welcome Skateshop in Madrid as they pass two decades in biz, and our friends at Skate Like a Girl go through some of the highlights and harrowing moments from their first 25 years. Ring in a new calendar year of the mag by grabbing yours today.",
+      "lede": "Look up! Yep, that’s Daan Van Der Linden rolling into a massive brick wall for the front of our January ‘26 mag. Open up the issue and",
+      "credits": {
+        "skater": "daan van der linden"
+      }
+    },
+    {
+      "filename": "2026_02.jpg",
+      "year": 2026,
+      "month": 2,
+      "archive_filename": "Simon_Bannerot_Thrasher_Cover_02_26_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE FEBRUARY 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-february-2026",
+      "blurb": "Upside Down Under, Simon Bannerot hits the spin cycle through a monster pipe in Melbourne and gets spit out onto the cover of our February ‘26 mag. Speakin’ of spins, inside the mag we got Element rippin’ around Sweden, Butter runnin’ circles in Colombia, Yeti in the Rockies and Volcom makin’ waves from the US to Oz. Beyond the tours we have interviews with two of the most mysterious and entertaining figures out: Sage Elsesser and Gus Gordon. Things get heavy with David Reyes’ 5 Greats and all the action from our epic Supreme Bowl session. Then we crank the Zounds with Marisa Dal Santo’s Blööd Ôath and Mannequin Pussy—you read that right. All that and more is yours, all you gotta do is grab the mag before it’s too late!",
+      "lede": "Upside Down Under, Simon Bannerot hits the spin cycle through a monster pipe in Melbourne and gets spit out onto the cover of our February ‘26 mag. Speakin’ of spins, inside the mag we got Element rippin’ around Sweden, Butter runnin’ circles in Colombia, Yeti in the Rockies and Volcom makin’ waves from the US to Oz. Beyond the tours we have interviews with two of the most mysterious and entertaining figures out: Sage Elsesser and Gus Gordon.",
+      "credits": {
+        "skater": "simon bannerot",
+        "location": "Melbourne"
+      }
+    },
+    {
+      "filename": "2026_03.jpg",
+      "year": 2026,
+      "month": 3,
+      "archive_filename": "03_26_Thrasher_Cover_Jhancarlos_Gonzalez_2000_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE MARCH 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-march-2026",
+      "blurb": "Starting the new year off right on a huck and a prayer, Jhanka gaps out to an obscene front lip in Canada for the cover of our March ‘26 mag. Break open that issue and we got more brick beasts with adidas’ mad dash through the Midwest. The tours continue with Antihero in Texas and Santa Cruz eating its way through China’s most gut-busting cuisine. Schmitty teases his new doc with a powerful ode to Phil Shao. GT, Pedro, Ruby and more uncover the hidden history of a Hollywood bowl with one of our most eccentric tour guides to date. Who were the biggest winners and losers of 2025? Better check those T-Eddys for the official list. The biggest winner, no doubt, was Chris Joslin, and we got you a ticket into his SOTY party. Then we got heart wrenching tales with interviews from SOTY 2002 Tony Trujillo and David Loy. And that ain’t all of it! Get yours today for your first hit of hype in 2026.",
+      "lede": "Starting the new year off right on a huck and a prayer, Jhanka gaps out to an obscene front lip in Canada for the cover of our March ‘26 mag.",
+      "credits": {
+        "location": "Canada",
+        "trick": "front lip",
+        "skater": "jhancarlos gonzalez"
+      }
+    },
+    {
+      "filename": "2026_04.jpg",
+      "year": 2026,
+      "month": 4,
+      "archive_filename": "26_04_Thrasher_Magazine_Dashawn_Jordan_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE APRIL 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-april-2026",
+      "blurb": "Count ’em up! Arizona’s son Dashawn Jordan 5-0s down 30 stairs. How’s that for a first cover? Open up that April ’26 issue ’cause we got more big numbers with a 5 Greats from John Dilo and a boatload of facts about Dallas-Fort Worth from Frankie Heck and friends. Speaking of boats, we hopped on Barney’s barge to float down the Thames for a scenic riverside rip across the UK. More adventures await with the New Balance crew criss-crossing the US like some old-world explorers. On the interview beat we got Jake Braun and Aussie Wombat Kieran Woolley. Don’t think we forgot about our coverboy! Dashawn packs the pages with more heavy hits in his interview with Atiba. All that and more is at your door. All you gotta do is order the mag!",
+      "lede": "Count ’em up! Arizona’s son Dashawn Jordan 5-0s down 30 stairs. How’s that for a first cover?",
+      "credits": {
+        "skater": "dashawn jordan",
+        "trick": "5-0"
+      }
+    },
+    {
+      "filename": "2026_05.jpg",
+      "year": 2026,
+      "month": 5,
+      "archive_filename": "26_05_Thrasher_Magazine_Antwuan_Dixon_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE MAY 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-may-2026",
+      "blurb": "The original, the inimitable Antwuan Dixon returns to the front of the mag with an absolute hammer of switch frontside flip for our May ’26 issue. Shot by our guy Atiba, of course! If that wasn’t enough to feed your fix for new ‘Twuan flicks, we also got him on the record with an impactful and in-depth interview. Crack open that mag for more magic, like Fred Gall dueling with Newark’s Phantom of the Opera or Pass~Port’s tropical Pacific getaway. More on the travel itinerary, we got a globetrotting lensman Patrik Wallner reporting from Hong Kong, plus DC in Marseille and Indy’s all-out tear through Vancouver. We even went down to Brazil to check an Epic Spot. Then the original street contest, and the only one we care about, returns with Bust or Bail: Santa Monica Slamma! Triples is best, after all. You heard there’s a new Quasi video comin’ out? Good thing we got Ohio’s son Justin Henry on the record with Gilbert Crockett askin’ the questions. You better get it to be in the loop. So head down to your local, and pick up the mag today.",
+      "lede": "The original, the inimitable Antwuan Dixon returns to the front of the mag with an absolute hammer of switch frontside flip for our May ’26 issue. Shot by our guy Atiba, of course! If that wasn’t enough to feed your fix for new ‘Twuan flicks, we also got him on the record with an impactful and in-depth interview.",
+      "credits": {
+        "skater": "antwuan dixon",
+        "photographer": "atiba",
+        "trick": "switch frontside flip"
+      }
+    },
+    {
+      "filename": "2026_06.jpg",
+      "year": 2026,
+      "month": 6,
+      "archive_filename": "26_06_Thrasher_Magazine_Cover_Dylan_Jaeb_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE JUNE 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-june-2026",
+      "blurb": "A massive four block needs a fakie flip? There’s only one man for the job: Dylan Jaeb! He puts Rincon back on the map by going over the bar and onto the cover of our June ’26 mag. In this issue, we tap our 2014 SOTY Wes Kremer to interview the Mafia’s Alexis Ramirez as he wraps a bow on his first part as full-fledged member of Nike SB’s esteemed roster. More big game gets hunted when Red Bull goes to South Africa. Don’t worry, they didn’t hurt the animals, but the spots are another story. There’s even more muddy action outta Swampfest with Greyson and gang. No fire in Florida this year, but maybe for the best since we see the aftermath of what a Burn Zone looks like with Raney and co. on California’s coast. We got all that more! But you gotta grab the mag to get the full experience. What are you waitin’ for?",
+      "lede": "A massive four block needs a fakie flip? There’s only one man for the job: Dylan Jaeb! He puts Rincon back on the map by going over the bar and onto the cover of our June ’26 mag.",
+      "credits": {
+        "skater": "dylan jaeb",
+        "spot": "Rincon",
+        "trick": "fakie flip"
+      }
+    },
+    {
+      "filename": "2026_07.jpg",
+      "year": 2026,
+      "month": 7,
+      "archive_filename": "26_07_Thrasher_Cover_Chris_Joslin_SOTY_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE JULY 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-july-2026",
+      "blurb": "Our reigning champ Chris Joslin starts the summer with some island heat! A massive switch frontside flip backed by an all-star squad for his SOTY Rico victory lap in our July ’26. We’re talkin’ Caribbean chaos via Sheckler, Foy, Big Z and more—all guided by Manny Santiago on his home turf. Dive in with Jamie as he passes the torch. Further in, our Skater of the Year coverage keeps goin’ with Grant Taylor reliving his 2011 tear. Milton Martinez lays out his 5 Greats. You’re lookin’ at a serious lineup. The Butcher’s been busy behind the lens with upstart talent in our backyard and his hometown scene in Argentina. You can see all that and more. Just grab that mag!",
+      "lede": "Our reigning champ Chris Joslin starts the summer with some island heat! A massive switch frontside flip backed by an all-star squad for his SOTY Rico victory lap in our July ’26. We’re talkin’ Caribbean chaos via Sheckler, Foy, Big Z and more—all guided by Manny Santiago on his home turf.",
+      "credits": {
+        "skater": "chris joslin",
+        "trick": "switch frontside flip"
+      }
+    },
+    {
+      "filename": "2026_08.jpg",
+      "year": 2026,
+      "month": 8,
+      "archive_filename": "26_08_Thrasher_Cover_Tom_Karangelov_Nosegrind_PH_Darwen_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE AUGUST 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-august-2026",
+      "blurb": "Tom Karangelov makes proper use of a basketball goal with a roof-gap nosegrind. A great snapshot by Jake Darwen. Nice work, guys! In this issue, the Rod Father shares his 5 Greats, Santa Cruz turns up the heat in Guadalajara, the next generation of Etnies, a packed Photo Feature, and an inside look at Tom K and Spanky's upcoming shared part. You’re not gonna wanna miss this one! Get yours today.",
+      "lede": "Tom Karangelov makes proper use of a basketball goal with a roof-gap nosegrind. A great snapshot by Jake Darwen. Nice work, guys!",
+      "credits": {
+        "skater": "tom karangelov",
+        "photographer": "jake darwen",
+        "trick": "nosegrind"
+      }
+    },
+    {
+      "filename": "2026_09.jpg",
+      "year": 2026,
+      "month": 9,
+      "archive_filename": "26_09_Thrasher_Cover_Jace_De_Tomasso_Switch_Ollie_PH_Burnett_1080_2_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE SEPTEMBER 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-september-2026",
+      "blurb": "",
+      "lede": "",
+      "credits": {
+        "skater": "jace de tomasso",
+        "trick": "switch ollie",
+        "photographer": "burnett"
+      }
+    },
+    {
+      "filename": "2026_10.jpg",
+      "year": 2026,
+      "month": 10,
+      "archive_filename": "26_10_Thrasher_Cover_Jake_Hayes_50-50_PH_Darwen_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE OCTOBER 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-october-2026",
+      "blurb": "Doing anything on an LA table is a feat in itself, but Jake Hayes makes history as the first to hit the double stack. This is unthinkable cover-worthy skateboarding. And that ain’t all of it. Break into that October ’26 mag to see GX take down Greece’s deadliest slopes. Need a blockbuster overseas trip? We’ll take you to Japan with the Monster team to see how this country is making the future’s skaters, today! And in an extra-special feature, we got McClung VS McClung VS McClung. That’s right, we got Taylor, Trever and Trent coming through with some serious heat from their new video. You know the drill, go pick it up at your local shop or make the smartest decision of your life: SUBSCRIBE!",
+      "lede": "Doing anything on an LA table is a feat in itself, but Jake Hayes makes history as the first to hit the double stack. This is unthinkable cover-worthy skateboarding. And that ain’t all of it.",
+      "credits": {
+        "skater": "jake hayes",
+        "location": "Los Angeles, CA",
+        "trick": "50-50",
+        "photographer": "darwen"
+      }
+    },
+    {
+      "filename": "2026_11.jpg",
+      "year": 2026,
+      "month": 11,
+      "archive_filename": "26_11_Thrasher_Cover_Tristan_Funkhouser_5-0_Fakie_Photo_Acosta_1080_1x.jpg",
+      "shop_title": "THRASHER MAGAZINE NOVEMBER 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-november-2026",
+      "blurb": "T-Funk takes it back to the Banks and grinds straight onto the cover of our November mag. Pop that issue open and you’re lookin’ at a heavy lineup of features from top pros, like Carlos Ribeiro’s 5 Greats and Hugo Boserup’s biggest interview to date. Dig deeper and we got hella Heads on the line with T4, Lau Willems and Jeremy Leabres. Need a history lesson? The Zero Army just turned 30 and we turned over every skull in the archive to bring you the hits from their handrail-heavy run. Out on the road, Red Bull takes over Taiwan with Jamie Foy, Zion Wright, Cordano Russell and company. Now, get fired up for your next session by grabbing a copy here or at your local shop!",
+      "lede": "T-Funk takes it back to the Banks and grinds straight onto the cover of our November mag.",
+      "credits": {
+        "spot": "Brooklyn Banks",
+        "location": "Brooklyn, NY",
+        "trick": "5-0 fakie",
+        "skater": "tristan funkhouser",
+        "photographer": "acosta"
+      }
+    },
+    {
+      "filename": "2026_12.jpg",
+      "year": 2026,
+      "month": 12,
+      "archive_filename": "",
+      "shop_title": "THRASHER MAGAZINE DECEMBER 2026",
+      "shop_url": "https://shop.thrashermagazine.com/products/thrasher-magazine-december-2026",
+      "blurb": "The fever dream turned reality: Jamie Foy heelflips over the rat's mouth in Boca Raton, Florida. Double the trouble, we have a second cover featured on the back with Ryan Sheckler and a burly brick blast on a German mega! Congrats you two. In this issue, we've got Death Match and Stratosphere's 40th Anniversary. Interviews with John Shanahan, Vincent Milou, Simon Bannerot, Diego Todd and Mark Suciu. Heavy shit! Get yours before it gets swooped.",
+      "lede": "The fever dream turned reality: Jamie Foy heelflips over the rat's mouth in Boca Raton, Florida. Double the trouble, we have a second cover featured on the back with Ryan Sheckler and a burly brick blast on a German mega! Congrats you two.",
+      "credits": {
+        "skater": "jamie foy",
+        "location": "Boca Raton, Florida",
+        "trick": "heelflip"
+      }
+    }
+  ]
+}

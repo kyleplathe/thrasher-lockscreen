@@ -13,19 +13,23 @@ Optional:
 Skips quietly if RESEND_API_KEY is not set.
 
 Optional:
-  SHORTCUTS_URL   — override iCloud Shortcuts link (default is set in this file).
+  SHORTCUTS_URL    — override iCloud Shortcuts link (default is set in this file).
+  SEND_TEST_EMAIL  — if "1" and this commit has no new cover JPG, email the latest
+                     monthly cover anyway (used to verify Resend without a new issue).
+
+Sends with curl. api.resend.com sits behind Cloudflare, which returns 403 / error
+1010 for Python urllib's default User-Agent. curl from GitHub Actions is allowed.
 """
 
 from __future__ import annotations
 
+import base64
 import json
 import os
 import random
 import re
 import subprocess
 import sys
-import urllib.error
-import urllib.request
 
 MONTHS = [
     "January",
@@ -55,6 +59,11 @@ SUBJECT_EMOJIS = [
 # Override with SHORTCUTS_URL env / GitHub secret if the link ever changes.
 DEFAULT_SHORTCUTS_URL = (
     "https://www.icloud.com/shortcuts/f7b91ae83200412b9c211e7b6b73f53a"
+)
+
+# Public copies of the files this repo commits. Used as the tap-through target.
+GITHUB_RAW = (
+    "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main"
 )
 
 
@@ -101,14 +110,19 @@ def metadata_blurb(filename: str, data: dict) -> str:
         sk = (meta.get("skater") or "").strip()
         tr = (meta.get("trick") or "").strip()
         loc = (meta.get("location") or "").strip()
+        spot = (meta.get("spot") or "").strip()
+        photographer = (meta.get("photographer") or "").strip()
         if sk:
             bits.append(sk)
         if tr:
             bits.append(tr)
-        if loc:
-            bits.append(f"📍 {loc}")
+        place = " · ".join(part for part in (spot, loc) if part)
+        if place:
+            bits.append(f"📍 {place}")
+        if photographer:
+            bits.append(f"📷 {photographer}")
         if bits:
-            return " · ".join(bits[:4])
+            return " · ".join(bits[:5])
     return ""
 
 
@@ -142,7 +156,64 @@ def collect_new_covers(changed: list[str], data: dict) -> list[tuple[str, str, s
     return covers
 
 
-def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str]:
+def latest_monthly_cover(data: dict) -> list[tuple[str, str, str]]:
+    """Newest YYYY_MM.jpg in the shortcut feed, for a Resend connectivity test."""
+    best: tuple[tuple[int, int], str, str, str] | None = None
+    for img in data.get("images", []):
+        filename = img.get("filename") or ""
+        match = re.match(r"^(?P<y>\d{4})_(?P<mm>\d{2})\.jpg$", filename, re.I)
+        if not match:
+            continue
+        month = int(match.group("mm"))
+        if not 1 <= month <= 12:
+            continue
+        key = (int(match.group("y")), month)
+        if best is None or key > best[0]:
+            label = f"{MONTHS[month - 1]} {key[0]}"
+            best = (key, filename, label, metadata_blurb(filename, data))
+    if best is None:
+        return []
+    _key, filename, label, blurb = best
+    return [(filename, label, blurb)]
+
+
+def local_cover_file(filename: str) -> str | None:
+    """Magazine cover first, lock-screen render if the original is not in the checkout."""
+    for rel in (
+        f"images/original/{filename}",
+        f"images/optimized_final_with_text/{filename}",
+    ):
+        if os.path.isfile(rel):
+            return rel
+    return None
+
+
+def public_cover_url(filename: str, local_path: str | None) -> str:
+    folder = "images/original"
+    if local_path and "optimized_final_with_text" in local_path:
+        folder = "images/optimized_final_with_text"
+    return f"{GITHUB_RAW}/{folder}/{filename}"
+
+
+def inline_cover(filename: str) -> tuple[str, str, dict | None]:
+    """Return (img src, public url, optional Resend inline attachment)."""
+    local_path = local_cover_file(filename)
+    public_url = public_cover_url(filename, local_path)
+    if not local_path:
+        return public_url, public_url, None
+    with open(local_path, "rb") as handle:
+        encoded = base64.b64encode(handle.read()).decode("ascii")
+    content_id = "cover-" + re.sub(r"[^A-Za-z0-9]", "", filename)
+    attachment = {
+        "filename": os.path.basename(local_path),
+        "content": encoded,
+        "content_type": "image/jpeg",
+        "content_id": content_id,
+    }
+    return f"cid:{content_id}", public_url, attachment
+
+
+def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str, list[dict]]:
     link = shortcuts_url()
     emoji = random.choice(SUBJECT_EMOJIS)
     if len(covers) == 1:
@@ -167,19 +238,34 @@ def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str]:
         "Tap through with the shortcut below: random cover, same layout you love, zero hunting on Instagram.",
         "</p>",
     ]
+    attachments: list[dict] = []
     for base, label, blurb in covers:
+        img_src, public_url, attachment = inline_cover(base)
+        if attachment:
+            attachments.append(attachment)
         lines.append(
             "<div style='border:1px solid #e5e5e5; border-radius:14px; padding:16px 18px; margin:14px 0; "
-            "background:linear-gradient(180deg,#fafafa 0%,#fff 100%);'>"
+            "background:linear-gradient(180deg,#fafafa 0%,#fff 100%); text-align:center;'>"
         )
-        lines.append(f"<p style='margin:0 0 4px; font-size:12px; color:#888;'>Just added</p>")
-        lines.append(f"<p style='margin:0 0 8px; font-size:19px; font-weight:800;'>{label}</p>")
-        lines.append(f"<p style='margin:0; color:#666; font-size:13px; font-family:ui-monospace,monospace;'>{base}</p>")
+        lines.append(f"<p style='margin:0 0 12px; font-size:12px; color:#888; text-align:left;'>Just added</p>")
+        lines.append(
+            f"<a href=\"{public_url}\" style=\"text-decoration:none;\">"
+            f"<img src=\"{img_src}\" alt=\"{label} Thrasher cover\" width=\"320\" "
+            "style=\"display:block; width:100%; max-width:320px; height:auto; margin:0 auto 14px; "
+            "border-radius:6px; border:1px solid #ddd;\" />"
+            "</a>"
+        )
+        lines.append(f"<p style='margin:0 0 8px; font-size:19px; font-weight:800; text-align:left;'>{label}</p>")
+        lines.append(
+            f"<p style='margin:0; color:#666; font-size:13px; font-family:ui-monospace,monospace; text-align:left;'>{base}</p>"
+        )
         if blurb:
-            lines.append(f"<p style='margin:12px 0 0; font-size:15px; color:#222; line-height:1.45;'>{blurb}</p>")
+            lines.append(
+                f"<p style='margin:12px 0 0; font-size:15px; color:#222; line-height:1.45; text-align:left;'>{blurb}</p>"
+            )
         else:
             lines.append(
-                "<p style='margin:12px 0 0; font-size:14px; color:#666; line-height:1.45;'>"
+                "<p style='margin:12px 0 0; font-size:14px; color:#666; line-height:1.45; text-align:left;'>"
                 "Full skater / trick metadata shows up in the feed when it’s in the JSON—either way, the cover art "
                 "is ready to roll.</p>"
             )
@@ -206,31 +292,57 @@ def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str]:
         ]
     )
     html = "\n".join(lines)
-    return subject, html
+    return subject, html, attachments
 
 
-def send_resend(api_key: str, to_addr: str, from_addr: str, subject: str, html: str) -> None:
-    payload = json.dumps(
-        {
-            "from": from_addr,
-            "to": [to_addr],
-            "subject": subject,
-            "html": html,
-        }
-    ).encode("utf-8")
-    req = urllib.request.Request(
-        "https://api.resend.com/emails",
-        data=payload,
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        method="POST",
+def send_resend(
+    api_key: str,
+    to_addr: str,
+    from_addr: str,
+    subject: str,
+    html: str,
+    attachments: list[dict] | None = None,
+) -> str:
+    """POST the email via curl. Returns the Resend response body."""
+    message: dict = {
+        "from": from_addr,
+        "to": [to_addr],
+        "subject": subject,
+        "html": html,
+    }
+    if attachments:
+        message["attachments"] = attachments
+    payload = json.dumps(message)
+    proc = subprocess.run(
+        [
+            "curl",
+            "--silent",
+            "--show-error",
+            "--fail-with-body",
+            "--max-time",
+            "30",
+            "-X",
+            "POST",
+            "https://api.resend.com/emails",
+            "-H",
+            f"Authorization: Bearer {api_key}",
+            "-H",
+            "Content-Type: application/json",
+            "-H",
+            "User-Agent: thrasher-lockscreen-notify/1.0",
+            "--data-binary",
+            "@-",
+        ],
+        input=payload,
+        capture_output=True,
+        text=True,
+        check=False,
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        body = resp.read().decode("utf-8", errors="replace")
-        if resp.status not in (200, 201):
-            raise RuntimeError(f"Resend HTTP {resp.status}: {body}")
+    body = (proc.stdout or "").strip()
+    if proc.returncode != 0:
+        detail = body or (proc.stderr or "").strip() or f"curl exit {proc.returncode}"
+        raise RuntimeError(detail[:500])
+    return body
 
 
 def main() -> int:
@@ -259,24 +371,33 @@ def main() -> int:
         return 1
 
     data = load_json(json_path)
+    test_mode = (os.environ.get("SEND_TEST_EMAIL") or "").strip().lower() in {
+        "1",
+        "true",
+        "yes",
+    }
     covers = collect_new_covers(changed, data)
+    used_latest = False
+    if not covers and test_mode:
+        covers = latest_monthly_cover(data)
+        used_latest = True
     if not covers:
         print("No new cover JPGs in HEAD — skipping email (metadata-only commit).")
         return 0
 
-    subject, html = build_email(covers)
+    subject, html, attachments = build_email(covers)
+    if used_latest:
+        subject = f"Test: {subject}"
 
     try:
-        send_resend(api_key, to_addr, from_addr, subject, html)
-    except urllib.error.HTTPError as e:
-        err = e.read().decode("utf-8", errors="replace")
-        print(f"Resend HTTP error: {e.code} {err}", file=sys.stderr)
-        return 1
+        response = send_resend(api_key, to_addr, from_addr, subject, html, attachments)
     except Exception as e:
         print(f"Resend error: {e}", file=sys.stderr)
         return 1
 
     print("Email sent OK.")
+    if response:
+        print(response)
     return 0
 
 

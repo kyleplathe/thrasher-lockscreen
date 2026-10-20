@@ -404,10 +404,12 @@ class ThrasherMonthlyScraper:
             # Add to images list
             data['images'].append(new_entry)
             data['total_images'] = len(data['images'])
+            self._apply_latest_cover(data)
             
             # Save updated JSON
             with open(self.json_file, 'w') as f:
                 json.dump(data, f, indent=2)
+                f.write('\n')
             
             print(f"  Added {filename} to JSON")
             return True
@@ -455,6 +457,7 @@ class ThrasherMonthlyScraper:
         
         if not new_covers:
             print("✅ No new covers found!")
+            self.sync_latest_cover()
             return
         
         new_covers.sort(key=lambda c: (c["year"], c["month"]))
@@ -474,10 +477,36 @@ class ThrasherMonthlyScraper:
                     self.record_first_seen(fn, cover)
         
         print(f"\n✅ Successfully processed {len(new_covers)} new covers!")
+        self.sync_latest_cover()
         print(f"\n📝 Next steps:")
         print(f"   1. Run image_optimizer.py to process new images")
         print(f"   2. Run apply_text_overlays_all.py to add text overlays")
         print(f"   3. Commit and push to GitHub")
+
+    def _apply_latest_cover(self, data):
+        """Keep the shortcut's latest-cover pointer on the newest issue."""
+        from update_readme_stats import apply_latest_cover
+
+        return apply_latest_cover(data)
+
+    def sync_latest_cover(self):
+        """Rewrite `latest` in the shortcut JSON when the newest issue changed."""
+        if not os.path.exists(self.json_file):
+            return
+        try:
+            with open(self.json_file, 'r') as f:
+                data = json.load(f)
+            if not self._apply_latest_cover(data):
+                filename = (data.get('latest') or {}).get('filename', '?')
+                print(f"🆕 Latest cover already set: {filename}")
+                return
+            with open(self.json_file, 'w') as f:
+                json.dump(data, f, indent=2)
+                f.write('\n')
+            filename = (data.get('latest') or {}).get('filename', '?')
+            print(f"🆕 Latest cover for the shortcut: {filename}")
+        except Exception as e:
+            print(f"  Warning: could not refresh latest cover: {e}")
 
 def main():
     scraper = ThrasherMonthlyScraper()

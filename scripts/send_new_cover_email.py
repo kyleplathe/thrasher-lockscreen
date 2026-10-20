@@ -110,14 +110,19 @@ def metadata_blurb(filename: str, data: dict) -> str:
         sk = (meta.get("skater") or "").strip()
         tr = (meta.get("trick") or "").strip()
         loc = (meta.get("location") or "").strip()
+        spot = (meta.get("spot") or "").strip()
+        photographer = (meta.get("photographer") or "").strip()
         if sk:
             bits.append(sk)
         if tr:
             bits.append(tr)
-        if loc:
-            bits.append(f"📍 {loc}")
+        place = " · ".join(part for part in (spot, loc) if part)
+        if place:
+            bits.append(f"📍 {place}")
+        if photographer:
+            bits.append(f"📷 {photographer}")
         if bits:
-            return " · ".join(bits[:4])
+            return " · ".join(bits[:5])
     return ""
 
 

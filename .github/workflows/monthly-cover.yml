@@ -54,6 +54,9 @@ jobs:
       - name: Scrape new covers
         run: python3 scripts/monthly_cover_scraper.py
 
+      - name: Research cover credits
+        run: python3 scripts/research_cover_details.py --apply --since 2024
+
       - name: Process only newly downloaded originals
         run: |
           set -euo pipefail
@@ -94,6 +97,7 @@ jobs:
           git add images/original images/optimized_final_with_text shortcuts_text_overlay_covers.json README.md
           [[ -f data/cover_shop_publish_timestamps.json ]] && git add data/cover_shop_publish_timestamps.json
           [[ -f data/cover_first_seen.json ]] && git add data/cover_first_seen.json
+          [[ -f data/cover_research.json ]] && git add data/cover_research.json
 
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"

@@ -236,7 +236,7 @@
         "detailer": "rainbow rail",
         "staircount": "",
         "spot": "",
-        "location": "",
+        "location": "Basque Country",
         "notes": "",
         "special": "",
         "soty": "",
@@ -1576,7 +1576,8 @@
       "metadata": {
         "filename": "2024_10.jpg",
         "year": "2024",
-        "month": "10"
+        "month": "10",
+        "skater": "elijah berle"
       }
     },
     {
@@ -1585,7 +1586,11 @@
       "metadata": {
         "filename": "2024_04.jpg",
         "year": "2024",
-        "month": "04"
+        "month": "04",
+        "skater": "filipe mota",
+        "spot": "Hollywood High",
+        "location": "Los Angeles, CA",
+        "trick": "kickflip fs blunt"
       }
     },
     {
@@ -1774,7 +1779,9 @@
       "metadata": {
         "filename": "2024_05.jpg",
         "year": "2024",
-        "month": "05"
+        "month": "05",
+        "skater": "miles silvas",
+        "location": "Mexico City, Mexico"
       }
     },
     {
@@ -1785,7 +1792,9 @@
         "year": "2024",
         "month": "11",
         "skater": "tiago lemos",
-        "trick": ""
+        "trick": "switch backside noseblunt",
+        "spot": "Bay Blocks",
+        "location": "San Francisco, CA"
       }
     },
     {
@@ -2194,7 +2203,10 @@
       "metadata": {
         "filename": "2024_07.jpg",
         "year": "2024",
-        "month": "07"
+        "month": "07",
+        "skater": "chris russell",
+        "location": "Australia",
+        "trick": "eggplant"
       }
     },
     {
@@ -2414,7 +2426,10 @@
       "metadata": {
         "filename": "2024_06.jpg",
         "year": "2024",
-        "month": "06"
+        "month": "06",
+        "skater": "kader",
+        "spot": "Chinatown",
+        "trick": "switch frontside flip"
       }
     },
     {
@@ -5814,7 +5829,8 @@
         "year": "2025",
         "month": "01",
         "skater": "grant taylor",
-        "trick": "ollie burnett"
+        "trick": "ollie",
+        "photographer": "burnett"
       }
     },
     {
@@ -6004,8 +6020,9 @@
         "filename": "2025_03.jpg",
         "year": "2025",
         "month": "03",
-        "skater": "andrew reynollds",
-        "trick": "kickflip wallride darwen"
+        "skater": "andrew reynolds",
+        "trick": "kickflip wallride",
+        "photographer": "darwen"
       }
     },
     {
@@ -6396,7 +6413,9 @@
         "year": "2025",
         "month": "02",
         "skater": "greyson fletcher",
-        "trick": "one foot aguilar"
+        "trick": "one foot",
+        "location": "Oahu, Hawaii",
+        "photographer": "aguilar"
       }
     },
     {
@@ -7038,7 +7057,8 @@
         "year": "2025",
         "month": "07",
         "skater": "cody chapman",
-        "trick": "kickflip"
+        "trick": "kickflip",
+        "location": "San Francisco, CA"
       }
     },
     {
@@ -7188,8 +7208,9 @@
         "filename": "2025_05.jpg",
         "year": "2025",
         "month": "05",
-        "skater": "jamie foy burnett",
-        "trick": "frontside half cab nosegrind"
+        "skater": "jamie foy",
+        "trick": "frontside half cab nosegrind",
+        "photographer": "burnett"
       }
     },
     {
@@ -7709,7 +7730,8 @@
         "year": "2025",
         "month": "04",
         "skater": "tristan funkhouser",
-        "trick": "tree ride marco hernandez"
+        "trick": "tree ride",
+        "photographer": "marco hernandez"
       }
     },
     {
@@ -8798,7 +8820,8 @@
       "metadata": {
         "filename": "2024_08.jpg",
         "year": "2024",
-        "month": "08"
+        "month": "08",
+        "skater": "lance mountain"
       }
     },
     {
@@ -8967,7 +8990,8 @@
       "metadata": {
         "filename": "2024_09.jpg",
         "year": "2024",
-        "month": "09"
+        "month": "09",
+        "skater": "alexis sablone"
       }
     },
     {
@@ -10745,7 +10769,11 @@
       "metadata": {
         "filename": "2025_12.jpg",
         "year": "2025",
-        "month": "12"
+        "month": "12",
+        "skater": "tom schaar",
+        "spot": "FDR",
+        "trick": "disaster",
+        "photographer": "heikkila"
       }
     },
     {
@@ -10754,7 +10782,9 @@
       "metadata": {
         "filename": "2025_11.jpg",
         "year": "2025",
-        "month": "11"
+        "month": "11",
+        "skater": "chris joslin",
+        "spot": "El Toro"
       }
     },
     {
@@ -10763,7 +10793,9 @@
       "metadata": {
         "filename": "2025_10.jpg",
         "year": "2025",
-        "month": "10"
+        "month": "10",
+        "skater": "nick michel",
+        "location": "San Francisco, CA"
       }
     },
     {
@@ -10772,7 +10804,10 @@
       "metadata": {
         "filename": "2026_05.jpg",
         "year": "2026",
-        "month": "05"
+        "month": "05",
+        "skater": "antwuan dixon",
+        "photographer": "atiba",
+        "trick": "switch frontside flip"
       }
     },
     {
@@ -10781,7 +10816,8 @@
       "metadata": {
         "filename": "2026_01.jpg",
         "year": "2026",
-        "month": "01"
+        "month": "01",
+        "skater": "daan van der linden"
       }
     },
     {
@@ -10790,7 +10826,9 @@
       "metadata": {
         "filename": "2026_02.jpg",
         "year": "2026",
-        "month": "02"
+        "month": "02",
+        "skater": "simon bannerot",
+        "location": "Melbourne"
       }
     },
     {
@@ -10799,7 +10837,10 @@
       "metadata": {
         "filename": "2026_03.jpg",
         "year": "2026",
-        "month": "03"
+        "month": "03",
+        "location": "Canada",
+        "trick": "front lip",
+        "skater": "jhancarlos gonzalez"
       }
     },
     {
@@ -10808,7 +10849,9 @@
       "metadata": {
         "filename": "2026_04.jpg",
         "year": "2026",
-        "month": "04"
+        "month": "04",
+        "skater": "dashawn jordan",
+        "trick": "5-0"
       }
     },
     {
@@ -10817,7 +10860,10 @@
       "metadata": {
         "filename": "2026_06.jpg",
         "year": "2026",
-        "month": "06"
+        "month": "06",
+        "skater": "dylan jaeb",
+        "spot": "Rincon",
+        "trick": "fakie flip"
       }
     },
     {
@@ -10826,7 +10872,9 @@
       "metadata": {
         "filename": "2026_07.jpg",
         "year": "2026",
-        "month": "07"
+        "month": "07",
+        "skater": "chris joslin",
+        "trick": "switch frontside flip"
       }
     },
     {
@@ -10835,7 +10883,10 @@
       "metadata": {
         "filename": "2026_08.jpg",
         "year": "2026",
-        "month": "08"
+        "month": "08",
+        "skater": "tom karangelov",
+        "photographer": "jake darwen",
+        "trick": "nosegrind"
       }
     },
     {
@@ -10844,7 +10895,10 @@
       "metadata": {
         "filename": "2026_09.jpg",
         "year": "2026",
-        "month": "09"
+        "month": "09",
+        "skater": "jace de tomasso",
+        "trick": "switch ollie",
+        "photographer": "burnett"
       }
     },
     {
@@ -10853,7 +10907,11 @@
       "metadata": {
         "filename": "2026_10.jpg",
         "year": "2026",
-        "month": "10"
+        "month": "10",
+        "skater": "jake hayes",
+        "location": "Los Angeles, CA",
+        "trick": "50-50",
+        "photographer": "darwen"
       }
     },
     {
@@ -10862,7 +10920,12 @@
       "metadata": {
         "filename": "2026_11.jpg",
         "year": "2026",
-        "month": "11"
+        "month": "11",
+        "spot": "Brooklyn Banks",
+        "location": "Brooklyn, NY",
+        "trick": "5-0 fakie",
+        "skater": "tristan funkhouser",
+        "photographer": "acosta"
       }
     },
     {
@@ -10871,7 +10934,10 @@
       "metadata": {
         "filename": "2026_12.jpg",
         "year": "2026",
-        "month": "12"
+        "month": "12",
+        "skater": "jamie foy",
+        "location": "Boca Raton, Florida",
+        "trick": "heelflip"
       }
     }
   ]

@@ -32,14 +32,28 @@ The complete collection of 565 covers was built by scraping:
 1. **Tap this link on your iPhone**: [Download Thrasher Shortcut](https://www.icloud.com/shortcuts/2374fd29de134e4788b63084f8872bbb)
 2. **Tap "Get Shortcut"** when prompted
 3. **Test it** by tapping the ▶️ button
-4. **Done!** Your lock screen changes instantly
+4. **Add the cover choice** with the menu steps below (this iCloud copy still picks a random cover until you do)
 
 ## 📱 How to Use Daily
 
 ### Option 1: Manual (Tap to change)
 - Open Shortcuts app
 - Tap your Thrasher shortcut
-- Lock screen changes instantly
+- Choose **Random cover** or **Most recent cover**
+- Lock screen changes to that cover
+
+Each run asks which cover to set.
+
+**Update the shortcut already on your phone** (the iCloud copy always picks at random until you add this menu):
+
+1. Open **Thrasher Covers, Baby** and tap the **Get Dictionary Value** action whose key is `images`. Delete that action and the **Get Item from List** action under it.
+2. After **Get Dictionary**, add **Choose from Menu**. Set the prompt to `Which cover?`
+3. Menu item **Random cover**: **Get Dictionary Value** with key `images` (input: **Dictionary**), then **Get Item from List** → **Random Item**.
+4. Menu item **Most recent cover**: **Get Dictionary Value** with key `latest` (input: **Dictionary**).
+5. On the next **Get Dictionary Value** (`url`), set the input to the menu result.
+6. Leave the image download and **Set Wallpaper** (Lock Screen) as they are.
+
+`latest` in the cover catalog is always the newest issue, so **Most recent cover** does not depend on list order. An untouched copy of this shortcut is in `shortcuts/Thrasher_Covers_Baby.shortcut`. iOS only installs signed shortcuts, so the edit above is how you update the phone. On a Mac you can sign that file with Shortcuts and share a new iCloud link.
 
 ### Option 2: Automatic Daily Automation - **RECOMMENDED** ⚠️ **REQUIRES CUSTOM SETUP**
 **Important:** You cannot use the shortcut's built-in automation for lock screen changes due to Apple's security policy. You must manually build the automation logic below.
@@ -63,6 +77,8 @@ The complete collection of 565 covers was built by scraping:
 15. Tap **Done**
 16. Your lock screen will now change automatically every morning!
 
+**Newest issue instead of a random one:** use the same automation, but read the dictionary value `latest`, then `url`, instead of taking a random item from `images`. That `latest` value is the newest issue in the catalog.
+
 ## 🎨 What You Get
 
 - **565 covers** spanning 46 years (1981-2026)
@@ -70,7 +86,7 @@ The complete collection of 565 covers was built by scraping:
 - **Perfect iPhone sizing** - no cropping or stretching
 - **Rich metadata** - know the skater, trick, and location
 - **High quality** - optimized for crisp display
-- **Random selection** - never see the same cover twice in a row
+- **Your choice** - a random cover, or the most recent issue
 
 ## 🔧 Customization
 
@@ -104,6 +120,7 @@ Choose which details to display (date, skater, trick, location).
 ### Want different covers?
 - The shortcut randomly picks from 565 options
 - Run it multiple times to see different covers
+- Choose **Most recent cover** when you want the newest issue
 
 ### Automation not running?
 - Make sure "Ask Before Running" is turned OFF

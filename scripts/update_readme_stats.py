@@ -4,6 +4,7 @@ Keep README.md in sync with shortcuts_text_overlay_covers.json.
 
 Updates:
   - Hero image (latest cover under images/original/)
+  - `latest` on shortcuts_text_overlay_covers.json (shortcut "Most recent cover")
   - Cover counts
   - Year range (e.g. 1981-2026)
   - Span in years
@@ -14,6 +15,7 @@ includes an accurate README. Safe to run anytime (idempotent).
 
 from __future__ import annotations
 
+import copy
 import json
 import re
 import sys
@@ -47,15 +49,64 @@ REPO_RAW = (
 
 def cover_sort_key(filename: str) -> tuple[int, int, int]:
     base = filename.split("/")[-1]
-    m = re.match(r"^(?P<y>\d{4})_(?P<mm>\d{2})\.jpg$", base, re.I)
+    # YYYY_MM.jpg, plus YYYY_MM_NN.jpg when one month has more than one cover.
+    m = re.match(r"^(?P<y>\d{4})_(?P<mm>\d{2})(?:_(?P<n>\d+))?\.jpg$", base, re.I)
     if m:
-        return (int(m.group("y")), int(m.group("mm")), 0)
+        variant = int(m.group("n") or 0)
+        return (int(m.group("y")), int(m.group("mm")), variant)
     m2 = re.match(r"^(?P<y>\d{4})_(?P<sp>Summer|PhotoIssue)\.jpg$", base, re.I)
     if m2:
         y = int(m2.group("y"))
         sp = m2.group("sp").lower()
         return (y, 13 if sp == "summer" else 14, 0)
     return (0, 0, 0)
+
+
+def select_latest_image(images: list) -> dict | None:
+    """Return the newest cover entry. Skips filenames that are not issue dates."""
+    best = None
+    best_key = None
+    for img in images:
+        filename = (img or {}).get("filename") or ""
+        key = cover_sort_key(filename)
+        if key == (0, 0, 0):
+            continue
+        if best is None or key > best_key:
+            best = img
+            best_key = key
+    return best
+
+
+def apply_latest_cover(data: dict) -> bool:
+    """Point data['latest'] at the newest cover. Returns True when data changed.
+
+    The shortcut reads this object for "Most recent cover" so it does not have
+    to sort the full images list on the phone.
+    """
+    latest_img = select_latest_image(data.get("images") or [])
+    if latest_img is None:
+        return False
+
+    payload = {
+        "filename": latest_img.get("filename") or "",
+        "url": latest_img.get("url") or "",
+        "metadata": copy.deepcopy(latest_img.get("metadata") or {}),
+    }
+    rebuilt: dict = {}
+    for key in ("version", "description", "total_images"):
+        if key in data:
+            rebuilt[key] = data[key]
+    rebuilt["latest"] = payload
+    for key, value in data.items():
+        if key in rebuilt or key in ("latest", "images"):
+            continue
+        rebuilt[key] = value
+    rebuilt["images"] = data.get("images") or []
+    if rebuilt == data:
+        return False
+    data.clear()
+    data.update(rebuilt)
+    return True
 
 
 def display_label(filename: str) -> str:
@@ -183,6 +234,15 @@ def main() -> int:
     if not README_PATH.is_file():
         print(f"Missing {README_PATH}", file=sys.stderr)
         return 1
+
+    catalog = json.loads(JSON_PATH.read_text(encoding="utf-8"))
+    if apply_latest_cover(catalog):
+        JSON_PATH.write_text(json.dumps(catalog, indent=2) + "\n", encoding="utf-8")
+        latest_name = (catalog.get("latest") or {}).get("filename") or "?"
+        print(f"Updated shortcut catalog latest cover: {latest_name}")
+    else:
+        latest_name = (catalog.get("latest") or {}).get("filename") or "?"
+        print(f"Shortcut catalog latest cover already current: {latest_name}")
 
     stats = load_stats()
     before = README_PATH.read_text(encoding="utf-8")

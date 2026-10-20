@@ -14,6 +14,7 @@ This automation system allows you to automatically check for and download new Th
 - Compares against existing covers in JSON (and local image files)
 - Downloads new covers to `images/original/`
 - Adds new covers to `shortcuts_text_overlay_covers.json`
+- Refreshes the top-level `latest` object (the shortcut's **Most recent cover**)
 - Writes `data/cover_shop_publish_timestamps.json` with Shopify **`published_at`** / `created_at` / `updated_at` per issue (shop listings are the best signal for *when* an issue went live)
 
 **When are new covers “posted”?**
@@ -38,6 +39,7 @@ python3 scripts/prune_orphan_optimized_covers.py              # remove orphans
 
 **What it does**:
 - Sets the hero image to the **latest** cover (`images/original/YYYY_MM.jpg`)
+- Refreshes `latest` in `shortcuts_text_overlay_covers.json` for the shortcut
 - Rewrites cover **counts**, **year range** (e.g. `1981-2026`), and **span in years**
 
 The monthly GitHub Action runs this before every commit so the README does not drift.

@@ -39,21 +39,27 @@ The complete collection of 565 covers was built by scraping:
 ### Option 1: Manual (Tap to change)
 - Open Shortcuts app
 - Tap your Thrasher shortcut
-- Choose **Random cover** or **Most recent cover**
+- Choose **Pick a date**, **Most recent cover**, or **Random cover**
+- **Pick a date** opens a date picker. The month and year choose the issue. The day is ignored.
+- If that month has more than one cover, a second list lets you pick which one.
 - Lock screen changes to that cover
-
-Each run asks which cover to set.
 
 **Update the shortcut already on your phone** (the iCloud copy always picks at random until you add this menu):
 
-1. Open **Thrasher Covers, Baby** and tap the **Get Dictionary Value** action whose key is `images`. Delete that action and the **Get Item from List** action under it.
-2. After **Get Dictionary**, add **Choose from Menu**. Set the prompt to `Which cover?`
-3. Menu item **Random cover**: **Get Dictionary Value** with key `images` (input: **Dictionary**), then **Get Item from List** → **Random Item**.
-4. Menu item **Most recent cover**: **Get Dictionary Value** with key `latest` (input: **Dictionary**).
-5. On the next **Get Dictionary Value** (`url`), set the input to the menu result.
-6. Leave the image download and **Set Wallpaper** (Lock Screen) as they are.
+1. Open **Thrasher Covers, Baby** and delete the **Get Dictionary Value** action for `images` and the **Get Item from List** action under it.
+2. After **Get Dictionary**, add **Choose from Menu**. Prompt: `Which cover?` Items, in order: **Pick a date**, **Most recent cover**, **Random cover**.
+3. **Pick a date**
+   - **Ask for Input**, type **Date**, prompt `Which issue? The day is ignored.`
+   - **Format Date**, custom format `yyyy_MM`
+   - **Get Dictionary Value** `covers_by_month`, then **Get Dictionary Value** again using that formatted date as the key. That value is the list of issue names for the month.
+   - **Count** the list. If it is less than 1, show an alert `No Thrasher cover for that month.` and **Stop Shortcut**.
+   - Otherwise, if the count is greater than 1, **Choose from List** (`Which cover?`). If the count is 1, **Get Item from List** → **First Item**.
+   - **Get Dictionary Value** `url_by_label`, then **Get Dictionary Value** using the chosen name as the key. That value is the image URL.
+4. **Most recent cover**: **Get Dictionary Value** `latest`, then **Get Dictionary Value** `url`.
+5. **Random cover**: **Get Dictionary Value** `images`, then **Get Item from List** → **Random Item**, then **Get Dictionary Value** `url`.
+6. After the menu, **Get Contents of URL** from the menu result and **Set Wallpaper** to the Lock Screen.
 
-`latest` in the cover catalog is always the newest issue, so **Most recent cover** does not depend on list order. An untouched copy of this shortcut is in `shortcuts/Thrasher_Covers_Baby.shortcut`. iOS only installs signed shortcuts, so the edit above is how you update the phone. On a Mac you can sign that file with Shortcuts and share a new iCloud link.
+`latest` is always the newest issue. `covers_by_month` and `url_by_label` are what the date picker looks up. An untouched copy of this shortcut is in `shortcuts/Thrasher_Covers_Baby.shortcut`. iOS only installs signed shortcuts, so the edit above is how you update the phone. On a Mac you can sign that file with Shortcuts and share a new iCloud link.
 
 ### Option 2: Automatic Daily Automation - **RECOMMENDED** ⚠️ **REQUIRES CUSTOM SETUP**
 **Important:** You cannot use the shortcut's built-in automation for lock screen changes due to Apple's security policy. You must manually build the automation logic below.
@@ -86,7 +92,7 @@ Each run asks which cover to set.
 - **Perfect iPhone sizing** - no cropping or stretching
 - **Rich metadata** - know the skater, trick, and location
 - **High quality** - optimized for crisp display
-- **Your choice** - a random cover, or the most recent issue
+- **Your choice** - pick an issue on the date picker, use the most recent cover, or take a random one
 
 ## 🔧 Customization
 
@@ -121,6 +127,7 @@ Choose which details to display (date, skater, trick, location).
 - The shortcut randomly picks from 565 options
 - Run it multiple times to see different covers
 - Choose **Most recent cover** when you want the newest issue
+- Choose **Pick a date** and spin to a month and year
 
 ### Automation not running?
 - Make sure "Ask Before Running" is turned OFF

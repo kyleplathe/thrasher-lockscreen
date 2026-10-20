@@ -4,7 +4,8 @@ Keep README.md in sync with shortcuts_text_overlay_covers.json.
 
 Updates:
   - Hero image (latest cover under images/original/)
-  - `latest` on shortcuts_text_overlay_covers.json (shortcut "Most recent cover")
+  - `latest`, `covers_by_month`, and `url_by_label` on shortcuts_text_overlay_covers.json
+    (shortcut "Most recent cover" and the date picker)
   - Cover counts
   - Year range (e.g. 1981-2026)
   - Span in years
@@ -77,13 +78,66 @@ def select_latest_image(images: list) -> dict | None:
     return best
 
 
-def apply_latest_cover(data: dict) -> bool:
-    """Point data['latest'] at the newest cover. Returns True when data changed.
+_MONTH_FILE = re.compile(
+    r"^(?P<y>\d{4})_(?P<mm>\d{2})(?:_(?P<n>\d+))?\.jpg$",
+    re.I,
+)
 
-    The shortcut reads this object for "Most recent cover" so it does not have
-    to sort the full images list on the phone.
+
+def month_key(filename: str) -> str | None:
+    """YYYY_MM for a monthly issue, or None for summer/photo issues and junk."""
+    match = _MONTH_FILE.match(filename.split("/")[-1])
+    if not match:
+        return None
+    month = int(match.group("mm"))
+    if not 1 <= month <= 12:
+        return None
+    return f"{match.group('y')}_{month:02d}"
+
+
+def shortcut_date_index(images: list) -> tuple[dict, dict]:
+    """Labels and URLs the shortcut date picker can resolve without sorting.
+
+    covers_by_month maps ``YYYY_MM`` to a list of labels (one per cover that month).
+    url_by_label maps each of those labels to the image URL.
     """
-    latest_img = select_latest_image(data.get("images") or [])
+    grouped: dict[str, list] = {}
+    for img in images:
+        filename = (img or {}).get("filename") or ""
+        key = month_key(filename)
+        if key is None or not (img or {}).get("url"):
+            continue
+        grouped.setdefault(key, []).append(img)
+
+    covers_by_month: dict[str, list[str]] = {}
+    url_by_label: dict[str, str] = {}
+    for key in sorted(grouped):
+        year, month = key.split("_")
+        base = f"{MONTHS[int(month) - 1]} {year}"
+        ordered = sorted(
+            grouped[key],
+            key=lambda img: cover_sort_key(img.get("filename") or ""),
+        )
+        labels: list[str] = []
+        for index, img in enumerate(ordered, start=1):
+            label = base if len(ordered) == 1 or index == 1 else f"{base} ({index})"
+            if label in url_by_label:
+                label = f"{base} ({img.get('filename')})"
+            labels.append(label)
+            url_by_label[label] = img["url"]
+        covers_by_month[key] = labels
+    return covers_by_month, url_by_label
+
+
+def apply_latest_cover(data: dict) -> bool:
+    """Refresh the fields the shortcut reads. Returns True when data changed.
+
+    ``latest`` is the newest cover. ``covers_by_month`` and ``url_by_label``
+    back the date picker: a chosen month becomes ``YYYY_MM``, then a label,
+    then the image URL.
+    """
+    images = data.get("images") or []
+    latest_img = select_latest_image(images)
     if latest_img is None:
         return False
 
@@ -92,16 +146,19 @@ def apply_latest_cover(data: dict) -> bool:
         "url": latest_img.get("url") or "",
         "metadata": copy.deepcopy(latest_img.get("metadata") or {}),
     }
+    covers_by_month, url_by_label = shortcut_date_index(images)
     rebuilt: dict = {}
     for key in ("version", "description", "total_images"):
         if key in data:
             rebuilt[key] = data[key]
     rebuilt["latest"] = payload
+    rebuilt["covers_by_month"] = covers_by_month
+    rebuilt["url_by_label"] = url_by_label
     for key, value in data.items():
-        if key in rebuilt or key in ("latest", "images"):
+        if key in rebuilt or key in ("latest", "covers_by_month", "url_by_label", "images"):
             continue
         rebuilt[key] = value
-    rebuilt["images"] = data.get("images") or []
+    rebuilt["images"] = images
     if rebuilt == data:
         return False
     data.clear()

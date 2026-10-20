@@ -23,6 +23,7 @@ Sends with curl. api.resend.com sits behind Cloudflare, which returns 403 / erro
 
 from __future__ import annotations
 
+import base64
 import json
 import os
 import random
@@ -58,6 +59,11 @@ SUBJECT_EMOJIS = [
 # Override with SHORTCUTS_URL env / GitHub secret if the link ever changes.
 DEFAULT_SHORTCUTS_URL = (
     "https://www.icloud.com/shortcuts/f7b91ae83200412b9c211e7b6b73f53a"
+)
+
+# Public copies of the files this repo commits. Used as the tap-through target.
+GITHUB_RAW = (
+    "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main"
 )
 
 
@@ -166,7 +172,43 @@ def latest_monthly_cover(data: dict) -> list[tuple[str, str, str]]:
     return [(filename, label, blurb)]
 
 
-def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str]:
+def local_cover_file(filename: str) -> str | None:
+    """Magazine cover first, lock-screen render if the original is not in the checkout."""
+    for rel in (
+        f"images/original/{filename}",
+        f"images/optimized_final_with_text/{filename}",
+    ):
+        if os.path.isfile(rel):
+            return rel
+    return None
+
+
+def public_cover_url(filename: str, local_path: str | None) -> str:
+    folder = "images/original"
+    if local_path and "optimized_final_with_text" in local_path:
+        folder = "images/optimized_final_with_text"
+    return f"{GITHUB_RAW}/{folder}/{filename}"
+
+
+def inline_cover(filename: str) -> tuple[str, str, dict | None]:
+    """Return (img src, public url, optional Resend inline attachment)."""
+    local_path = local_cover_file(filename)
+    public_url = public_cover_url(filename, local_path)
+    if not local_path:
+        return public_url, public_url, None
+    with open(local_path, "rb") as handle:
+        encoded = base64.b64encode(handle.read()).decode("ascii")
+    content_id = "cover-" + re.sub(r"[^A-Za-z0-9]", "", filename)
+    attachment = {
+        "filename": os.path.basename(local_path),
+        "content": encoded,
+        "content_type": "image/jpeg",
+        "content_id": content_id,
+    }
+    return f"cid:{content_id}", public_url, attachment
+
+
+def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str, list[dict]]:
     link = shortcuts_url()
     emoji = random.choice(SUBJECT_EMOJIS)
     if len(covers) == 1:
@@ -191,19 +233,34 @@ def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str]:
         "Tap through with the shortcut below: random cover, same layout you love, zero hunting on Instagram.",
         "</p>",
     ]
+    attachments: list[dict] = []
     for base, label, blurb in covers:
+        img_src, public_url, attachment = inline_cover(base)
+        if attachment:
+            attachments.append(attachment)
         lines.append(
             "<div style='border:1px solid #e5e5e5; border-radius:14px; padding:16px 18px; margin:14px 0; "
-            "background:linear-gradient(180deg,#fafafa 0%,#fff 100%);'>"
+            "background:linear-gradient(180deg,#fafafa 0%,#fff 100%); text-align:center;'>"
         )
-        lines.append(f"<p style='margin:0 0 4px; font-size:12px; color:#888;'>Just added</p>")
-        lines.append(f"<p style='margin:0 0 8px; font-size:19px; font-weight:800;'>{label}</p>")
-        lines.append(f"<p style='margin:0; color:#666; font-size:13px; font-family:ui-monospace,monospace;'>{base}</p>")
+        lines.append(f"<p style='margin:0 0 12px; font-size:12px; color:#888; text-align:left;'>Just added</p>")
+        lines.append(
+            f"<a href=\"{public_url}\" style=\"text-decoration:none;\">"
+            f"<img src=\"{img_src}\" alt=\"{label} Thrasher cover\" width=\"320\" "
+            "style=\"display:block; width:100%; max-width:320px; height:auto; margin:0 auto 14px; "
+            "border-radius:6px; border:1px solid #ddd;\" />"
+            "</a>"
+        )
+        lines.append(f"<p style='margin:0 0 8px; font-size:19px; font-weight:800; text-align:left;'>{label}</p>")
+        lines.append(
+            f"<p style='margin:0; color:#666; font-size:13px; font-family:ui-monospace,monospace; text-align:left;'>{base}</p>"
+        )
         if blurb:
-            lines.append(f"<p style='margin:12px 0 0; font-size:15px; color:#222; line-height:1.45;'>{blurb}</p>")
+            lines.append(
+                f"<p style='margin:12px 0 0; font-size:15px; color:#222; line-height:1.45; text-align:left;'>{blurb}</p>"
+            )
         else:
             lines.append(
-                "<p style='margin:12px 0 0; font-size:14px; color:#666; line-height:1.45;'>"
+                "<p style='margin:12px 0 0; font-size:14px; color:#666; line-height:1.45; text-align:left;'>"
                 "Full skater / trick metadata shows up in the feed when it’s in the JSON—either way, the cover art "
                 "is ready to roll.</p>"
             )
@@ -230,19 +287,27 @@ def build_email(covers: list[tuple[str, str, str]]) -> tuple[str, str]:
         ]
     )
     html = "\n".join(lines)
-    return subject, html
+    return subject, html, attachments
 
 
-def send_resend(api_key: str, to_addr: str, from_addr: str, subject: str, html: str) -> str:
+def send_resend(
+    api_key: str,
+    to_addr: str,
+    from_addr: str,
+    subject: str,
+    html: str,
+    attachments: list[dict] | None = None,
+) -> str:
     """POST the email via curl. Returns the Resend response body."""
-    payload = json.dumps(
-        {
-            "from": from_addr,
-            "to": [to_addr],
-            "subject": subject,
-            "html": html,
-        }
-    )
+    message: dict = {
+        "from": from_addr,
+        "to": [to_addr],
+        "subject": subject,
+        "html": html,
+    }
+    if attachments:
+        message["attachments"] = attachments
+    payload = json.dumps(message)
     proc = subprocess.run(
         [
             "curl",
@@ -315,12 +380,12 @@ def main() -> int:
         print("No new cover JPGs in HEAD — skipping email (metadata-only commit).")
         return 0
 
-    subject, html = build_email(covers)
+    subject, html, attachments = build_email(covers)
     if used_latest:
         subject = f"Test: {subject}"
 
     try:
-        response = send_resend(api_key, to_addr, from_addr, subject, html)
+        response = send_resend(api_key, to_addr, from_addr, subject, html, attachments)
     except Exception as e:
         print(f"Resend error: {e}", file=sys.stderr)
         return 1

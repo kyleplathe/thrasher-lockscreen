@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "description": "Thrasher Magazine covers with text overlays for iOS Shortcuts",
-  "total_images": 565,
+  "total_images": 564,
   "images": [
     {
       "filename": "2010_12.jpg",
@@ -307,9 +307,20 @@
       "filename": "2008_Summer.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2008_Summer.jpg",
       "metadata": {
-        "filename": "2008_Summer.jpg",
+        "issueno": "345",
+        "month": "Summer",
         "year": "2008",
-        "month": "Summer"
+        "skater": "silas baxter-neal",
+        "trick": "bs disaster",
+        "obstacle": "transition",
+        "detailer": "street transition",
+        "staircount": "",
+        "spot": "",
+        "location": "",
+        "notes": "13th issue",
+        "special": "",
+        "soty": "",
+        "filename": "2008_Summer.jpg"
       }
     },
     {
@@ -716,9 +727,20 @@
       "filename": "2009_PhotoIssue.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2009_PhotoIssue.jpg",
       "metadata": {
-        "filename": "2009_PhotoIssue.jpg",
+        "issueno": "358",
+        "month": "PhotoIssue",
         "year": "2009",
-        "month": "PhotoIssue"
+        "skater": "antwuan dixon",
+        "trick": "",
+        "obstacle": "portrait",
+        "detailer": "",
+        "staircount": "",
+        "spot": "",
+        "location": "",
+        "notes": "13th issue",
+        "special": "",
+        "soty": "",
+        "filename": "2009_PhotoIssue.jpg"
       }
     },
     {
@@ -785,17 +807,17 @@
       "filename": "1988_12.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/1988_12.jpg",
       "metadata": {
-        "issueno": "97",
+        "issueno": "96",
         "month": "12",
         "year": "1988",
-        "skater": "tony alva",
-        "trick": "hill bomb",
-        "obstacle": "hill",
-        "detailer": "ditch",
+        "skater": "lance mountain",
+        "trick": "sad plant",
+        "obstacle": "transition",
+        "detailer": "halfpipe",
         "staircount": "",
         "spot": "",
         "location": "",
-        "notes": "first 13th issue",
+        "notes": "",
         "special": "",
         "soty": "",
         "filename": "1988_12.jpg"
@@ -958,7 +980,7 @@
         "notes": "",
         "special": "Figgy",
         "soty": "",
-        "filename": "2015_09_01.jpg"
+        "filename": "2015_09.jpg"
       }
     },
     {
@@ -1128,10 +1150,10 @@
         "issueno": "91",
         "month": "07",
         "year": "1988",
-        "skater": "danny sargent, luke ogden, john dettman ",
-        "trick": "",
-        "obstacle": "hill bomb",
-        "detailer": "hill",
+        "skater": "danny sargent, luke ogden, john dettman",
+        "trick": "hill bomb",
+        "obstacle": "hill",
+        "detailer": "",
         "staircount": "",
         "spot": "",
         "location": "",
@@ -1245,9 +1267,20 @@
       "filename": "2005_Summer.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2005_Summer.jpg",
       "metadata": {
-        "filename": "2005_Summer.jpg",
+        "issueno": "306",
+        "month": "Summer",
         "year": "2005",
-        "month": "Summer"
+        "skater": "chet childress",
+        "trick": "bs nosegrab",
+        "obstacle": "transition",
+        "detailer": "bowl",
+        "staircount": "",
+        "spot": "",
+        "location": "",
+        "notes": "13th issue",
+        "special": "",
+        "soty": "",
+        "filename": "2005_Summer.jpg"
       }
     },
     {
@@ -2286,7 +2319,7 @@
         "notes": "woman",
         "special": "Music",
         "soty": "",
-        "filename": "2012_06_01.jpg"
+        "filename": "2012_06.jpg"
       }
     },
     {
@@ -3100,7 +3133,7 @@
         "notes": "",
         "special": "Dylan",
         "soty": "",
-        "filename": "2017_01.jpg"
+        "filename": "2017_01_01.jpg"
       }
     },
     {
@@ -3211,7 +3244,7 @@
         "year": "2025",
         "month": "08",
         "skater": "curren caples",
-        "trick": "50 50"
+        "trick": "50-50"
       }
     },
     {
@@ -3418,9 +3451,20 @@
       "filename": "2002_PhotoIssue.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2002_PhotoIssue.jpg",
       "metadata": {
-        "filename": "2002_PhotoIssue.jpg",
+        "issueno": "267",
+        "month": "PhotoIssue",
         "year": "2002",
-        "month": "PhotoIssue"
+        "skater": "josh harmony",
+        "trick": "fs nosegrind",
+        "obstacle": "rail",
+        "detailer": "handrail",
+        "staircount": "11",
+        "spot": "",
+        "location": "",
+        "notes": "13th issue",
+        "special": "",
+        "soty": "",
+        "filename": "2002_PhotoIssue.jpg"
       }
     },
     {
@@ -3507,9 +3551,20 @@
       "filename": "2007_Summer.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2007_Summer.jpg",
       "metadata": {
-        "filename": "2007_Summer.jpg",
+        "issueno": "332",
+        "month": "Summer",
         "year": "2007",
-        "month": "Summer"
+        "skater": "peter hewitt",
+        "trick": "fs nosegrab",
+        "obstacle": "transition",
+        "detailer": "bowl",
+        "staircount": "",
+        "spot": "",
+        "location": "",
+        "notes": "13th issue",
+        "special": "",
+        "soty": "",
+        "filename": "2007_Summer.jpg"
       }
     },
     {
@@ -4356,9 +4411,20 @@
       "filename": "2003_PhotoIssue.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2003_PhotoIssue.jpg",
       "metadata": {
-        "filename": "2003_PhotoIssue.jpg",
+        "issueno": "280",
+        "month": "PhotoIssue",
         "year": "2003",
-        "month": "PhotoIssue"
+        "skater": "john cardiel",
+        "trick": "fs air",
+        "obstacle": "transition",
+        "detailer": "park",
+        "staircount": "",
+        "spot": "ripon",
+        "location": "",
+        "notes": "13th issue",
+        "special": "",
+        "soty": "",
+        "filename": "2003_PhotoIssue.jpg"
       }
     },
     {
@@ -4505,18 +4571,18 @@
       "filename": "2012_06_01.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2012_06_01.jpg",
       "metadata": {
-        "issueno": "389",
+        "issueno": "388",
         "month": "06",
         "year": "2012",
-        "skater": "kreayshawn",
-        "trick": "",
-        "obstacle": "portrait",
-        "detailer": "music",
+        "skater": "danny way",
+        "trick": "bs kickflip",
+        "obstacle": "gap",
+        "detailer": "mega ramp",
         "staircount": "",
         "spot": "",
         "location": "",
-        "notes": "woman",
-        "special": "Music",
+        "notes": "murderer",
+        "special": "",
         "soty": "",
         "filename": "2012_06_01.jpg"
       }
@@ -4658,7 +4724,7 @@
         "notes": "",
         "special": "",
         "soty": "",
-        "filename": "2003_08_01.jpg"
+        "filename": "2003_08.jpg"
       }
     },
     {
@@ -5405,20 +5471,20 @@
       "filename": "2013_01.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2013_01.jpg",
       "metadata": {
-        "issueno": "400",
+        "issueno": "397",
         "month": "01",
         "year": "2013",
-        "skater": "stevie perez",
-        "trick": "bs 180 to nosegrind",
-        "obstacle": "rail",
-        "detailer": "handrail",
-        "staircount": "10",
+        "skater": "elijah berle",
+        "trick": "ramp-to-ramp",
+        "obstacle": "transition",
+        "detailer": "channel",
+        "staircount": "",
         "spot": "",
         "location": "",
         "notes": "",
-        "special": "Perez",
+        "special": "Berle",
         "soty": "",
-        "filename": "2013_01_02.jpg"
+        "filename": "2013_01.jpg"
       }
     },
     {
@@ -6833,18 +6899,18 @@
       "filename": "2015_09_01.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2015_09_01.jpg",
       "metadata": {
-        "issueno": "436",
+        "issueno": "435",
         "month": "09",
         "year": "2015",
-        "skater": "figgy",
-        "trick": "bs crook",
-        "obstacle": "rail",
-        "detailer": "handrail",
-        "staircount": "24",
+        "skater": "raven tershy",
+        "trick": "bs tailslide nose grab",
+        "obstacle": "transition",
+        "detailer": "pool",
+        "staircount": "",
         "spot": "",
         "location": "",
         "notes": "",
-        "special": "Figgy",
+        "special": "Raven",
         "soty": "",
         "filename": "2015_09_01.jpg"
       }
@@ -7501,8 +7567,8 @@
         "month": "03",
         "year": "1985",
         "skater": "billy ruff & neil blender",
-        "trick": "",
-        "obstacle": "ollie",
+        "trick": "ollie",
+        "obstacle": "",
         "detailer": "",
         "staircount": "",
         "spot": "",
@@ -7537,9 +7603,20 @@
       "filename": "2004_Summer.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2004_Summer.jpg",
       "metadata": {
-        "filename": "2004_Summer.jpg",
+        "issueno": "293",
+        "month": "Summer",
         "year": "2004",
-        "month": "Summer"
+        "skater": "tommy sandoval",
+        "trick": "tre flip",
+        "obstacle": "stairs",
+        "detailer": "triple set",
+        "staircount": "3 flat 3 flat 2",
+        "spot": "",
+        "location": "",
+        "notes": "13th issue",
+        "special": "",
+        "soty": "",
+        "filename": "2004_Summer.jpg"
       }
     },
     {
@@ -7600,26 +7677,6 @@
         "special": "",
         "soty": "",
         "filename": "2016_09.jpg"
-      }
-    },
-    {
-      "filename": "2003_08_01.jpg",
-      "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2003_08_01.jpg",
-      "metadata": {
-        "issueno": "275",
-        "month": "08",
-        "year": "2003",
-        "skater": "tom penny",
-        "trick": "kickflip to fakie",
-        "obstacle": "transition",
-        "detailer": "fullpipe",
-        "staircount": "",
-        "spot": "",
-        "location": "",
-        "notes": "",
-        "special": "",
-        "soty": "",
-        "filename": "2003_08_01.jpg"
       }
     },
     {
@@ -7978,20 +8035,20 @@
       "filename": "2015_01_01.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2015_01_01.jpg",
       "metadata": {
-        "issueno": "427",
+        "issueno": "424",
         "month": "01",
         "year": "2015",
-        "skater": "brandon westgate",
-        "trick": "bs boardslide",
+        "skater": "ishod wair",
+        "trick": "fs tailslide",
         "obstacle": "rail",
         "detailer": "handrail",
-        "staircount": "",
+        "staircount": "9 flat 7",
         "spot": "",
         "location": "",
-        "notes": "up handrail",
-        "special": "Westgate",
+        "notes": "",
+        "special": "Ishod",
         "soty": "",
-        "filename": "2015_01_03.jpg"
+        "filename": "2015_01_01.jpg"
       }
     },
     {
@@ -8711,7 +8768,7 @@
         "notes": "up handrail",
         "special": "Westgate",
         "soty": "",
-        "filename": "2015_01_03.jpg"
+        "filename": "2015_01_02.jpg"
       }
     },
     {
@@ -8908,40 +8965,40 @@
       "filename": "2013_01_04.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2013_01_04.jpg",
       "metadata": {
-        "issueno": "400",
+        "issueno": "399",
         "month": "01",
         "year": "2013",
-        "skater": "stevie perez",
-        "trick": "bs 180 to nosegrind",
-        "obstacle": "rail",
-        "detailer": "handrail",
-        "staircount": "10",
+        "skater": "raven tershy",
+        "trick": "fs fastplant",
+        "obstacle": "transition",
+        "detailer": "street transition",
+        "staircount": "",
         "spot": "",
         "location": "",
         "notes": "",
-        "special": "Perez",
+        "special": "Tershy",
         "soty": "",
-        "filename": "2013_01_02.jpg"
+        "filename": "2013_01_04.jpg"
       }
     },
     {
       "filename": "2015_01.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2015_01.jpg",
       "metadata": {
-        "issueno": "427",
+        "issueno": "426",
         "month": "01",
         "year": "2015",
-        "skater": "brandon westgate",
-        "trick": "bs boardslide",
-        "obstacle": "rail",
-        "detailer": "handrail",
+        "skater": "blake carpenter",
+        "trick": "ollie",
+        "obstacle": "gap",
+        "detailer": "",
         "staircount": "",
         "spot": "",
         "location": "",
-        "notes": "up handrail",
-        "special": "Westgate",
+        "notes": "",
+        "special": "Carpenter",
         "soty": "",
-        "filename": "2015_01_03.jpg"
+        "filename": "2015_01.jpg"
       }
     },
     {
@@ -9098,18 +9155,18 @@
       "filename": "2015_01_03.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2015_01_03.jpg",
       "metadata": {
-        "issueno": "427",
+        "issueno": "425",
         "month": "01",
         "year": "2015",
-        "skater": "brandon westgate",
-        "trick": "bs boardslide",
-        "obstacle": "rail",
-        "detailer": "handrail",
-        "staircount": "",
+        "skater": "torey pudwill",
+        "trick": "bs tailslide",
+        "obstacle": "ledge",
+        "detailer": "hubba",
+        "staircount": "13",
         "spot": "",
         "location": "",
-        "notes": "up handrail",
-        "special": "Westgate",
+        "notes": "",
+        "special": "Pudwill",
         "soty": "",
         "filename": "2015_01_03.jpg"
       }
@@ -9638,20 +9695,20 @@
       "filename": "2013_01_01.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2013_01_01.jpg",
       "metadata": {
-        "issueno": "400",
+        "issueno": "396",
         "month": "01",
         "year": "2013",
-        "skater": "stevie perez",
-        "trick": "bs 180 to nosegrind",
-        "obstacle": "rail",
-        "detailer": "handrail",
-        "staircount": "10",
+        "skater": "vincent alvarez",
+        "trick": "kickflip pivot",
+        "obstacle": "transition",
+        "detailer": "street transition",
+        "staircount": "",
         "spot": "",
         "location": "",
-        "notes": "",
-        "special": "Perez",
+        "notes": "combo",
+        "special": "Alvarez",
         "soty": "",
-        "filename": "2013_01_02.jpg"
+        "filename": "2013_01_01.jpg"
       }
     },
     {
@@ -9958,18 +10015,18 @@
       "filename": "2017_01.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2017_01.jpg",
       "metadata": {
-        "issueno": "453",
+        "issueno": "452",
         "month": "01",
         "year": "2017",
-        "skater": "dylan reider",
-        "trick": "kickflip",
-        "obstacle": "bank",
-        "detailer": "",
+        "skater": "kyle walker",
+        "trick": "second-story kickflip",
+        "obstacle": "gap",
+        "detailer": "over rail",
         "staircount": "",
         "spot": "",
         "location": "",
         "notes": "",
-        "special": "Dylan",
+        "special": "Walker",
         "soty": "",
         "filename": "2017_01.jpg"
       }
@@ -10138,9 +10195,20 @@
       "filename": "2006_Summer.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2006_Summer.jpg",
       "metadata": {
-        "filename": "2006_Summer.jpg",
+        "issueno": "319",
+        "month": "Summer",
         "year": "2006",
-        "month": "Summer"
+        "skater": "cairo foster",
+        "trick": "bs 5-0",
+        "obstacle": "rail",
+        "detailer": "handrail",
+        "staircount": "",
+        "spot": "",
+        "location": "",
+        "notes": "13th issue",
+        "special": "",
+        "soty": "",
+        "filename": "2006_Summer.jpg"
       }
     },
     {
@@ -10367,20 +10435,20 @@
       "filename": "2013_01_03.jpg",
       "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2013_01_03.jpg",
       "metadata": {
-        "issueno": "400",
+        "issueno": "398",
         "month": "01",
         "year": "2013",
-        "skater": "stevie perez",
-        "trick": "bs 180 to nosegrind",
+        "skater": "cory kennedy",
+        "trick": "crooks pop-over",
         "obstacle": "rail",
         "detailer": "handrail",
-        "staircount": "10",
+        "staircount": "9",
         "spot": "",
         "location": "",
         "notes": "",
-        "special": "Perez",
+        "special": "Kennedy",
         "soty": "",
-        "filename": "2013_01_02.jpg"
+        "filename": "2013_01_03.jpg"
       }
     },
     {

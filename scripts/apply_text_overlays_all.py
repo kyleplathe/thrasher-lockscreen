@@ -46,8 +46,9 @@ class TextOverlayApplier:
             'january': 1, 'february': 2, 'march': 3, 'april': 4,
             'may': 5, 'june': 6, 'july': 7, 'august': 8,
             'september': 9, 'october': 10, 'november': 11, 'december': 12,
-            'winter': 12  # Winter issue typically December
         }
+        # Winter is a 13th issue (1988: Tony Alva), not a stand-in for December.
+        # Mapping it to 12 overwrote the December cover (Lance Mountain, sad plant).
         return months.get(month_name.lower())
     
     def load_fonts(self):

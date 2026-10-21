@@ -11,7 +11,7 @@ This repository is kept private to prevent malicious actors from hijacking the i
 
 ## 🎯 What This Project Does
 
-This project provides **565 Thrasher Magazine covers** from 1981-2026 that can be automatically set as iPhone lock screens. Each cover includes:
+This project provides **564 Thrasher Magazine covers** from 1981-2026 that can be automatically set as iPhone lock screens. Each cover includes:
 
 - 📅 **Date** (month and year)
 - 👤 **Skater name** 
@@ -20,7 +20,7 @@ This project provides **565 Thrasher Magazine covers** from 1981-2026 that can b
 
 ## 📊 Data Sources
 
-The complete collection of 565 covers was built by scraping:
+The complete collection of 564 covers was built by scraping:
 - **[Thrasher Magazine website](https://www.thrashermagazine.com/articles/magazine/)** - Current covers from 1981-present
 - **[4Ply Magazine archive](https://archive.4plymag.com)** - Metadata from 1981-2019
 - Manual metadata extraction from cover filenames and descriptions
@@ -65,7 +65,7 @@ The complete collection of 565 covers was built by scraping:
 
 ## 🎨 What You Get
 
-- **565 covers** spanning 46 years (1981-2026)
+- **564 covers** spanning 46 years (1981-2026)
 - **Complete coverage** - all 12 months for most years
 - **Perfect iPhone sizing** - no cropping or stretching
 - **Rich metadata** - know the skater, trick, and location
@@ -102,7 +102,7 @@ Choose which details to display (date, skater, trick, location).
 - They should look crisp on any iPhone model
 
 ### Want different covers?
-- The shortcut randomly picks from 565 options
+- The shortcut randomly picks from 564 options
 - Run it multiple times to see different covers
 
 ### Automation not running?

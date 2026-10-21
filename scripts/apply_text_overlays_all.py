@@ -35,6 +35,16 @@ class TextOverlayApplier:
                 month = self.month_to_number(row['month'])
                 if month:
                     key = f"{year}_{month:02d}"
+                    # A second cover in the same month (or a 13th issue) must not
+                    # replace the calendar issue. Variants are assigned by hand
+                    # in shortcuts_text_overlay_covers.json.
+                    if key in fourply_data:
+                        kept = fourply_data[key]
+                        print(
+                            f"skip duplicate {key}: #{row['issueno']} {row['skater']}"
+                            f" (keeping #{kept['issueno']} {kept['skater']})"
+                        )
+                        continue
                     fourply_data[key] = row
         
         print(f"Loaded {len(fourply_data)} entries from 4ply CSV")

@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "description": "Thrasher Magazine covers with text overlays for iOS Shortcuts",
-  "total_images": 564,
+  "total_images": 565,
   "images": [
     {
       "filename": "2010_12.jpg",
@@ -11006,6 +11006,18 @@
         "skater": "jamie foy",
         "location": "Boca Raton, Florida",
         "trick": "heelflip"
+      }
+    },
+    {
+      "filename": "2027_01.jpg",
+      "url": "https://raw.githubusercontent.com/kyleplathe/thrasher-lockscreen/main/images/optimized_final_with_text/2027_01.jpg",
+      "metadata": {
+        "filename": "2027_01.jpg",
+        "year": "2027",
+        "month": "01",
+        "skater": "chloe covell",
+        "location": "Wallenberg",
+        "trick": "kickflip"
       }
     }
   ]
